@@ -1,0 +1,17 @@
+numpy
+pillow
+opencv-python
+faiss-cpu
+torch
+torchvision
+torchaudio
+transformers
+accelerate
+sentencepiece
+einops
+bitsandbytes
+deepspeed
+timm
+mpi4py
+git+https://github.com/PKU-YuanGroup/MoE-LLaVA.git
+git+https://github.com/facebookresearch/ImageBind.git

@@ -1,0 +1,32 @@
+name: Bio-Med-Agent
+channels:
+  - nvidia/label/cuda-11.8.0
+  - pytorch
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - cuda-toolkit=11.8
+  - pip
+
+  - pip:
+      - numpy
+      - pillow
+      - opencv-python
+      - faiss-cpu
+      - torch
+      - torchvision
+      - torchaudio
+      - transformers
+      - accelerate
+      - sentencepiece
+      - einops
+      - bitsandbytes
+      - deepspeed
+      - timm
+      - mpi4py
+
+      # Editable / Git installs (from your commands)
+      - git+https://github.com/PKU-YuanGroup/MoE-LLaVA.git
+      - git+https://github.com/facebookresearch/ImageBind.git
