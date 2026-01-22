@@ -21,3 +21,7 @@ scripts/cache_dir/
 cache_dir/
 hf_cache/
 wandb/
+# Large artifacts
+checkpoints/
+cache_dir/
+*.whl
