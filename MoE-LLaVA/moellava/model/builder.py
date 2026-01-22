@@ -12,7 +12,6 @@
 #    See the License for the specific language governing permissions and
 #    limitations under the License.
 
-
 import os
 import warnings
 import shutil
@@ -63,6 +62,53 @@ if a == "4" and int(b) >= 37:
     from moellava.model.language_model.llava_qwen1_5 import LlavaQwen1_5ForCausalLM
 
 
+# ======================================================================================
+# IMPORTANT PATCH: init DS comm WITHOUT MPI
+# ======================================================================================
+def _ensure_deepspeed_comm(dist_backend: str = "nccl") -> None:
+    """
+    Initialize torch.distributed + deepspeed.comm without triggering MPI discovery.
+
+    Why:
+      - deepspeed.init_distributed() may attempt MPI discovery (mpi4py/libmpi) and crash
+      - MoE all_to_all uses deepspeed.comm (cdb). If cdb is None, you get:
+            AttributeError: 'NoneType' object has no attribute 'all_to_all_single'
+
+    This function:
+      - Initializes torch.distributed via env:// if needed (WORLD_SIZE defaults to 1)
+      - Initializes deepspeed.comm via ds_comm.init_distributed()
+    """
+    import torch.distributed as dist
+    import deepspeed.comm as ds_comm
+
+    # torch.distributed init (env://, no MPI)
+    if dist.is_available() and not dist.is_initialized():
+        os.environ.setdefault("MASTER_ADDR", "127.0.0.1")
+        os.environ.setdefault("MASTER_PORT", "29500")
+        os.environ.setdefault("RANK", "0")
+        os.environ.setdefault("WORLD_SIZE", "1")
+        os.environ.setdefault("LOCAL_RANK", "0")
+
+        local_rank = int(os.environ.get("LOCAL_RANK", "0"))
+        if torch.cuda.is_available():
+            torch.cuda.set_device(local_rank)
+
+        backend = dist_backend if torch.cuda.is_available() else "gloo"
+        dist.init_process_group(backend=backend, init_method="env://")
+
+        if torch.cuda.is_available():
+            dist.barrier(device_ids=[torch.cuda.current_device()])
+        else:
+            dist.barrier()
+
+    # deepspeed.comm init (so cdb is not None)
+    if not ds_comm.is_initialized():
+        ds_comm.init_distributed(dist_backend=dist_backend)
+
+    if ds_comm.get_rank() is None:
+        raise RuntimeError("DeepSpeed comm backend is not initialized (cdb is None).")
+
+
 def _maybe_set_generation_config(tokenizer, model, model_id_for_config: str):
     """
     Keep original behavior: for Qwen models they customize generation_config.
@@ -74,6 +120,19 @@ def _maybe_set_generation_config(tokenizer, model, model_id_for_config: str):
         )
     except Exception:
         pass
+
+
+def _is_moe_enabled(model_name: str, cfg) -> bool:
+    name_lower = (model_name or "").lower()
+    if "moe" in name_lower:
+        return True
+    try:
+        moe_cfg = getattr(cfg, "moe", None)
+        if isinstance(moe_cfg, dict):
+            return bool(moe_cfg.get("moe_enable", False))
+        return bool(getattr(moe_cfg, "moe_enable", False))
+    except Exception:
+        return False
 
 
 def load_pretrained_model(
@@ -91,18 +150,19 @@ def load_pretrained_model(
     """
     Full edit goals:
     1) Fix Phi routing: never instantiate Llama classes for Phi checkpoints.
-    2) Remove DeepSpeed requirement for single-GPU inference (your environment).
-       - No deepspeed.init_distributed
-       - No ds_engine wrapping
-    3) Remove broken indentation and undefined variables (dtype) in Phi model_base path.
-    4) Keep LoRA merge path intact.
-    5) Keep mm_projector loading and image/video tower loading behavior.
+    2) Avoid DeepSpeed MPI init from inside this loader.
+    3) Keep LoRA merge path intact.
+    4) Keep mm_projector loading and image/video tower loading behavior.
+
+    NOTE:
+    - For MoE models, deepspeed.comm must be initialized (cdb != None) before first forward.
+      We do that via _ensure_deepspeed_comm() without MPI.
     """
 
     # Build kwargs
     kwargs = {"device_map": device_map, **kwargs}
 
-    # If user explicitly sets device != cuda, pin everything there.
+    # If user explicitly sets device != "cuda", pin everything there (e.g., cuda:0, cuda:1, cpu)
     if device != "cuda":
         kwargs["device_map"] = {"": device}
 
@@ -122,8 +182,9 @@ def load_pretrained_model(
 
     model = None
     tokenizer = None
+    cfg_pretrained = None  # used for MoE enable check
 
-    if "llava" in model_name.lower():
+    if "llava" in (model_name or "").lower():
         # ----------------------------
         # LLaVA / MoE-LLaVA model load
         # ----------------------------
@@ -137,6 +198,7 @@ def load_pretrained_model(
         # 1) LoRA non-MoE with model_base: load base then merge
         if "lora" in model_name.lower() and "moe" not in model_name.lower() and model_base is not None:
             lora_cfg_pretrained = AutoConfig.from_pretrained(model_path)
+            cfg_pretrained = lora_cfg_pretrained
             tokenizer = AutoTokenizer.from_pretrained(model_base, use_fast=False, padding_side=padding_side)
             print("Loading LLaVA from base model...")
 
@@ -213,9 +275,10 @@ def load_pretrained_model(
             model = model.merge_and_unload()
             print("Model is loaded...")
 
-        # 2) LoRA MoE path: keep as-is but REMOVE deepspeed wrapping for your single-GPU inference
+        # 2) LoRA MoE path
         elif "lora" in model_name.lower() and "moe" in model_name.lower():
             lora_cfg_pretrained = AutoConfig.from_pretrained(model_path)
+            cfg_pretrained = lora_cfg_pretrained
             print("Adapting to MoE...")
 
             name_lower = model_name.lower()
@@ -264,11 +327,8 @@ def load_pretrained_model(
                     model_path, low_cpu_mem_usage=True, config=lora_cfg_pretrained, **kwargs
                 )
 
-            # IMPORTANT: do NOT wrap with DeepSpeed for single GPU unless you truly need it.
-            # The original code did this if not merge. We disable it because it forced distributed init.
-            # If you later want DS inference, launch via deepspeed/torchrun, not from inside this loader.
-            # if not merge: ...
-
+            # Ensure DS comm for MoE (NO MPI)
+            _ensure_deepspeed_comm(dist_backend="nccl")
             model.to(device)
 
         # 3) model_base not None: mm_projector-only / delta weights
@@ -280,7 +340,8 @@ def load_pretrained_model(
             if "mpt" in name_lower:
                 if not os.path.isfile(os.path.join(model_path, "configuration_mpt.py")):
                     shutil.copyfile(
-                        os.path.join(model_base, "configuration_mpt.py"), os.path.join(model_path, "configuration_mpt.py")
+                        os.path.join(model_base, "configuration_mpt.py"),
+                        os.path.join(model_path, "configuration_mpt.py"),
                     )
                 tokenizer = AutoTokenizer.from_pretrained(model_base, use_fast=True, padding_side=padding_side)
                 cfg_pretrained = AutoConfig.from_pretrained(model_path, trust_remote_code=True)
@@ -291,7 +352,7 @@ def load_pretrained_model(
             elif "openchat" in name_lower or "mistral" in name_lower:
                 tokenizer = AutoTokenizer.from_pretrained(model_base, use_fast=False, padding_side=padding_side)
                 cfg_pretrained = AutoConfig.from_pretrained(model_path)
-                if getattr(cfg_pretrained, "moe", {}).get("moe_enable", False):
+                if _is_moe_enabled(model_name, cfg_pretrained):
                     model = EvalMoELLaVAMistralForCausalLM.from_pretrained(
                         model_base, low_cpu_mem_usage=True, config=cfg_pretrained, **kwargs
                     )
@@ -303,7 +364,7 @@ def load_pretrained_model(
             elif "phi" in name_lower:
                 tokenizer = AutoTokenizer.from_pretrained(model_base, use_fast=False, padding_side=padding_side)
                 cfg_pretrained = LlavaPhiConfig.from_pretrained(model_path)  # noqa: F403
-                if getattr(cfg_pretrained, "moe", {}).get("moe_enable", False):
+                if _is_moe_enabled(model_name, cfg_pretrained):
                     model = EvalMoELLaVAPhiForCausalLM.from_pretrained(
                         model_base, low_cpu_mem_usage=True, config=cfg_pretrained, **kwargs
                     )
@@ -316,7 +377,7 @@ def load_pretrained_model(
             elif "qwen" in name_lower and "1.5" in name_lower:
                 tokenizer = AutoTokenizer.from_pretrained(model_base, use_fast=False, padding_side=padding_side)
                 cfg_pretrained = LlavaQwen1_5Config.from_pretrained(model_path)  # noqa: F403
-                if getattr(cfg_pretrained, "moe", {}).get("moe_enable", False):
+                if _is_moe_enabled(model_name, cfg_pretrained):
                     model = EvalMoELLaVAQwen1_5ForCausalLM.from_pretrained(
                         model_base, low_cpu_mem_usage=True, config=cfg_pretrained, **kwargs
                     )
@@ -329,7 +390,7 @@ def load_pretrained_model(
             elif "minicpm" in name_lower:
                 tokenizer = AutoTokenizer.from_pretrained(model_base, use_fast=False, padding_side=padding_side)
                 cfg_pretrained = LlavaMiniCPMConfig.from_pretrained(model_path)  # noqa: F403
-                if getattr(cfg_pretrained, "moe", {}).get("moe_enable", False):
+                if _is_moe_enabled(model_name, cfg_pretrained):
                     model = EvalMoELLaVAMiniCPMForCausalLM.from_pretrained(
                         model_base, low_cpu_mem_usage=True, config=cfg_pretrained, **kwargs
                     )
@@ -345,7 +406,7 @@ def load_pretrained_model(
 
                 tokenizer = Arcade100kTokenizer.from_pretrained(model_base, use_fast=False, padding_side=padding_side)
                 cfg_pretrained = StableLMEpochConfig.from_pretrained(model_path)
-                if getattr(cfg_pretrained, "moe", {}).get("moe_enable", False):
+                if _is_moe_enabled(model_name, cfg_pretrained):
                     model = EvalMoELLaVAStablelmForCausalLM.from_pretrained(
                         model_base, low_cpu_mem_usage=True, config=cfg_pretrained, **kwargs
                     )
@@ -357,7 +418,7 @@ def load_pretrained_model(
             elif "qwen" in name_lower and "1.5" not in name_lower:
                 tokenizer = AutoTokenizer.from_pretrained(model_base, use_fast=False, padding_side=padding_side)
                 cfg_pretrained = AutoConfig.from_pretrained(model_path)
-                if getattr(cfg_pretrained, "moe", {}).get("moe_enable", False):
+                if _is_moe_enabled(model_name, cfg_pretrained):
                     model = EvalMoELLaVAQWenForCausalLM.from_pretrained(
                         model_base, low_cpu_mem_usage=True, config=cfg_pretrained, **kwargs
                     )
@@ -372,7 +433,7 @@ def load_pretrained_model(
             else:
                 tokenizer = AutoTokenizer.from_pretrained(model_base, use_fast=False, padding_side=padding_side)
                 cfg_pretrained = AutoConfig.from_pretrained(model_path)
-                if getattr(cfg_pretrained, "moe", {}).get("moe_enable", False):
+                if _is_moe_enabled(model_name, cfg_pretrained):
                     model = EvalMoELLaVALlamaForCausalLM.from_pretrained(
                         model_base, low_cpu_mem_usage=True, config=cfg_pretrained, **kwargs
                     )
@@ -385,6 +446,11 @@ def load_pretrained_model(
             mm_projector_weights = torch.load(os.path.join(model_path, "mm_projector.bin"), map_location="cpu")
             mm_projector_weights = {k: v.to(torch.float16) for k, v in mm_projector_weights.items()}
             model.load_state_dict(mm_projector_weights, strict=False)
+
+            # Ensure DS comm for MoE (NO MPI)
+            if _is_moe_enabled(model_name, cfg_pretrained):
+                _ensure_deepspeed_comm(dist_backend="nccl")
+
             model.to(device)
 
         # 4) model_base is None, non-LoRA direct loading from model_path
@@ -417,7 +483,6 @@ def load_pretrained_model(
                     model = LlavaMistralForCausalLM.from_pretrained(model_path, low_cpu_mem_usage=True, **kwargs)
 
             elif "phi" in name_lower:
-                # FIX: Phi must use Phi classes, not Llama classes.
                 tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False, padding_side=padding_side)
                 if "moe" in name_lower:
                     assert not load_8bit and not load_4bit
@@ -462,6 +527,10 @@ def load_pretrained_model(
                 else:
                     model = LlavaLlamaForCausalLM.from_pretrained(model_path, low_cpu_mem_usage=True, **kwargs)
 
+            # Ensure DS comm for MoE (NO MPI)
+            if "moe" in name_lower:
+                _ensure_deepspeed_comm(dist_backend="nccl")
+
             model.to(device)
 
     else:
@@ -494,7 +563,7 @@ def load_pretrained_model(
     # Processor loading (kept)
     processor = {"image": None, "video": None}
 
-    if "llava" in model_name.lower():
+    if "llava" in (model_name or "").lower():
         mm_use_im_start_end = getattr(model.config, "mm_use_im_start_end", False)
         mm_use_im_patch_token = getattr(model.config, "mm_use_im_patch_token", True)
 

@@ -1,0 +1,195 @@
+Log file: /home/myid/mj71006/projects/Bio-Med-Agent/scripts/tb_v1_moellava_pipeline_20260113_155350.txt
+Repo root: /home/myid/mj71006/projects/Bio-Med-Agent
+Host: csci-cscidl01
+GPU visibility: (not set in environment; set per command)
+
+
+================================================================================
+[2026-01-13 15:53:50] 2) 1st Ablation - After Base
+================================================================================
+
++ bash -lc CUDA_VISIBLE_DEVICES=0 python -m pipelines.eval_runner \
+    --ablate \
+    --items data/preprocess/tb_v1/v1/preprocess_manifest_ablate1.jsonl \
+    --mem_root data/memory_db/base/tb_v1/v1 \
+    --out_json output/eval_tb_v1_phi2_4e.ablate_all-m-after-base.json \
+    --model_path LanguageBind/MoE-LLaVA-Phi2-2.7B-4e \
+    --conv_mode phi \
+    --max_new_tokens 128 \
+    --temperature 0.2
+--------------------------------------------------------------------------------
+[dist] use_dist=False world_size=1
+[rank0] local_rank=0 cuda=0
+[rank0] running eval_runner from: /home/myid/mj71006/projects/Bio-Med-Agent/pipelines/eval_runner.py
+/home/myid/mj71006/projects/Bio-Med-Agent/ImageBind/imagebind/data.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:04<00:08,  4.16s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:08<00:04,  4.02s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:09<00:00,  2.77s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:09<00:00,  3.12s/it]
+[none] [progress] 50/639 done
+[none] [progress] 100/639 done
+[none] [progress] 150/639 done
+[none] [progress] 200/639 done
+[none] [progress] 250/639 done
+[none] [progress] 300/639 done
+[none] [progress] 350/639 done
+[none] [progress] 400/639 done
+[none] [progress] 450/639 done
+[none] [progress] 500/639 done
+[none] [progress] 550/639 done
+[none] [progress] 600/639 done
+
+✅ [rank0] completed mode=none summary={'mode': 'none', 'ablation': {'use_sem': False, 'use_epi': False, 'use_vis': False}, 'count_ok': 639, 'count_total': 639, 'em_full_avg': 0.0, 'f1_full_avg': 0.13016593499439383, 'em_impression_avg': 0.19874804381846636, 'f1_impression_avg': 0.2184803883531604, 'em_findings_avg': 0.0, 'f1_findings_avg': 0.11466295998180163, 'writeback_total': 0}
+[sem_only] [progress] 50/639 done
+[sem_only] [progress] 100/639 done
+[sem_only] [progress] 150/639 done
+[sem_only] [progress] 200/639 done
+[sem_only] [progress] 250/639 done
+[sem_only] [progress] 300/639 done
+[sem_only] [progress] 350/639 done
+[sem_only] [progress] 400/639 done
+[sem_only] [progress] 450/639 done
+[sem_only] [progress] 500/639 done
+[sem_only] [progress] 550/639 done
+[sem_only] [progress] 600/639 done
+
+✅ [rank0] completed mode=sem_only summary={'mode': 'sem_only', 'ablation': {'use_sem': True, 'use_epi': False, 'use_vis': False}, 'count_ok': 639, 'count_total': 639, 'em_full_avg': 0.0, 'f1_full_avg': 0.11099275588091166, 'em_impression_avg': 0.19874804381846636, 'f1_impression_avg': 0.22014209121843772, 'em_findings_avg': 0.0, 'f1_findings_avg': 0.08951339674837788, 'writeback_total': 0}
+[epi_only] [progress] 50/639 done
+[epi_only] [progress] 100/639 done
+[epi_only] [progress] 150/639 done
+[epi_only] [progress] 200/639 done
+[epi_only] [progress] 250/639 done
+[epi_only] [progress] 300/639 done
+[epi_only] [progress] 350/639 done
+[epi_only] [progress] 400/639 done
+[epi_only] [progress] 450/639 done
+[epi_only] [progress] 500/639 done
+[epi_only] [progress] 550/639 done
+[epi_only] [progress] 600/639 done
+
+✅ [rank0] completed mode=epi_only summary={'mode': 'epi_only', 'ablation': {'use_sem': False, 'use_epi': True, 'use_vis': False}, 'count_ok': 639, 'count_total': 639, 'em_full_avg': 0.0, 'f1_full_avg': 0.13383108213241574, 'em_impression_avg': 0.17996870109546165, 'f1_impression_avg': 0.20818720428235707, 'em_findings_avg': 0.0, 'f1_findings_avg': 0.11900564777867037, 'writeback_total': 0}
+[vis_only] [progress] 50/639 done
+[vis_only] [progress] 100/639 done
+[vis_only] [progress] 150/639 done
+[vis_only] [progress] 200/639 done
+[vis_only] [progress] 250/639 done
+[vis_only] [progress] 300/639 done
+[vis_only] [progress] 350/639 done
+[vis_only] [progress] 400/639 done
+[vis_only] [progress] 450/639 done
+[vis_only] [progress] 500/639 done
+[vis_only] [progress] 550/639 done
+[vis_only] [progress] 600/639 done
+
+✅ [rank0] completed mode=vis_only summary={'mode': 'vis_only', 'ablation': {'use_sem': False, 'use_epi': False, 'use_vis': True}, 'count_ok': 639, 'count_total': 639, 'em_full_avg': 0.0, 'f1_full_avg': 0.13253774860365927, 'em_impression_avg': 0.19092331768388107, 'f1_impression_avg': 0.2135152294953649, 'em_findings_avg': 0.0, 'f1_findings_avg': 0.11746744616783983, 'writeback_total': 0}
+[sem_epi] [progress] 50/639 done
+[sem_epi] [progress] 100/639 done
+[sem_epi] [progress] 150/639 done
+[sem_epi] [progress] 200/639 done
+[sem_epi] [progress] 250/639 done
+[sem_epi] [progress] 300/639 done
+[sem_epi] [progress] 350/639 done
+[sem_epi] [progress] 400/639 done
+[sem_epi] [progress] 450/639 done
+[sem_epi] [progress] 500/639 done
+[sem_epi] [progress] 550/639 done
+[sem_epi] [progress] 600/639 done
+
+✅ [rank0] completed mode=sem_epi summary={'mode': 'sem_epi', 'ablation': {'use_sem': True, 'use_epi': True, 'use_vis': False}, 'count_ok': 639, 'count_total': 639, 'em_full_avg': 0.0, 'f1_full_avg': 0.10631637900367098, 'em_impression_avg': 0.20187793427230047, 'f1_impression_avg': 0.22369432606964035, 'em_findings_avg': 0.0, 'f1_findings_avg': 0.08532328514620358, 'writeback_total': 0}
+[sem_vis] [progress] 50/639 done
+[sem_vis] [progress] 100/639 done
+[sem_vis] [progress] 150/639 done
+[sem_vis] [progress] 200/639 done
+[sem_vis] [progress] 250/639 done
+[sem_vis] [progress] 300/639 done
+[sem_vis] [progress] 350/639 done
+[sem_vis] [progress] 400/639 done
+[sem_vis] [progress] 450/639 done
+[sem_vis] [progress] 500/639 done
+[sem_vis] [progress] 550/639 done
+[sem_vis] [progress] 600/639 done
+
+✅ [rank0] completed mode=sem_vis summary={'mode': 'sem_vis', 'ablation': {'use_sem': True, 'use_epi': False, 'use_vis': True}, 'count_ok': 639, 'count_total': 639, 'em_full_avg': 0.0, 'f1_full_avg': 0.11156861182370785, 'em_impression_avg': 0.19561815336463223, 'f1_impression_avg': 0.2198730163505399, 'em_findings_avg': 0.0, 'f1_findings_avg': 0.09075959903278275, 'writeback_total': 0}
+[epi_vis] [progress] 50/639 done
+[epi_vis] [progress] 100/639 done
+[epi_vis] [progress] 150/639 done
+[epi_vis] [progress] 200/639 done
+[epi_vis] [progress] 250/639 done
+[epi_vis] [progress] 300/639 done
+[epi_vis] [progress] 350/639 done
+[epi_vis] [progress] 400/639 done
+[epi_vis] [progress] 450/639 done
+[epi_vis] [progress] 500/639 done
+[epi_vis] [progress] 550/639 done
+[epi_vis] [progress] 600/639 done
+
+✅ [rank0] completed mode=epi_vis summary={'mode': 'epi_vis', 'ablation': {'use_sem': False, 'use_epi': True, 'use_vis': True}, 'count_ok': 639, 'count_total': 639, 'em_full_avg': 0.0, 'f1_full_avg': 0.12613166427768793, 'em_impression_avg': 0.21752738654147105, 'f1_impression_avg': 0.23969665274013938, 'em_findings_avg': 0.0, 'f1_findings_avg': 0.11199880106204296, 'writeback_total': 0}
+[all] [progress] 50/639 done
+[all] [progress] 100/639 done
+[all] [progress] 150/639 done
+[all] [progress] 200/639 done
+[all] [progress] 250/639 done
+[all] [progress] 300/639 done
+[all] [progress] 350/639 done
+[all] [progress] 400/639 done
+[all] [progress] 450/639 done
+[all] [progress] 500/639 done
+[all] [progress] 550/639 done
+[all] [progress] 600/639 done
+
+✅ [rank0] completed mode=all summary={'mode': 'all', 'ablation': {'use_sem': True, 'use_epi': True, 'use_vis': True}, 'count_ok': 639, 'count_total': 639, 'em_full_avg': 0.0, 'f1_full_avg': 0.1167545910825201, 'em_impression_avg': 0.19248826291079812, 'f1_impression_avg': 0.21993729207259965, 'em_findings_avg': 0.0, 'f1_findings_avg': 0.09496533900303039, 'writeback_total': 0}
+
+✅ [rank0] eval done (ablations)
+ - out: output/eval_tb_v1_phi2_4e.ablate_all-m-after-base.json
+--------------------------------------------------------------------------------
+✅ Completed: bash -lc CUDA_VISIBLE_DEVICES=0 python -m pipelines.eval_runner \
+    --ablate \
+    --items data/preprocess/tb_v1/v1/preprocess_manifest_ablate1.jsonl \
+    --mem_root data/memory_db/base/tb_v1/v1 \
+    --out_json output/eval_tb_v1_phi2_4e.ablate_all-m-after-base.json \
+    --model_path LanguageBind/MoE-LLaVA-Phi2-2.7B-4e \
+    --conv_mode phi \
+    --max_new_tokens 128 \
+    --temperature 0.2
+
+================================================================================
+[2026-01-14 09:02:10] 3) 1st Writeback (20001-30000)
+================================================================================
+
++ bash -lc CUDA_VISIBLE_DEVICES=0 python -m pipelines.eval_runner \
+    --items data/preprocess/tb_v1/v1/preprocess_manifest_bquery1.jsonl \
+    --mem_root data/memory_db/base/tb_v1/v1 \
+    --out_json output/eval_tb_v1_phi2_4e.during-first-writeback.json \
+    --model_path LanguageBind/MoE-LLaVA-Phi2-2.7B-4e \
+    --conv_mode phi \
+    --max_new_tokens 128 \
+    --writeback \
+    --writeback_k_epi 0 \
+    --writeback_k_vis 0 \
+    --writeback_novelty_thr 0.65 \
+    --writeback_min_impression_chars 30 \
+    --writeback_change_keywords "new,increased,decreased,worsened,improved,interval,progression,resolved,stable" \
+    --writeback_finding_keywords "effusion,pneumothorax,consolidation,cavitary,nodule,mass,atelectasis,edema,tb,tuberculosis,miliary"
+--------------------------------------------------------------------------------
+[dist] use_dist=False world_size=1
+[rank0] local_rank=0 cuda=0
+[rank0] running eval_runner from: /home/myid/mj71006/projects/Bio-Med-Agent/pipelines/eval_runner.py
+/home/myid/mj71006/projects/Bio-Med-Agent/ImageBind/imagebind/data.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:03<00:06,  3.35s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:07<00:03,  3.65s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:08<00:00,  2.45s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:08<00:00,  2.75s/it]
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[rank0]:     return _run_code(code, main_globals, None,
+[rank0]:   File "/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/runpy.py", line 86, in _run_code
+[rank0]:     exec(code, run_globals)
+[rank0]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/pipelines/eval_runner.py", line 650, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/pipelines/eval_runner.py", line 577, in main
+[rank0]:     out = run_eval_pass(
+[rank0]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/pipelines/eval_runner.py", line 398, in run_eval_pass
+[rank0]:     semantic.update(owner_id, episode_summary=answer_short, decision="radiology")
+[rank0]: TypeError: SemanticStore.update() got an unexpected keyword argument 'episode_summary'

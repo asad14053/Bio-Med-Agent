@@ -1,0 +1,230 @@
+Log file: /home/myid/mj71006/projects/Bio-Med-Agent/scripts/tb_v1_moellava_pipeline_20260113_095648.txt
+Repo root: /home/myid/mj71006/projects/Bio-Med-Agent
+Host: csci-cscidl01
+GPU visibility: (not set in environment; set per command)
+
+
+================================================================================
+[2026-01-13 09:56:48] 0) No Memory; Just Inference (Ablation mode=none)
+================================================================================
+
++ bash -lc CUDA_VISIBLE_DEVICES=0 python -m pipelines.eval_runner \
+    --ablate \
+    --ablate_mode none \
+    --items data/preprocess/tb_v1/v1/preprocess_manifest_ablate1.jsonl \
+    --mem_root data/memory_db/base/tb_v1/v1 \
+    --out_json output/ablation_none.json \
+    --model_path LanguageBind/MoE-LLaVA-Phi2-2.7B-4e \
+    --conv_mode phi \
+    --max_new_tokens 128 \
+    --temperature 0.2
+--------------------------------------------------------------------------------
+[dist] use_dist=False world_size=1
+[rank0] local_rank=0 cuda=0
+[rank0] running eval_runner from: /home/myid/mj71006/projects/Bio-Med-Agent/pipelines/eval_runner.py
+/home/myid/mj71006/projects/Bio-Med-Agent/ImageBind/imagebind/data.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:02<00:05,  3.00s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:05<00:02,  2.99s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:06<00:00,  1.87s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:06<00:00,  2.18s/it]
+[none] [progress] 50/639 done
+[none] [progress] 100/639 done
+[none] [progress] 150/639 done
+[none] [progress] 200/639 done
+[none] [progress] 250/639 done
+[none] [progress] 300/639 done
+[none] [progress] 350/639 done
+[none] [progress] 400/639 done
+[none] [progress] 450/639 done
+[none] [progress] 500/639 done
+[none] [progress] 550/639 done
+[none] [progress] 600/639 done
+
+✅ [rank0] completed mode=none summary={'mode': 'none', 'ablation': {'use_sem': False, 'use_epi': False, 'use_vis': False}, 'count_ok': 639, 'count_total': 639, 'em_full_avg': 0.0, 'f1_full_avg': 0.13316302891555312, 'em_impression_avg': 0.2112676056338028, 'f1_impression_avg': 0.2313569696028685, 'em_findings_avg': 0.0, 'f1_findings_avg': 0.11695723643311845, 'writeback_total': 0}
+
+✅ [rank0] eval done (ablations)
+ - out: output/ablation_none.json
+--------------------------------------------------------------------------------
+✅ Completed: bash -lc CUDA_VISIBLE_DEVICES=0 python -m pipelines.eval_runner \
+    --ablate \
+    --ablate_mode none \
+    --items data/preprocess/tb_v1/v1/preprocess_manifest_ablate1.jsonl \
+    --mem_root data/memory_db/base/tb_v1/v1 \
+    --out_json output/ablation_none.json \
+    --model_path LanguageBind/MoE-LLaVA-Phi2-2.7B-4e \
+    --conv_mode phi \
+    --max_new_tokens 128 \
+    --temperature 0.2
+
+================================================================================
+[2026-01-13 11:40:16] 1) Build Base Memory (1-20000)
+================================================================================
+
++ bash -lc python -m pipelines.build_memory \
+    --preprocess_manifest data/preprocess/tb_v1/v1/preprocess_manifest_base.jsonl \
+    --mem_root data/memory_db/base/tb_v1/v1 \
+    --data_root data/datasets/tb_v1 \
+    --device cuda \
+    --embed_dim 1024 \
+    --video_frames 2
+--------------------------------------------------------------------------------
+/home/myid/mj71006/projects/Bio-Med-Agent/ImageBind/imagebind/data.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+processed: 200
+processed: 400
+processed: 600
+processed: 800
+processed: 1000
+processed: 1200
+processed: 1400
+processed: 1600
+processed: 1800
+processed: 2000
+processed: 2200
+processed: 2400
+processed: 2600
+processed: 2800
+processed: 3000
+processed: 3200
+processed: 3400
+processed: 3600
+processed: 3800
+processed: 4000
+processed: 4200
+processed: 4400
+processed: 4600
+processed: 4800
+processed: 5000
+processed: 5200
+processed: 5400
+processed: 5600
+processed: 5800
+processed: 6000
+processed: 6200
+processed: 6400
+processed: 6600
+processed: 6800
+processed: 7000
+processed: 7200
+processed: 7400
+processed: 7600
+processed: 7800
+processed: 8000
+processed: 8200
+processed: 8400
+processed: 8600
+processed: 8800
+processed: 9000
+processed: 9200
+processed: 9400
+processed: 9600
+processed: 9800
+processed: 10000
+processed: 10200
+processed: 10400
+processed: 10600
+processed: 10800
+processed: 11000
+processed: 11200
+processed: 11400
+processed: 11600
+processed: 11800
+processed: 12000
+processed: 12200
+processed: 12400
+processed: 12600
+processed: 12800
+processed: 13000
+processed: 13200
+processed: 13400
+processed: 13600
+processed: 13800
+processed: 14000
+processed: 14200
+processed: 14400
+processed: 14600
+processed: 14800
+processed: 15000
+processed: 15200
+processed: 15400
+processed: 15600
+processed: 15800
+processed: 16000
+processed: 16200
+processed: 16400
+processed: 16600
+processed: 16800
+processed: 17000
+processed: 17200
+processed: 17400
+processed: 17600
+processed: 17800
+processed: 18000
+processed: 18200
+processed: 18400
+processed: 18600
+processed: 18800
+processed: 19000
+processed: 19200
+processed: 19400
+processed: 19600
+processed: 19800
+processed: 20000
+
+✅ build_base_memory done (GT semantic enabled)
+ - mem_root: data/memory_db/base/tb_v1/v1
+ - added: 20000
+ - skipped: 0
+ - missing_files: 0
+--------------------------------------------------------------------------------
+✅ Completed: bash -lc python -m pipelines.build_memory \
+    --preprocess_manifest data/preprocess/tb_v1/v1/preprocess_manifest_base.jsonl \
+    --mem_root data/memory_db/base/tb_v1/v1 \
+    --data_root data/datasets/tb_v1 \
+    --device cuda \
+    --embed_dim 1024 \
+    --video_frames 2
+
+================================================================================
+[2026-01-13 12:53:03] 2) 1st Ablation - After Base
+================================================================================
+
++ bash -lc CUDA_VISIBLE_DEVICES=0 python -m pipelines.eval_runner \
+    --ablate \
+    --items data/preprocess/tb_v1/v1/preprocess_manifest_ablate1.jsonl \
+    --mem_root data/memory_db/base/tb_v1/v1 \
+    --out_json output/eval_tb_v1_phi2_4e.ablate_all-m-after-base.json \
+    --model_path LanguageBind/MoE-LLaVA-Phi2-2.7B-4e \
+    --conv_mode phi \
+    --max_new_tokens 128 \
+    --temperature 0.2
+--------------------------------------------------------------------------------
+[dist] use_dist=False world_size=1
+[rank0] local_rank=0 cuda=0
+[rank0] running eval_runner from: /home/myid/mj71006/projects/Bio-Med-Agent/pipelines/eval_runner.py
+/home/myid/mj71006/projects/Bio-Med-Agent/ImageBind/imagebind/data.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:04<00:08,  4.08s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:08<00:04,  4.18s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:09<00:00,  2.77s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:09<00:00,  3.14s/it]
+[none] [progress] 50/639 done
+[none] [progress] 100/639 done
+[none] [progress] 150/639 done
+[none] [progress] 200/639 done
+[none] [progress] 250/639 done
+[none] [progress] 300/639 done
+[none] [progress] 350/639 done
+[none] [progress] 400/639 done
+[none] [progress] 450/639 done
+[none] [progress] 500/639 done
+[none] [progress] 550/639 done
+[none] [progress] 600/639 done
+
+✅ [rank0] completed mode=none summary={'mode': 'none', 'ablation': {'use_sem': False, 'use_epi': False, 'use_vis': False}, 'count_ok': 639, 'count_total': 639, 'em_full_avg': 0.0, 'f1_full_avg': 0.13096495795146454, 'em_impression_avg': 0.20657276995305165, 'f1_impression_avg': 0.2288501638199832, 'em_findings_avg': 0.0, 'f1_findings_avg': 0.11531245768344914, 'writeback_total': 0}
+[sem_only] [progress] 50/639 done
+[sem_only] [progress] 100/639 done
+[sem_only] [progress] 150/639 done
+[sem_only] [progress] 200/639 done
+[sem_only] [progress] 250/639 done

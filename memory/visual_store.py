@@ -35,7 +35,10 @@ class VisualStore:
             self.index.add(Z)
 
     def _norm(self, x: np.ndarray) -> np.ndarray:
+        if x.ndim == 1:
+            x = x.reshape(1, -1)
         return x / (np.linalg.norm(x, axis=1, keepdims=True) + 1e-12)
+
 
     def add(
         self,

@@ -931,6 +931,7 @@ class LazySupervisedDataset(Dataset):
         list_data_dict = []
         for data in data_path:
             data = json.load(open(data, "r"))
+
             for i in data:
                 i['id'] = len(list_data_dict)
                 list_data_dict.append(i)

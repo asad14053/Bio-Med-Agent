@@ -1,6 +1,7 @@
 import os
 from dataclasses import dataclass
 from typing import List, Optional
+from pathlib import Path
 
 import numpy as np
 
@@ -8,34 +9,28 @@ import numpy as np
 @dataclass
 class ImageBindConfig:
     device: str = "cuda"
-    video_frames: int = 2          # matches your ImageBindModel default + PadIm2Video repeat ntimes=2
+    video_frames: int = 2
     image_size: int = 224
-    normalize: bool = True         # embeddings are already normalized by ImageBind postprocessor, but keep safe
-    video_frame_strategy: str = "uniform"  # uniform sampling
+    normalize: bool = True
+    video_frame_strategy: str = "uniform"
+    tmp_frames_dir: str = "data/tmp_frames"
 
 
 class ImageBindEncoder:
     """
-    Real ImageBind encoder using your pasted ImageBindModel (imagebind_model.py).
+    ImageBind encoder that produces 1024-d embeddings.
 
-    Produces:
-      - encode_image(image_path) -> np.ndarray [1024]
-      - encode_video(video_path) -> np.ndarray [1024]   (sample T frames, stack, forward, average if needed)
-
-    Expected VISION input tensor shape for your model:
-      [B, 3, T, 224, 224]
+    Image input expected by ImageBind VISION:
+      - image: [B, 3, H, W]  (ImageBind internally pads/repeats to T=2)
+      - video: [B, 3, T, H, W] with T=2 for imagebind_huge
     """
 
     def __init__(self, cfg: Optional[ImageBindConfig] = None):
         self.cfg = cfg or ImageBindConfig()
 
-        # Import your ImageBind code (adjust module path if needed)
         import torch
         from PIL import Image
         import torchvision.transforms as T
-
-        # This import must match where your pasted file lives.
-        # If your repo structure is imagebind/models/imagebind_model.py, this is correct:
         from imagebind.models.imagebind_model import imagebind_huge, ModalityType
 
         self.torch = torch
@@ -44,7 +39,7 @@ class ImageBindEncoder:
 
         self.model = imagebind_huge(pretrained=True).to(self.cfg.device).eval()
 
-        # Standard CLIP-like normalization works fine for ImageBind vision path.
+        # Standard CLIP-like normalization works well for ImageBind vision.
         self.transform = T.Compose([
             T.Resize(self.cfg.image_size, interpolation=T.InterpolationMode.BICUBIC),
             T.CenterCrop(self.cfg.image_size),
@@ -62,72 +57,124 @@ class ImageBindEncoder:
         return x / n
 
     # -------------------------
+    # Robust image loading
+    # -------------------------
+    def _load_rgb_pil(self, path: str):
+        """
+        Always return a PIL Image in RGB mode (3 channels).
+        Handles grayscale, LA, palette, RGBA, etc.
+        """
+        img = self.Image.open(path)
+
+        # Some files are lazy-loaded; force load now so convert is reliable
+        img.load()
+
+        # Convert anything to RGB (guarantees 3 channels)
+        if img.mode != "RGB":
+            img = img.convert("RGB")
+        return img
+
+    def _assert_vision_shape(self, x, expect_video: bool):
+        """
+        Validate and hard-fail with a helpful message if shape is wrong.
+        """
+        if expect_video:
+            # [B, 3, T, H, W]
+            if x.ndim != 5:
+                raise RuntimeError(f"[ImageBindEncoder] Expected 5D video tensor [B,3,T,H,W], got {tuple(x.shape)}")
+            b, c, t, h, w = x.shape
+            if c != 3:
+                raise RuntimeError(f"[ImageBindEncoder] Video tensor must have 3 channels. Got C={c} with shape {tuple(x.shape)}")
+            if t != self.cfg.video_frames:
+                raise RuntimeError(f"[ImageBindEncoder] Video tensor must have T={self.cfg.video_frames}. Got T={t} with shape {tuple(x.shape)}")
+            if h != self.cfg.image_size or w != self.cfg.image_size:
+                raise RuntimeError(f"[ImageBindEncoder] Video tensor must be {self.cfg.image_size}x{self.cfg.image_size}. Got {h}x{w}")
+        else:
+            # [B, 3, H, W]
+            if x.ndim != 4:
+                raise RuntimeError(f"[ImageBindEncoder] Expected 4D image tensor [B,3,H,W], got {tuple(x.shape)}")
+            b, c, h, w = x.shape
+            if c != 3:
+                raise RuntimeError(f"[ImageBindEncoder] Image tensor must have 3 channels. Got C={c} with shape {tuple(x.shape)}")
+            if h != self.cfg.image_size or w != self.cfg.image_size:
+                raise RuntimeError(f"[ImageBindEncoder] Image tensor must be {self.cfg.image_size}x{self.cfg.image_size}. Got {h}x{w}")
+
+    # -------------------------
     # Public API
     # -------------------------
     def encode_image(self, image_path: str) -> np.ndarray:
         """
         Returns [1024] float32.
-        IMPORTANT: For ImageBind vision, pass [B,3,H,W] (4D).
-        The model's PadIm2Video will expand it to T=2 internally.
+        Feed ImageBind VISION with [B,3,H,W]. ImageBind will pad to T=2 internally.
         """
         import torch
 
-        img = self.Image.open(image_path).convert("RGB")
-        x = self.transform(img)         # [3,224,224]
-        x = x.unsqueeze(0)              # [1,3,224,224]  <-- 4D ONLY
-        x = x.to(self.cfg.device)
+        img = self._load_rgb_pil(image_path)
+        x = self.transform(img)          # [3,224,224]
+        x = x.unsqueeze(0)               # [1,3,224,224]
+        x = x.to(self.cfg.device, non_blocking=True)
+
+        self._assert_vision_shape(x, expect_video=False)
 
         with torch.inference_mode():
             out = self.model({self.ModalityType.VISION: x})
-            z = out[self.ModalityType.VISION][0].detach().float().cpu().numpy()  # [1024]
+            z = out[self.ModalityType.VISION][0].detach().float().cpu().numpy()
 
         z = z.astype(np.float32).reshape(-1)
         return self._l2norm(z)
 
-
-
     def encode_video(self, video_path: str) -> np.ndarray:
         """
         Returns [1024] float32.
-        For video, pass [B,3,T,224,224] (5D). Use exactly T=2 frames for your model.
+        Feed ImageBind VISION with [B,3,T,224,224] where T=cfg.video_frames (default 2).
         """
         import torch
 
         frame_paths = self._sample_video_frames(video_path, n=self.cfg.video_frames)
         if len(frame_paths) == 0:
-            raise RuntimeError(f"Could not sample frames from video: {video_path}")
+            raise RuntimeError(f"[ImageBindEncoder] Could not sample frames from video: {video_path}")
 
+        # Load + transform frames
         frames = []
         for fp in frame_paths:
-            img = self.Image.open(fp).convert("RGB")
+            img = self._load_rgb_pil(fp)
             frames.append(self.transform(img))  # [3,224,224]
 
-        # frames: list of [3,224,224] length T
-        x = torch.stack(frames, dim=0)          # [T,3,224,224]
-        x = x.permute(1, 0, 2, 3).unsqueeze(0)  # [1,3,T,224,224]
-        x = x.to(self.cfg.device)
+        # If we got fewer than required frames (cv2 read can fail), pad by repeating last
+        if len(frames) < self.cfg.video_frames:
+            last = frames[-1]
+            while len(frames) < self.cfg.video_frames:
+                frames.append(last.clone())
+
+        # If we got more frames than expected, truncate
+        frames = frames[: self.cfg.video_frames]
+
+        # [T,3,224,224] -> [1,3,T,224,224]
+        x = torch.stack(frames, dim=0)           # [T,3,H,W]
+        x = x.permute(1, 0, 2, 3).unsqueeze(0)   # [1,3,T,H,W]
+        x = x.to(self.cfg.device, non_blocking=True)
+
+        self._assert_vision_shape(x, expect_video=True)
 
         with torch.inference_mode():
             out = self.model({self.ModalityType.VISION: x})
-            z = out[self.ModalityType.VISION][0].detach().float().cpu().numpy()  # [1024]
+            z = out[self.ModalityType.VISION][0].detach().float().cpu().numpy()
 
         z = z.astype(np.float32).reshape(-1)
         return self._l2norm(z)
-
 
     # -------------------------
     # Video frame sampling
     # -------------------------
     def _sample_video_frames(self, video_path: str, n: int) -> List[str]:
         """
-        Uniformly sample n frames using OpenCV and save under data/tmp_frames/<video_stem>/.
+        Uniformly sample n frames using OpenCV and save under tmp_frames_dir/<video_stem>/.
         """
         import cv2
-        from pathlib import Path
 
         cap = cv2.VideoCapture(video_path)
         if not cap.isOpened():
-            raise RuntimeError(f"Could not open video: {video_path}")
+            raise RuntimeError(f"[ImageBindEncoder] Could not open video: {video_path}")
 
         total = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
         if total <= 0:
@@ -136,13 +183,9 @@ class ImageBindEncoder:
         if n <= 1:
             idxs = [total // 2]
         else:
-            if self.cfg.video_frame_strategy == "uniform":
-                idxs = np.linspace(0, total - 1, num=n).astype(int).tolist()
-            else:
-                # fallback uniform
-                idxs = np.linspace(0, total - 1, num=n).astype(int).tolist()
+            idxs = np.linspace(0, total - 1, num=n).astype(int).tolist()
 
-        out_dir = Path("data/tmp_frames") / Path(video_path).stem
+        out_dir = Path(self.cfg.tmp_frames_dir) / Path(video_path).stem
         out_dir.mkdir(parents=True, exist_ok=True)
 
         out_paths = []
@@ -151,6 +194,8 @@ class ImageBindEncoder:
             ok, frame = cap.read()
             if not ok or frame is None:
                 continue
+
+            # Write as jpg (OpenCV uses BGR; PIL will read and we convert to RGB anyway)
             out_path = str(out_dir / f"f_{i:02d}.jpg")
             cv2.imwrite(out_path, frame)
             out_paths.append(out_path)
