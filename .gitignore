@@ -14,3 +14,9 @@ output/
 .vscode/
 ipynb_checkpoints/
 scripts/cache_dir/
+# HuggingFace caches
+.cache/
+**/.cache/
+cache_dir/
+hf_cache/
+wandb/

@@ -1,0 +1,46 @@
+Log file: /home/myid/mj71006/projects/Bio-Med-Agent/scripts/tb_v1_moellava_pipeline_20260114_142248.txt
+Repo root: /home/myid/mj71006/projects/Bio-Med-Agent
+Host: csci-cscidl01
+GPU visibility: (not set in environment; set per command)
+
+
+================================================================================
+[2026-01-14 14:22:48] 3) 1st Writeback (20001-30000)
+================================================================================
+
++ bash -lc CUDA_VISIBLE_DEVICES=0 python -m pipelines.eval_runner \
+    --items data/preprocess/tb_v1/v1/preprocess_manifest_bquery1.jsonl \
+    --mem_root data/memory_db/base/tb_v1/v1 \
+    --out_json output/eval_tb_v1_phi2_4e.during-first-writeback.json \
+    --model_path LanguageBind/MoE-LLaVA-Phi2-2.7B-4e \
+    --conv_mode phi \
+    --max_new_tokens 128 \
+    --writeback \
+    --writeback_k_epi 0 \
+    --writeback_k_vis 0 \
+    --writeback_novelty_thr 0.65 \
+    --writeback_min_impression_chars 30 \
+    --writeback_change_keywords "new,increased,decreased,worsened,improved,interval,progression,resolved,stable" \
+    --writeback_finding_keywords "effusion,pneumothorax,consolidation,cavitary,nodule,mass,atelectasis,edema,tb,tuberculosis,miliary"
+--------------------------------------------------------------------------------
+[dist] use_dist=False world_size=1
+[rank0] local_rank=0 cuda=0
+[rank0] running eval_runner from: /home/myid/mj71006/projects/Bio-Med-Agent/pipelines/eval_runner.py
+/home/myid/mj71006/projects/Bio-Med-Agent/ImageBind/imagebind/data.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/huggingface_hub/file_download.py:942: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:03<00:07,  3.68s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:07<00:03,  3.70s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:08<00:00,  2.51s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:08<00:00,  2.83s/it]
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[rank0]:     return _run_code(code, main_globals, None,
+[rank0]:   File "/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/runpy.py", line 86, in _run_code
+[rank0]:     exec(code, run_globals)
+[rank0]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/pipelines/eval_runner.py", line 650, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/pipelines/eval_runner.py", line 577, in main
+[rank0]:     out = run_eval_pass(
+[rank0]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/pipelines/eval_runner.py", line 398, in run_eval_pass
+[rank0]:     semantic.update(owner_id, impression_summary= answer_short, decision="radiology")
+[rank0]: TypeError: SemanticStore.update() got an unexpected keyword argument 'decision'
