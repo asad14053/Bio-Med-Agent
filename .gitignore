@@ -9,6 +9,7 @@ datasets/
 *.ckpt
 *.bin
 *.safetensors
+*.whl
 logs/
 output/
 .vscode/
