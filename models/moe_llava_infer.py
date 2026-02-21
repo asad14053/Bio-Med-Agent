@@ -8,14 +8,15 @@ from moellava.model.builder import load_pretrained_model
 from moellava.conversation import conv_templates, SeparatorStyle
 from moellava.constants import DEFAULT_IMAGE_TOKEN
 
-import re
 from typing import Tuple
+
 
 def _count_tokens_for_prompt(prompt: str, tokenizer) -> int:
     ids = tokenizer_image_token(prompt, tokenizer, return_tensors="pt")
     if ids.dim() == 1:
         return int(ids.numel())
     return int(ids.shape[1])
+
 
 def _truncate_middle_keep_head_tail(text: str, head_chars: int, tail_chars: int) -> str:
     """
@@ -26,6 +27,7 @@ def _truncate_middle_keep_head_tail(text: str, head_chars: int, tail_chars: int)
     if len(text) <= head_chars + tail_chars:
         return text
     return text[:head_chars] + "\n...\n" + text[-tail_chars:]
+
 
 def _shrink_user_prompt(user_prompt: str, tokenizer, token_budget: int) -> str:
     """
@@ -149,6 +151,15 @@ class MoELLaVAInfer:
         # Unwrap DS engine if needed
         self.model = _unwrap_ds_model(model_obj)
 
+        # ---- Pad token safety (prevents HF warnings, stabilizes generation) ----
+        # GPT-style tokenizers sometimes don't define a pad token. Reuse EOS.
+        if self.tokenizer.pad_token_id is None:
+            self.tokenizer.pad_token = self.tokenizer.eos_token
+        try:
+            self.model.config.pad_token_id = self.tokenizer.pad_token_id
+        except Exception:
+            pass
+
         # Only move if it's a plain module (DeepSpeed engine/module is usually already placed/injected)
         try:
             self.model.to(self.device)
@@ -201,14 +212,19 @@ class MoELLaVAInfer:
             # Keep the tail tokens (question/format are usually near the end)
             input_ids = input_ids[:, -token_budget:]
 
+        # IMPORTANT: attention mask (all ones, since we do not pad in this code path)
+        attention_mask = torch.ones_like(input_ids, dtype=torch.long, device=self.device)
+
         # 5) Stop tokens
         stop_str = conv.sep if conv.sep_style != SeparatorStyle.TWO else conv.sep2
         stopping_criteria = KeywordsStoppingCriteria([stop_str], self.tokenizer, input_ids)
 
         # 6) Generate
-        # IMPORTANT: use_cache=True reduces compute/memory during decoding
+        # NOTE: temperature only matters if do_sample=True; we keep deterministic by default.
         output_ids = self.model.generate(
             input_ids=input_ids,
+            attention_mask=attention_mask,
+            pad_token_id=self.tokenizer.pad_token_id,
             images=image_tensor,
             do_sample=False,
             num_beams=1,
@@ -220,4 +236,3 @@ class MoELLaVAInfer:
         gen = output_ids[0, input_ids.shape[1]:]
         out = self.tokenizer.decode(gen, skip_special_tokens=True).strip()
         return out
-

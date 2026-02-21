@@ -17,6 +17,23 @@ from memory.visual_store import VisualStore
 from memory.semantic_store import SemanticStore
 from memory.prompt_builder import build_prompt
 from models.moe_llava_infer import MoELLaVAInfer
+from models.llava_phi_infer import LlavaPhiInfer
+
+#############################################################
+
+def ckpt_is_moe(model_path: str) -> bool:
+    """
+    Returns True if checkpoint config declares MoE fields.
+    We do NOT modify MoE code; we only route which infer wrapper to use.
+    """
+    cfg_path = os.path.join(model_path, "config.json")
+    try:
+        with open(cfg_path, "r", encoding="utf-8") as f:
+            cfg = json.load(f)
+        return "moe" in cfg
+    except Exception:
+        # If config.json missing/unreadable, assume MoE to preserve your existing behavior
+        return True
 
 
 # ----------------------------
@@ -249,7 +266,7 @@ def run_eval_pass(
     visual: VisualStore,
     semantic: SemanticStore,
     encoder: ImageBindEncoder,
-    fm: MoELLaVAInfer,
+    fm,
     args: argparse.Namespace,
     mode_tag: str,
     use_sem: bool,
@@ -565,13 +582,28 @@ def main():
 
         encoder = ImageBindEncoder(ImageBindConfig(device=args.device, video_frames=args.video_frames_for_episode))
 
-        fm = MoELLaVAInfer(
-            model_path=args.model_path,
-            conv_mode=args.conv_mode,
-            device=f"cuda:{args.local_rank}" if torch.cuda.is_available() else "cpu",
-            load_4bit=args.load_4bit,
-            load_8bit=args.load_8bit,
-        )
+        device_str = f"cuda:{args.local_rank}" if torch.cuda.is_available() else "cpu"
+
+        if ckpt_is_moe(args.model_path):
+            if rank == 0:
+                print(f"[model] detected MoE checkpoint -> using MoELLaVAInfer", flush=True)
+            fm = MoELLaVAInfer(
+                model_path=args.model_path,
+                conv_mode=args.conv_mode,
+                device=device_str,
+                load_4bit=args.load_4bit,
+                load_8bit=args.load_8bit,
+            )
+        else:
+            if rank == 0:
+                print(f"[model] detected Regular checkpoint -> using LlavaPhiInfer", flush=True)
+            # LlavaPhiInfer (regular) currently does not take load_4bit/load_8bit in our stub.
+            fm = LlavaPhiInfer(
+                model_path=args.model_path,
+                conv_mode=args.conv_mode,
+                device=device_str,
+            )
+
 
         if not args.ablate:
             out = run_eval_pass(

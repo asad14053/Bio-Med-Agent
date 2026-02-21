@@ -923,18 +923,101 @@ def expand2square(pil_img, background_color):
 class LazySupervisedDataset(Dataset):
     """Dataset for supervised fine-tuning."""
 
+    @staticmethod
+    def _load_json_or_jsonl(path: str):
+        """Load either a .json (dict or list) or a .jsonl (one json obj per line)."""
+        with open(path, "r", encoding="utf-8") as f:
+            txt = f.read().lstrip()
+
+        if not txt:
+            raise ValueError(f"Empty data file: {path}")
+
+        # JSONL: first non-space char is "{" but json.loads fails with "Extra data"
+        # when there are multiple JSON objects in the file.
+        if path.endswith(".jsonl"):
+            rows = []
+            for ln, line in enumerate(txt.splitlines(), start=1):
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    rows.append(json.loads(line))
+                except Exception as e:
+                    raise ValueError(f"Bad JSON on line {ln} in {path}: {e}")
+            return rows
+
+        # JSON: dict or list
+        obj = json.loads(txt)
+        if isinstance(obj, dict):
+            return [obj]
+        if isinstance(obj, list):
+            return obj
+        raise ValueError(f"Unsupported JSON root type in {path}: {type(obj)}")
+
+    @staticmethod
+    def _normalize_to_moellava(sample: dict) -> dict:
+        """
+        Convert your manifest row -> MoE-LLaVA sample format.
+
+        Input (yours):
+          {
+            "media_type":"image",
+            "media_path":"/abs/path/to.jpg",
+            "question":"...",
+            "answer_gt":"..."
+          }
+
+        Output (MoE-LLaVA):
+          {
+            "image":"/abs/path/to.jpg",
+            "conversations":[{"from":"human","value":"<image>\nQ"}, {"from":"gpt","value":"A"}],
+            ... keep other metadata ...
+          }
+        """
+        if not isinstance(sample, dict):
+            raise ValueError(f"Each sample must be a dict, got {type(sample)}")
+
+        # Already MoE-LLaVA schema
+        if "conversations" in sample and ("image" in sample or "video" in sample):
+            return sample
+
+        q = sample.get("question") or sample.get("query") or sample.get("prompt") or ""
+        a = sample.get("answer_gt") or sample.get("answer") or sample.get("response") or sample.get("output") or ""
+
+        media_path = sample.get("media_path") or sample.get("image") or sample.get("video")
+        media_type = (sample.get("media_type") or "").lower().strip()
+
+        if not media_path:
+            raise ValueError(f"Sample missing media_path/image/video. Keys={list(sample.keys())}")
+
+        out = dict(sample)  # keep your fields: qa_id, subject_id, preprocess, etc.
+        out["conversations"] = [
+            {"from": "human", "value": f"{DEFAULT_IMAGE_TOKEN}\n{q}".strip()},
+            {"from": "gpt", "value": str(a).strip()},
+        ]
+
+        if media_type == "video":
+            out["video"] = media_path
+        else:
+            out["image"] = media_path
+
+        return out
+
+
     def __init__(self, data_path: str,
                  tokenizer: transformers.PreTrainedTokenizer,
                  data_args: DataArguments):
         super(LazySupervisedDataset, self).__init__()
         # ================================================
         list_data_dict = []
-        for data in data_path:
-            data = json.load(open(data, "r"))
+        for data_file in data_path:
+            data = self._load_json_or_jsonl(data_file)
 
-            for i in data:
-                i['id'] = len(list_data_dict)
-                list_data_dict.append(i)
+            for obj in data:
+                obj = self._normalize_to_moellava(obj)
+                obj["id"] = len(list_data_dict)
+                list_data_dict.append(obj)
+
         # ================================================
 
         rank0_print("Formatting inputs...Skip in lazy mode")
@@ -958,7 +1041,12 @@ class LazySupervisedDataset(Dataset):
     def modality_lengths(self):
         length_list = []
         for sample in self.list_data_dict:
-            cur_len = sum(len(conv['value'].split()) for conv in sample['conversations'])
+            
+            convs = sample.get("conversations", [])
+            cur_len = sum(len(conv.get("value", "").split()) for conv in convs)
+
+
+            #cur_len = sum(len(conv['value'].split()) for conv in sample['conversations'])
             # ===========================================================================
             cur_len = cur_len if ('image' in sample or 'video' in sample) else -cur_len
             # ===========================================================================
@@ -981,7 +1069,17 @@ class LazySupervisedDataset(Dataset):
                 image_file = image_file if isinstance(image_file, list) else [image_file]
                 image_file = order_pick_k(image_file, MAX_IMAGE_LENGTH)
                 # print(f"total {len(self.list_data_dict[i]['image'])} now {len(image_file)}")
-                image = [Image.open(os.path.join(image_folder, file)).convert('RGB') for file in image_file]
+                #image = [Image.open(os.path.join(image_folder, file)).convert('RGB') for file in image_file]
+                
+                def _resolve_path(p: str) -> str:
+                    # If p is absolute, do not join with image_folder
+                    if os.path.isabs(p):
+                        return p
+                    return os.path.join(image_folder, p)
+
+                image = [Image.open(_resolve_path(file)).convert('RGB') for file in image_file]
+
+                
                 # print(image[0])
                 if self.data_args.image_aspect_ratio == 'pad':
                     image = [expand2square(i, tuple(int(x * 255) for x in image_processor.image_mean)) for i in image]

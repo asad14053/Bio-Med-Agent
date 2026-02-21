@@ -2,7 +2,7 @@ from pathlib import Path
 
 # Input file (exact path)
 INPUT_FILE = Path(
-    "data/preprocess/tb_v1/v1/preprocess_manifest_train1.jsonl"
+    "data/preprocess/tb_v1/v1/preprocess_dataset.jsonl"
 )
 
 # Output directory = same directory as input file
@@ -10,10 +10,13 @@ BASE_DIR = INPUT_FILE.parent
 
 # Output files and line ranges (1-indexed)
 OUTPUT_RANGES = {
-    "preprocess_manifest_base.jsonl": (1, 20000),
-    "preprocess_manifest_bquery1.jsonl": (20001, 30000),
-    "preprocess_manifest_bquery2.jsonl": (30001, 40000),
-    "preprocess_manifest_bquery3.jsonl": (40001, 50000),
+    "preprocess_manifest_finetune.jsonl": (1, 30000),
+    "preprocess_manifest_base.jsonl": (30001, 32000),
+    "preprocess_manifest_writeback1.jsonl": (32001, 35000),
+    "preprocess_manifest_writeback2.jsonl": (35001, 38000),
+    "preprocess_manifest_writeback3.jsonl": (38001, 41000),
+    "preprocess_manifest_writeback4.jsonl": (41001, 45000),
+    "preprocess_manifest_evaluate.jsonl": (45001, 50000)
 }
 
 
