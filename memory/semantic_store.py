@@ -1,16 +1,21 @@
-import os, json
+# memory/semantic_store.py
+import os
+import json
 from datetime import datetime
-from typing import Dict, Any
+from typing import Dict, Any, List
 
 
 class SemanticStore:
     """
-    Semantic memory: per-patient rolling summary + stats.
-    MVP update rule is deterministic (no extra LLM).
+    Radiology semantic memory (study-level).
+
+    Stores a bounded rolling summary of prior study impressions
+    for a patient. NO decisions, NO adherence stats.
     """
 
-    def __init__(self, root: str = "data/memory_db/semantic"):
+    def __init__(self, root: str = "data/memory_db/semantic", max_history: int = 3):
         self.root = root
+        self.max_history = max_history
         os.makedirs(root, exist_ok=True)
 
     def _path(self, patient_id: str) -> str:
@@ -21,36 +26,34 @@ class SemanticStore:
         if not os.path.exists(p):
             return {
                 "patient_id": patient_id,
-                "patient_summary": "No prior history.",
-                "stats": {"total": 0, "adherent": 0, "nonadherent": 0, "ambiguous": 0, "last_seen": None},
-                "last_summaries": [],
+                "last_updated": None,
+                "study_impressions": [],   # list[str]
+                "patient_summary": "No prior imaging history available.",
             }
         with open(p, "r", encoding="utf-8") as f:
             return json.load(f)
 
-    def update(self, patient_id: str, episode_summary: str, decision: str):
+    def update(self, patient_id: str, impression_summary: str):
+        """
+        Write back ONE study-level impression summary.
+        """
         state = self.get(patient_id)
-        stats = state["stats"]
 
-        stats["total"] += 1
-        d = (decision or "").lower()
-        if "adherent" in d and "non" not in d:
-            stats["adherent"] += 1
-        elif "non" in d:
-            stats["nonadherent"] += 1
-        else:
-            stats["ambiguous"] += 1
+        history: List[str] = state.get("study_impressions", [])
 
-        stats["last_seen"] = datetime.utcnow().isoformat()
+        # normalize text
+        impression_summary = " ".join((impression_summary or "").split())
+        if not impression_summary:
+            return
 
-        state["last_summaries"] = (state.get("last_summaries", []) + [episode_summary])[-3:]
-        roll = " ".join(state["last_summaries"]).strip()
-        state["patient_summary"] = (
-            f"{roll} (Total={stats['total']}, A={stats['adherent']}, "
-            f"NA={stats['nonadherent']}, Amb={stats['ambiguous']})."
-            if roll else
-            f"(Total={stats['total']}, A={stats['adherent']}, NA={stats['nonadherent']}, Amb={stats['ambiguous']})."
-        )
+        # append + truncate
+        history = (history + [impression_summary])[-self.max_history :]
+
+        state["study_impressions"] = history
+        state["last_updated"] = datetime.utcnow().isoformat()
+
+        # build clean semantic context for prompting
+        state["patient_summary"] = " ".join(history)
 
         with open(self._path(patient_id), "w", encoding="utf-8") as f:
             json.dump(state, f, indent=2)

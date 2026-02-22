@@ -1,0 +1,1230 @@
+[W127 18:26:30.313547047 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:47.673465991 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:47.688476481 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:47.688930882 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:47.689216931 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:47.689453331 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.986454590 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.987171731 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.987498513 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.987758404 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.988045463 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.988377109 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.988673328 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.988972126 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.989278094 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.989545393 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.989808755 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.992498710 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.021819939 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.022260493 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.022537800 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.022798729 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.023051853 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.023297277 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.023538363 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.023787879 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.024061875 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.024313966 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.024558431 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.024902200 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.025187788 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.025595277 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:26:48.025864221 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[2026-01-27 18:26:48,433] [WARNING] [runner.py:232:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+Detected VISIBLE_DEVICES=0 but ignoring it because one or several of --include/--exclude/--num_gpus/--num_nodes cl args were used. If you want to use CUDA_VISIBLE_DEVICES don't pass any of these arguments to deepspeed.
+[2026-01-27 18:26:48,434] [INFO] [runner.py:630:main] cmd = /home/myid/mj71006/anaconda3/envs/moellava/bin/python3.10 -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMCwgMSwgMiwgMywgNCwgNSwgNiwgN119 --master_addr=127.0.0.1 --master_port=29500 --enable_each_rank_log=None --log_level=info MoE-LLaVA/moellava/train/train_mem.py --deepspeed MoE-LLaVA/scripts/zero1.json --model_name_or_path microsoft/phi-2 --version phi --data_path data/preprocess/tb_v1/v1/preprocess_manifest_finetune.jsonl --image_folder data/datasets/tb_v1 --image_tower openai/clip-vit-large-patch14-336 --image_projector_type mlp2x_gelu --pretrain_mm_mlp_adapter checkpoints/MoE-LLaVA-Phi2-Pretrain/mm_projector.bin --mm_vision_select_layer -2 --mm_use_im_start_end False --mm_use_im_patch_token False --image_aspect_ratio pad --group_by_modality_length True --bf16 True --output_dir checkpoints/MoE-LLaVA-Phi2-finetune-Regular --num_train_epochs 1 --per_device_train_batch_size 1 --per_device_eval_batch_size 1 --gradient_accumulation_steps 1 --evaluation_strategy no --save_strategy steps --save_steps 50000 --save_total_limit 1 --logging_steps 1 --tf32 True --model_max_length 1024 --gradient_checkpointing True --dataloader_num_workers 0 --lazy_preprocess True --learning_rate 5e-5 --report_to tensorboard --cache_dir ./cache_dir
+[W127 18:26:49.737962092 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:07.577681264 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:07.623030679 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:07.623714176 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:07.624010274 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:07.624267747 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.916706758 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.917472116 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.917790289 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.918053205 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.918299449 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.918553922 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.918808725 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.919060076 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.919331841 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.919584561 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.919844758 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.922983051 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.952369767 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.952814657 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.953095017 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.953344885 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.953581117 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.953820188 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.954049765 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.954276639 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.954506521 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.954742202 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.954967160 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.955307426 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.955566641 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.955972356 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:08.956276108 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[2026-01-27 18:27:08,362] [INFO] [launch.py:155:main] 0 NCCL_P2P_DISABLE=1
+[2026-01-27 18:27:08,362] [INFO] [launch.py:155:main] 0 NCCL_DEBUG=INFO
+[2026-01-27 18:27:08,362] [INFO] [launch.py:162:main] WORLD INFO DICT: {'localhost': [0, 1, 2, 3, 4, 5, 6, 7]}
+[2026-01-27 18:27:08,362] [INFO] [launch.py:168:main] nnodes=1, num_local_procs=8, node_rank=0
+[2026-01-27 18:27:08,362] [INFO] [launch.py:179:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0, 1, 2, 3, 4, 5, 6, 7]})
+[2026-01-27 18:27:08,362] [INFO] [launch.py:180:main] dist_world_size=8
+[2026-01-27 18:27:08,362] [INFO] [launch.py:184:main] Setting CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+[2026-01-27 18:27:08,363] [INFO] [launch.py:272:main] process 1316097 spawned with command: ['/home/myid/mj71006/anaconda3/envs/moellava/bin/python3.10', '-u', 'MoE-LLaVA/moellava/train/train_mem.py', '--local_rank=0', '--deepspeed', 'MoE-LLaVA/scripts/zero1.json', '--model_name_or_path', 'microsoft/phi-2', '--version', 'phi', '--data_path', 'data/preprocess/tb_v1/v1/preprocess_manifest_finetune.jsonl', '--image_folder', 'data/datasets/tb_v1', '--image_tower', 'openai/clip-vit-large-patch14-336', '--image_projector_type', 'mlp2x_gelu', '--pretrain_mm_mlp_adapter', 'checkpoints/MoE-LLaVA-Phi2-Pretrain/mm_projector.bin', '--mm_vision_select_layer', '-2', '--mm_use_im_start_end', 'False', '--mm_use_im_patch_token', 'False', '--image_aspect_ratio', 'pad', '--group_by_modality_length', 'True', '--bf16', 'True', '--output_dir', 'checkpoints/MoE-LLaVA-Phi2-finetune-Regular', '--num_train_epochs', '1', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--gradient_accumulation_steps', '1', '--evaluation_strategy', 'no', '--save_strategy', 'steps', '--save_steps', '50000', '--save_total_limit', '1', '--logging_steps', '1', '--tf32', 'True', '--model_max_length', '1024', '--gradient_checkpointing', 'True', '--dataloader_num_workers', '0', '--lazy_preprocess', 'True', '--learning_rate', '5e-5', '--report_to', 'tensorboard', '--cache_dir', './cache_dir']
+[2026-01-27 18:27:08,364] [INFO] [launch.py:272:main] process 1316098 spawned with command: ['/home/myid/mj71006/anaconda3/envs/moellava/bin/python3.10', '-u', 'MoE-LLaVA/moellava/train/train_mem.py', '--local_rank=1', '--deepspeed', 'MoE-LLaVA/scripts/zero1.json', '--model_name_or_path', 'microsoft/phi-2', '--version', 'phi', '--data_path', 'data/preprocess/tb_v1/v1/preprocess_manifest_finetune.jsonl', '--image_folder', 'data/datasets/tb_v1', '--image_tower', 'openai/clip-vit-large-patch14-336', '--image_projector_type', 'mlp2x_gelu', '--pretrain_mm_mlp_adapter', 'checkpoints/MoE-LLaVA-Phi2-Pretrain/mm_projector.bin', '--mm_vision_select_layer', '-2', '--mm_use_im_start_end', 'False', '--mm_use_im_patch_token', 'False', '--image_aspect_ratio', 'pad', '--group_by_modality_length', 'True', '--bf16', 'True', '--output_dir', 'checkpoints/MoE-LLaVA-Phi2-finetune-Regular', '--num_train_epochs', '1', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--gradient_accumulation_steps', '1', '--evaluation_strategy', 'no', '--save_strategy', 'steps', '--save_steps', '50000', '--save_total_limit', '1', '--logging_steps', '1', '--tf32', 'True', '--model_max_length', '1024', '--gradient_checkpointing', 'True', '--dataloader_num_workers', '0', '--lazy_preprocess', 'True', '--learning_rate', '5e-5', '--report_to', 'tensorboard', '--cache_dir', './cache_dir']
+[2026-01-27 18:27:08,365] [INFO] [launch.py:272:main] process 1316099 spawned with command: ['/home/myid/mj71006/anaconda3/envs/moellava/bin/python3.10', '-u', 'MoE-LLaVA/moellava/train/train_mem.py', '--local_rank=2', '--deepspeed', 'MoE-LLaVA/scripts/zero1.json', '--model_name_or_path', 'microsoft/phi-2', '--version', 'phi', '--data_path', 'data/preprocess/tb_v1/v1/preprocess_manifest_finetune.jsonl', '--image_folder', 'data/datasets/tb_v1', '--image_tower', 'openai/clip-vit-large-patch14-336', '--image_projector_type', 'mlp2x_gelu', '--pretrain_mm_mlp_adapter', 'checkpoints/MoE-LLaVA-Phi2-Pretrain/mm_projector.bin', '--mm_vision_select_layer', '-2', '--mm_use_im_start_end', 'False', '--mm_use_im_patch_token', 'False', '--image_aspect_ratio', 'pad', '--group_by_modality_length', 'True', '--bf16', 'True', '--output_dir', 'checkpoints/MoE-LLaVA-Phi2-finetune-Regular', '--num_train_epochs', '1', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--gradient_accumulation_steps', '1', '--evaluation_strategy', 'no', '--save_strategy', 'steps', '--save_steps', '50000', '--save_total_limit', '1', '--logging_steps', '1', '--tf32', 'True', '--model_max_length', '1024', '--gradient_checkpointing', 'True', '--dataloader_num_workers', '0', '--lazy_preprocess', 'True', '--learning_rate', '5e-5', '--report_to', 'tensorboard', '--cache_dir', './cache_dir']
+[2026-01-27 18:27:08,366] [INFO] [launch.py:272:main] process 1316100 spawned with command: ['/home/myid/mj71006/anaconda3/envs/moellava/bin/python3.10', '-u', 'MoE-LLaVA/moellava/train/train_mem.py', '--local_rank=3', '--deepspeed', 'MoE-LLaVA/scripts/zero1.json', '--model_name_or_path', 'microsoft/phi-2', '--version', 'phi', '--data_path', 'data/preprocess/tb_v1/v1/preprocess_manifest_finetune.jsonl', '--image_folder', 'data/datasets/tb_v1', '--image_tower', 'openai/clip-vit-large-patch14-336', '--image_projector_type', 'mlp2x_gelu', '--pretrain_mm_mlp_adapter', 'checkpoints/MoE-LLaVA-Phi2-Pretrain/mm_projector.bin', '--mm_vision_select_layer', '-2', '--mm_use_im_start_end', 'False', '--mm_use_im_patch_token', 'False', '--image_aspect_ratio', 'pad', '--group_by_modality_length', 'True', '--bf16', 'True', '--output_dir', 'checkpoints/MoE-LLaVA-Phi2-finetune-Regular', '--num_train_epochs', '1', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--gradient_accumulation_steps', '1', '--evaluation_strategy', 'no', '--save_strategy', 'steps', '--save_steps', '50000', '--save_total_limit', '1', '--logging_steps', '1', '--tf32', 'True', '--model_max_length', '1024', '--gradient_checkpointing', 'True', '--dataloader_num_workers', '0', '--lazy_preprocess', 'True', '--learning_rate', '5e-5', '--report_to', 'tensorboard', '--cache_dir', './cache_dir']
+[2026-01-27 18:27:08,367] [INFO] [launch.py:272:main] process 1316101 spawned with command: ['/home/myid/mj71006/anaconda3/envs/moellava/bin/python3.10', '-u', 'MoE-LLaVA/moellava/train/train_mem.py', '--local_rank=4', '--deepspeed', 'MoE-LLaVA/scripts/zero1.json', '--model_name_or_path', 'microsoft/phi-2', '--version', 'phi', '--data_path', 'data/preprocess/tb_v1/v1/preprocess_manifest_finetune.jsonl', '--image_folder', 'data/datasets/tb_v1', '--image_tower', 'openai/clip-vit-large-patch14-336', '--image_projector_type', 'mlp2x_gelu', '--pretrain_mm_mlp_adapter', 'checkpoints/MoE-LLaVA-Phi2-Pretrain/mm_projector.bin', '--mm_vision_select_layer', '-2', '--mm_use_im_start_end', 'False', '--mm_use_im_patch_token', 'False', '--image_aspect_ratio', 'pad', '--group_by_modality_length', 'True', '--bf16', 'True', '--output_dir', 'checkpoints/MoE-LLaVA-Phi2-finetune-Regular', '--num_train_epochs', '1', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--gradient_accumulation_steps', '1', '--evaluation_strategy', 'no', '--save_strategy', 'steps', '--save_steps', '50000', '--save_total_limit', '1', '--logging_steps', '1', '--tf32', 'True', '--model_max_length', '1024', '--gradient_checkpointing', 'True', '--dataloader_num_workers', '0', '--lazy_preprocess', 'True', '--learning_rate', '5e-5', '--report_to', 'tensorboard', '--cache_dir', './cache_dir']
+[2026-01-27 18:27:08,368] [INFO] [launch.py:272:main] process 1316102 spawned with command: ['/home/myid/mj71006/anaconda3/envs/moellava/bin/python3.10', '-u', 'MoE-LLaVA/moellava/train/train_mem.py', '--local_rank=5', '--deepspeed', 'MoE-LLaVA/scripts/zero1.json', '--model_name_or_path', 'microsoft/phi-2', '--version', 'phi', '--data_path', 'data/preprocess/tb_v1/v1/preprocess_manifest_finetune.jsonl', '--image_folder', 'data/datasets/tb_v1', '--image_tower', 'openai/clip-vit-large-patch14-336', '--image_projector_type', 'mlp2x_gelu', '--pretrain_mm_mlp_adapter', 'checkpoints/MoE-LLaVA-Phi2-Pretrain/mm_projector.bin', '--mm_vision_select_layer', '-2', '--mm_use_im_start_end', 'False', '--mm_use_im_patch_token', 'False', '--image_aspect_ratio', 'pad', '--group_by_modality_length', 'True', '--bf16', 'True', '--output_dir', 'checkpoints/MoE-LLaVA-Phi2-finetune-Regular', '--num_train_epochs', '1', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--gradient_accumulation_steps', '1', '--evaluation_strategy', 'no', '--save_strategy', 'steps', '--save_steps', '50000', '--save_total_limit', '1', '--logging_steps', '1', '--tf32', 'True', '--model_max_length', '1024', '--gradient_checkpointing', 'True', '--dataloader_num_workers', '0', '--lazy_preprocess', 'True', '--learning_rate', '5e-5', '--report_to', 'tensorboard', '--cache_dir', './cache_dir']
+[2026-01-27 18:27:08,369] [INFO] [launch.py:272:main] process 1316103 spawned with command: ['/home/myid/mj71006/anaconda3/envs/moellava/bin/python3.10', '-u', 'MoE-LLaVA/moellava/train/train_mem.py', '--local_rank=6', '--deepspeed', 'MoE-LLaVA/scripts/zero1.json', '--model_name_or_path', 'microsoft/phi-2', '--version', 'phi', '--data_path', 'data/preprocess/tb_v1/v1/preprocess_manifest_finetune.jsonl', '--image_folder', 'data/datasets/tb_v1', '--image_tower', 'openai/clip-vit-large-patch14-336', '--image_projector_type', 'mlp2x_gelu', '--pretrain_mm_mlp_adapter', 'checkpoints/MoE-LLaVA-Phi2-Pretrain/mm_projector.bin', '--mm_vision_select_layer', '-2', '--mm_use_im_start_end', 'False', '--mm_use_im_patch_token', 'False', '--image_aspect_ratio', 'pad', '--group_by_modality_length', 'True', '--bf16', 'True', '--output_dir', 'checkpoints/MoE-LLaVA-Phi2-finetune-Regular', '--num_train_epochs', '1', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--gradient_accumulation_steps', '1', '--evaluation_strategy', 'no', '--save_strategy', 'steps', '--save_steps', '50000', '--save_total_limit', '1', '--logging_steps', '1', '--tf32', 'True', '--model_max_length', '1024', '--gradient_checkpointing', 'True', '--dataloader_num_workers', '0', '--lazy_preprocess', 'True', '--learning_rate', '5e-5', '--report_to', 'tensorboard', '--cache_dir', './cache_dir']
+[2026-01-27 18:27:08,370] [INFO] [launch.py:272:main] process 1316104 spawned with command: ['/home/myid/mj71006/anaconda3/envs/moellava/bin/python3.10', '-u', 'MoE-LLaVA/moellava/train/train_mem.py', '--local_rank=7', '--deepspeed', 'MoE-LLaVA/scripts/zero1.json', '--model_name_or_path', 'microsoft/phi-2', '--version', 'phi', '--data_path', 'data/preprocess/tb_v1/v1/preprocess_manifest_finetune.jsonl', '--image_folder', 'data/datasets/tb_v1', '--image_tower', 'openai/clip-vit-large-patch14-336', '--image_projector_type', 'mlp2x_gelu', '--pretrain_mm_mlp_adapter', 'checkpoints/MoE-LLaVA-Phi2-Pretrain/mm_projector.bin', '--mm_vision_select_layer', '-2', '--mm_use_im_start_end', 'False', '--mm_use_im_patch_token', 'False', '--image_aspect_ratio', 'pad', '--group_by_modality_length', 'True', '--bf16', 'True', '--output_dir', 'checkpoints/MoE-LLaVA-Phi2-finetune-Regular', '--num_train_epochs', '1', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '1', '--gradient_accumulation_steps', '1', '--evaluation_strategy', 'no', '--save_strategy', 'steps', '--save_steps', '50000', '--save_total_limit', '1', '--logging_steps', '1', '--tf32', 'True', '--model_max_length', '1024', '--gradient_checkpointing', 'True', '--dataloader_num_workers', '0', '--lazy_preprocess', 'True', '--learning_rate', '5e-5', '--report_to', 'tensorboard', '--cache_dir', './cache_dir']
+[W127 18:27:12.289294455 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:12.339421357 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:12.443274491 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:12.466874459 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:12.478958427 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:12.480939464 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:12.486882307 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:12.489002481 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:27.087875651 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:27.089233446 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:27.089980468 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:27.090654735 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:27.486088174 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:27.487879261 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:27.488610434 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:27.489026018 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:27.489425034 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:27.489855879 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:27.490250236 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:27.490705464 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:27.491130971 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:27.491534442 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:27.491988615 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:27.711007894 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:27.712304497 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:27.713082609 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:27.713757628 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:28.125966921 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:28.126887940 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:28.127340868 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:28.127753109 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:28.128176177 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:28.128589127 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:28.128987422 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:28.129385065 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:28.129782603 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:28.130178531 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:28.130570610 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:29.538621223 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:29.575447444 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:29.576213359 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:29.576585179 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:29.576895404 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:29.577205211 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:29.577500678 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:29.577792959 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:29.578083871 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:29.578332204 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:29.578589859 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:29.578848766 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:29.579102504 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:29.579350579 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:29.579785535 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:29.580094483 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:29.656425837 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:30.103348868 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:30.139769163 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:30.140641703 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:30.140986643 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:30.141295058 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:30.141551843 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:30.141812048 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:30.142061653 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:30.142308308 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:30.142556489 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:30.142805670 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:30.143062170 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:30.143312107 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:30.143557267 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:30.143956540 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:30.144282675 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:30.219784293 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:32.634386479 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:32.635544007 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:32.636209845 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:32.636789630 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.841112418 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.841741068 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.842073012 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.842406712 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.065487437 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.066218817 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.066535311 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.066811815 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.067074011 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.067345491 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.067610869 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.067878021 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.068191105 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.068546506 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.068847504 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.275417962 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.276215853 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.276584540 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.276911932 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.277234185 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.277521471 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.277785427 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.278061561 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.278338534 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.278618769 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.278909515 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.699048988 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.700471958 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.701231403 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:33.701859630 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:34.142319034 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:34.143177381 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:34.143560402 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:34.143921747 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:34.144271370 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:34.144579431 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:34.144873228 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:34.145191745 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:34.145502172 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:34.145767757 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:34.146037830 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.903116989 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.939656745 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.940495962 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.940817155 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.941085620 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.941343135 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.941598584 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.941850636 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.942105890 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.942355854 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.942613127 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.942873915 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.943124086 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.943373566 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.943800510 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.944079733 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.020556181 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.264782366 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.301905571 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.302627353 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.302968812 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.303246582 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.303513241 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.303777148 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.304062569 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.304397946 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.304714794 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.305037900 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.305357109 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.305609808 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.305860986 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.306279027 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.306551018 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:35.384063401 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:36.179385836 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:36.217119245 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:36.217872391 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:36.218225242 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:36.218507189 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:36.218772100 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:36.219039444 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:36.219297557 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:36.219546441 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:36.219822239 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:36.220114485 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:36.220413563 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:36.220697272 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:36.220982078 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:36.221456533 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:36.221736230 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:36.301288600 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:38.888011493 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:38.889050660 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:38.889603521 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:38.890101609 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:38.291612807 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:38.293011616 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:38.293421875 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:38.293748106 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:38.294073706 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:38.294382709 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:38.294686962 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:38.295009017 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:38.295323652 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:38.295645066 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:38.295970450 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:39.669203332 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:39.670079683 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:39.670524901 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:39.670926581 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.046814201 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.048609300 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.049650277 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.050569467 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.051467022 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.052449148 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.052803368 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.053119484 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.053416681 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.053692001 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.053975529 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.068774187 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.069863867 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.070482218 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.071047283 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.142589193 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.181808998 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.182478182 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.182797989 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.183065546 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.183318714 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.183578839 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.183834527 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.184276164 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.184635816 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.184969124 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.185309607 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.185577678 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.185839898 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.186241658 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.186528903 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.260416150 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.485164801 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.486153416 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.486590787 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.486966564 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.487364659 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.487738227 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.488159587 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.488559228 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.488927621 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.489288163 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:40.489636052 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.012025420 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.048958325 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.049727245 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.050055383 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.050345600 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.050616118 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.050888696 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.051158845 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.051471063 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.051784092 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.052090667 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.052410062 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.052720498 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.053025750 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.053483656 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.053776536 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.132589754 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.534036273 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.572666553 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.573559102 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.573895214 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.574199387 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.574482250 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.574757848 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.575027944 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.575300237 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.575572501 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.575841950 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.576305412 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.576626303 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.576935138 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.577439909 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.577734294 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W127 18:27:42.656537632 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+csci-cscidl01:1316097:1316097 [0] NCCL INFO Bootstrap : Using eno1:172.22.162.40<0>
+csci-cscidl01:1316097:1316097 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+csci-cscidl01:1316097:1316097 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+csci-cscidl01:1316097:1316097 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+csci-cscidl01:1316097:1316097 [0] NCCL INFO cudaDriverVersion 13000
+NCCL version 2.21.5+cuda11.0
+csci-cscidl01:1316102:1316102 [5] NCCL INFO cudaDriverVersion 13000
+csci-cscidl01:1316102:1316102 [5] NCCL INFO Bootstrap : Using eno1:172.22.162.40<0>
+csci-cscidl01:1316102:1316102 [5] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+csci-cscidl01:1316102:1316102 [5] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+csci-cscidl01:1316102:1316102 [5] NCCL INFO NET/Plugin: Using internal network plugin.
+csci-cscidl01:1316100:1316100 [3] NCCL INFO cudaDriverVersion 13000
+csci-cscidl01:1316100:1316100 [3] NCCL INFO Bootstrap : Using eno1:172.22.162.40<0>
+csci-cscidl01:1316100:1316100 [3] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+csci-cscidl01:1316100:1316100 [3] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+csci-cscidl01:1316100:1316100 [3] NCCL INFO NET/Plugin: Using internal network plugin.
+csci-cscidl01:1316098:1316098 [1] NCCL INFO cudaDriverVersion 13000
+csci-cscidl01:1316098:1316098 [1] NCCL INFO Bootstrap : Using eno1:172.22.162.40<0>
+csci-cscidl01:1316098:1316098 [1] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+csci-cscidl01:1316098:1316098 [1] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+csci-cscidl01:1316098:1316098 [1] NCCL INFO NET/Plugin: Using internal network plugin.
+csci-cscidl01:1316099:1316099 [2] NCCL INFO cudaDriverVersion 13000
+csci-cscidl01:1316104:1316104 [7] NCCL INFO cudaDriverVersion 13000
+csci-cscidl01:1316099:1316099 [2] NCCL INFO Bootstrap : Using eno1:172.22.162.40<0>
+csci-cscidl01:1316103:1316103 [6] NCCL INFO cudaDriverVersion 13000
+csci-cscidl01:1316104:1316104 [7] NCCL INFO Bootstrap : Using eno1:172.22.162.40<0>
+csci-cscidl01:1316099:1316099 [2] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+csci-cscidl01:1316099:1316099 [2] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+csci-cscidl01:1316099:1316099 [2] NCCL INFO NET/Plugin: Using internal network plugin.
+csci-cscidl01:1316103:1316103 [6] NCCL INFO Bootstrap : Using eno1:172.22.162.40<0>
+csci-cscidl01:1316104:1316104 [7] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+csci-cscidl01:1316104:1316104 [7] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+csci-cscidl01:1316104:1316104 [7] NCCL INFO NET/Plugin: Using internal network plugin.
+csci-cscidl01:1316103:1316103 [6] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+csci-cscidl01:1316103:1316103 [6] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+csci-cscidl01:1316103:1316103 [6] NCCL INFO NET/Plugin: Using internal network plugin.
+csci-cscidl01:1316101:1316101 [4] NCCL INFO cudaDriverVersion 13000
+csci-cscidl01:1316101:1316101 [4] NCCL INFO Bootstrap : Using eno1:172.22.162.40<0>
+csci-cscidl01:1316101:1316101 [4] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+csci-cscidl01:1316101:1316101 [4] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+csci-cscidl01:1316101:1316101 [4] NCCL INFO NET/Plugin: Using internal network plugin.
+csci-cscidl01:1316097:1316097 [0] NCCL INFO Comm config Blocking set to 1
+csci-cscidl01:1316097:1318615 [0] NCCL INFO Failed to open libibverbs.so[.1]
+csci-cscidl01:1316097:1318615 [0] NCCL INFO NET/Socket : Using [0]eno1:172.22.162.40<0>
+csci-cscidl01:1316097:1318615 [0] NCCL INFO Using non-device net plugin version 0
+csci-cscidl01:1316097:1318615 [0] NCCL INFO Using network Socket
+csci-cscidl01:1316100:1316100 [3] NCCL INFO Comm config Blocking set to 1
+csci-cscidl01:1316100:1318616 [3] NCCL INFO Failed to open libibverbs.so[.1]
+csci-cscidl01:1316100:1318616 [3] NCCL INFO NET/Socket : Using [0]eno1:172.22.162.40<0>
+csci-cscidl01:1316100:1318616 [3] NCCL INFO Using non-device net plugin version 0
+csci-cscidl01:1316100:1318616 [3] NCCL INFO Using network Socket
+csci-cscidl01:1316098:1316098 [1] NCCL INFO Comm config Blocking set to 1
+csci-cscidl01:1316098:1318617 [1] NCCL INFO Failed to open libibverbs.so[.1]
+csci-cscidl01:1316098:1318617 [1] NCCL INFO NET/Socket : Using [0]eno1:172.22.162.40<0>
+csci-cscidl01:1316098:1318617 [1] NCCL INFO Using non-device net plugin version 0
+csci-cscidl01:1316098:1318617 [1] NCCL INFO Using network Socket
+csci-cscidl01:1316101:1316101 [4] NCCL INFO Comm config Blocking set to 1
+csci-cscidl01:1316101:1318618 [4] NCCL INFO Failed to open libibverbs.so[.1]
+csci-cscidl01:1316101:1318618 [4] NCCL INFO NET/Socket : Using [0]eno1:172.22.162.40<0>
+csci-cscidl01:1316101:1318618 [4] NCCL INFO Using non-device net plugin version 0
+csci-cscidl01:1316101:1318618 [4] NCCL INFO Using network Socket
+csci-cscidl01:1316102:1316102 [5] NCCL INFO Comm config Blocking set to 1
+csci-cscidl01:1316102:1318619 [5] NCCL INFO Failed to open libibverbs.so[.1]
+csci-cscidl01:1316102:1318619 [5] NCCL INFO NET/Socket : Using [0]eno1:172.22.162.40<0>
+csci-cscidl01:1316102:1318619 [5] NCCL INFO Using non-device net plugin version 0
+csci-cscidl01:1316102:1318619 [5] NCCL INFO Using network Socket
+csci-cscidl01:1316099:1316099 [2] NCCL INFO Comm config Blocking set to 1
+csci-cscidl01:1316099:1318620 [2] NCCL INFO Failed to open libibverbs.so[.1]
+csci-cscidl01:1316099:1318620 [2] NCCL INFO NET/Socket : Using [0]eno1:172.22.162.40<0>
+csci-cscidl01:1316099:1318620 [2] NCCL INFO Using non-device net plugin version 0
+csci-cscidl01:1316099:1318620 [2] NCCL INFO Using network Socket
+csci-cscidl01:1316104:1316104 [7] NCCL INFO Comm config Blocking set to 1
+csci-cscidl01:1316104:1318621 [7] NCCL INFO Failed to open libibverbs.so[.1]
+csci-cscidl01:1316104:1318621 [7] NCCL INFO NET/Socket : Using [0]eno1:172.22.162.40<0>
+csci-cscidl01:1316104:1318621 [7] NCCL INFO Using non-device net plugin version 0
+csci-cscidl01:1316104:1318621 [7] NCCL INFO Using network Socket
+csci-cscidl01:1316103:1316103 [6] NCCL INFO Comm config Blocking set to 1
+csci-cscidl01:1316103:1318622 [6] NCCL INFO Failed to open libibverbs.so[.1]
+csci-cscidl01:1316103:1318622 [6] NCCL INFO NET/Socket : Using [0]eno1:172.22.162.40<0>
+csci-cscidl01:1316103:1318622 [6] NCCL INFO Using non-device net plugin version 0
+csci-cscidl01:1316103:1318622 [6] NCCL INFO Using network Socket
+csci-cscidl01:1316103:1318622 [6] NCCL INFO ncclCommInitRank comm 0x2a8e0b40 rank 6 nranks 8 cudaDev 6 nvmlDev 6 busId 40000 commId 0xd8d845c18c41bfdb - Init START
+csci-cscidl01:1316102:1318619 [5] NCCL INFO ncclCommInitRank comm 0x4d076370 rank 5 nranks 8 cudaDev 5 nvmlDev 5 busId 3f000 commId 0xd8d845c18c41bfdb - Init START
+csci-cscidl01:1316104:1318621 [7] NCCL INFO ncclCommInitRank comm 0x3b0f6b10 rank 7 nranks 8 cudaDev 7 nvmlDev 7 busId 41000 commId 0xd8d845c18c41bfdb - Init START
+csci-cscidl01:1316100:1318616 [3] NCCL INFO ncclCommInitRank comm 0x421d7a70 rank 3 nranks 8 cudaDev 3 nvmlDev 3 busId 1e000 commId 0xd8d845c18c41bfdb - Init START
+csci-cscidl01:1316099:1318620 [2] NCCL INFO ncclCommInitRank comm 0x4a516d10 rank 2 nranks 8 cudaDev 2 nvmlDev 2 busId 1d000 commId 0xd8d845c18c41bfdb - Init START
+csci-cscidl01:1316097:1318615 [0] NCCL INFO ncclCommInitRank comm 0x1cd5e160 rank 0 nranks 8 cudaDev 0 nvmlDev 0 busId 1b000 commId 0xd8d845c18c41bfdb - Init START
+csci-cscidl01:1316101:1318618 [4] NCCL INFO ncclCommInitRank comm 0x3afc56b0 rank 4 nranks 8 cudaDev 4 nvmlDev 4 busId 3d000 commId 0xd8d845c18c41bfdb - Init START
+csci-cscidl01:1316098:1318617 [1] NCCL INFO ncclCommInitRank comm 0x16fd3010 rank 1 nranks 8 cudaDev 1 nvmlDev 1 busId 1c000 commId 0xd8d845c18c41bfdb - Init START
+csci-cscidl01:1316102:1318619 [5] NCCL INFO NCCL_P2P_LEVEL set by environment to LOC
+csci-cscidl01:1316102:1318619 [5] NCCL INFO Setting affinity for GPU 5 to ffff,0000ffff
+csci-cscidl01:1316100:1318616 [3] NCCL INFO NCCL_P2P_LEVEL set by environment to LOC
+csci-cscidl01:1316100:1318616 [3] NCCL INFO Setting affinity for GPU 3 to ffff,0000ffff
+csci-cscidl01:1316103:1318622 [6] NCCL INFO NCCL_P2P_LEVEL set by environment to LOC
+csci-cscidl01:1316103:1318622 [6] NCCL INFO Setting affinity for GPU 6 to ffff,0000ffff
+csci-cscidl01:1316099:1318620 [2] NCCL INFO NCCL_P2P_LEVEL set by environment to LOC
+csci-cscidl01:1316099:1318620 [2] NCCL INFO Setting affinity for GPU 2 to ffff,0000ffff
+
+csci-cscidl01:1316102:1318619 [5] graph/search.cc:1036 NCCL WARN Could not find a path for pattern 4, falling back to simple order
+csci-cscidl01:1316104:1318621 [7] NCCL INFO NCCL_P2P_LEVEL set by environment to LOC
+csci-cscidl01:1316104:1318621 [7] NCCL INFO Setting affinity for GPU 7 to ffff,0000ffff
+
+csci-cscidl01:1316103:1318622 [6] graph/search.cc:1036 NCCL WARN Could not find a path for pattern 4, falling back to simple order
+
+csci-cscidl01:1316100:1318616 [3] graph/search.cc:1036 NCCL WARN Could not find a path for pattern 4, falling back to simple order
+csci-cscidl01:1316097:1318615 [0] NCCL INFO NCCL_P2P_LEVEL set by environment to LOC
+csci-cscidl01:1316097:1318615 [0] NCCL INFO Setting affinity for GPU 0 to ffff,0000ffff
+
+csci-cscidl01:1316099:1318620 [2] graph/search.cc:1036 NCCL WARN Could not find a path for pattern 4, falling back to simple order
+csci-cscidl01:1316101:1318618 [4] NCCL INFO NCCL_P2P_LEVEL set by environment to LOC
+csci-cscidl01:1316101:1318618 [4] NCCL INFO Setting affinity for GPU 4 to ffff,0000ffff
+csci-cscidl01:1316098:1318617 [1] NCCL INFO NCCL_P2P_LEVEL set by environment to LOC
+csci-cscidl01:1316098:1318617 [1] NCCL INFO Setting affinity for GPU 1 to ffff,0000ffff
+
+csci-cscidl01:1316103:1318622 [6] graph/search.cc:1036 NCCL WARN Could not find a path for pattern 1, falling back to simple order
+
+csci-cscidl01:1316104:1318621 [7] graph/search.cc:1036 NCCL WARN Could not find a path for pattern 4, falling back to simple order
+
+csci-cscidl01:1316102:1318619 [5] graph/search.cc:1036 NCCL WARN Could not find a path for pattern 1, falling back to simple order
+
+csci-cscidl01:1316097:1318615 [0] graph/search.cc:1036 NCCL WARN Could not find a path for pattern 4, falling back to simple order
+
+csci-cscidl01:1316099:1318620 [2] graph/search.cc:1036 NCCL WARN Could not find a path for pattern 1, falling back to simple order
+
+csci-cscidl01:1316100:1318616 [3] graph/search.cc:1036 NCCL WARN Could not find a path for pattern 1, falling back to simple order
+
+csci-cscidl01:1316101:1318618 [4] graph/search.cc:1036 NCCL WARN Could not find a path for pattern 4, falling back to simple order
+
+csci-cscidl01:1316104:1318621 [7] graph/search.cc:1036 NCCL WARN Could not find a path for pattern 1, falling back to simple order
+
+csci-cscidl01:1316097:1318615 [0] graph/search.cc:1036 NCCL WARN Could not find a path for pattern 1, falling back to simple order
+
+csci-cscidl01:1316098:1318617 [1] graph/search.cc:1036 NCCL WARN Could not find a path for pattern 4, falling back to simple order
+
+csci-cscidl01:1316101:1318618 [4] graph/search.cc:1036 NCCL WARN Could not find a path for pattern 1, falling back to simple order
+
+csci-cscidl01:1316098:1318617 [1] graph/search.cc:1036 NCCL WARN Could not find a path for pattern 1, falling back to simple order
+csci-cscidl01:1316102:1318619 [5] NCCL INFO comm 0x4d076370 rank 5 nRanks 8 nNodes 1 localRanks 8 localRank 5 MNNVL 0
+csci-cscidl01:1316101:1318618 [4] NCCL INFO comm 0x3afc56b0 rank 4 nRanks 8 nNodes 1 localRanks 8 localRank 4 MNNVL 0
+csci-cscidl01:1316098:1318617 [1] NCCL INFO comm 0x16fd3010 rank 1 nRanks 8 nNodes 1 localRanks 8 localRank 1 MNNVL 0
+csci-cscidl01:1316099:1318620 [2] NCCL INFO comm 0x4a516d10 rank 2 nRanks 8 nNodes 1 localRanks 8 localRank 2 MNNVL 0
+csci-cscidl01:1316104:1318621 [7] NCCL INFO comm 0x3b0f6b10 rank 7 nRanks 8 nNodes 1 localRanks 8 localRank 7 MNNVL 0
+csci-cscidl01:1316103:1318622 [6] NCCL INFO comm 0x2a8e0b40 rank 6 nRanks 8 nNodes 1 localRanks 8 localRank 6 MNNVL 0
+csci-cscidl01:1316097:1318615 [0] NCCL INFO comm 0x1cd5e160 rank 0 nRanks 8 nNodes 1 localRanks 8 localRank 0 MNNVL 0
+csci-cscidl01:1316100:1318616 [3] NCCL INFO comm 0x421d7a70 rank 3 nRanks 8 nNodes 1 localRanks 8 localRank 3 MNNVL 0
+csci-cscidl01:1316102:1318619 [5] NCCL INFO Trees [0] 6/-1/-1->5->4 [1] 6/-1/-1->5->4
+csci-cscidl01:1316101:1318618 [4] NCCL INFO Trees [0] 5/-1/-1->4->3 [1] 5/-1/-1->4->3
+csci-cscidl01:1316098:1318617 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0
+csci-cscidl01:1316099:1318620 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1
+csci-cscidl01:1316104:1318621 [7] NCCL INFO Trees [0] -1/-1/-1->7->6 [1] -1/-1/-1->7->6
+csci-cscidl01:1316102:1318619 [5] NCCL INFO P2P Chunksize set to 131072
+csci-cscidl01:1316103:1318622 [6] NCCL INFO Trees [0] 7/-1/-1->6->5 [1] 7/-1/-1->6->5
+csci-cscidl01:1316101:1318618 [4] NCCL INFO P2P Chunksize set to 131072
+csci-cscidl01:1316097:1318615 [0] NCCL INFO Channel 00/02 :    0   1   2   3   4   5   6   7
+csci-cscidl01:1316098:1318617 [1] NCCL INFO P2P Chunksize set to 131072
+csci-cscidl01:1316099:1318620 [2] NCCL INFO P2P Chunksize set to 131072
+csci-cscidl01:1316104:1318621 [7] NCCL INFO P2P Chunksize set to 131072
+csci-cscidl01:1316100:1318616 [3] NCCL INFO Trees [0] 4/-1/-1->3->2 [1] 4/-1/-1->3->2
+csci-cscidl01:1316103:1318622 [6] NCCL INFO P2P Chunksize set to 131072
+csci-cscidl01:1316097:1318615 [0] NCCL INFO Channel 01/02 :    0   1   2   3   4   5   6   7
+csci-cscidl01:1316100:1318616 [3] NCCL INFO P2P Chunksize set to 131072
+csci-cscidl01:1316097:1318615 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1
+csci-cscidl01:1316097:1318615 [0] NCCL INFO P2P Chunksize set to 131072
+csci-cscidl01:1316102:1318619 [5] NCCL INFO Channel 00 : 5[5] -> 6[6] via SHM/direct/direct
+csci-cscidl01:1316102:1318619 [5] NCCL INFO Channel 01 : 5[5] -> 6[6] via SHM/direct/direct
+csci-cscidl01:1316097:1318615 [0] NCCL INFO Channel 00 : 0[0] -> 1[1] via SHM/direct/direct
+csci-cscidl01:1316104:1318621 [7] NCCL INFO Channel 00 : 7[7] -> 0[0] via SHM/direct/direct
+csci-cscidl01:1316099:1318620 [2] NCCL INFO Channel 00 : 2[2] -> 3[3] via SHM/direct/direct
+csci-cscidl01:1316101:1318618 [4] NCCL INFO Channel 00 : 4[4] -> 5[5] via SHM/direct/direct
+csci-cscidl01:1316098:1318617 [1] NCCL INFO Channel 00 : 1[1] -> 2[2] via SHM/direct/direct
+csci-cscidl01:1316103:1318622 [6] NCCL INFO Channel 00 : 6[6] -> 7[7] via SHM/direct/direct
+csci-cscidl01:1316097:1318615 [0] NCCL INFO Channel 01 : 0[0] -> 1[1] via SHM/direct/direct
+csci-cscidl01:1316104:1318621 [7] NCCL INFO Channel 01 : 7[7] -> 0[0] via SHM/direct/direct
+csci-cscidl01:1316101:1318618 [4] NCCL INFO Channel 01 : 4[4] -> 5[5] via SHM/direct/direct
+csci-cscidl01:1316099:1318620 [2] NCCL INFO Channel 01 : 2[2] -> 3[3] via SHM/direct/direct
+csci-cscidl01:1316103:1318622 [6] NCCL INFO Channel 01 : 6[6] -> 7[7] via SHM/direct/direct
+csci-cscidl01:1316098:1318617 [1] NCCL INFO Channel 01 : 1[1] -> 2[2] via SHM/direct/direct
+csci-cscidl01:1316100:1318616 [3] NCCL INFO Channel 00 : 3[3] -> 4[4] via SHM/direct/direct
+csci-cscidl01:1316100:1318616 [3] NCCL INFO Channel 01 : 3[3] -> 4[4] via SHM/direct/direct
+csci-cscidl01:1316103:1318622 [6] NCCL INFO Connected all rings
+csci-cscidl01:1316104:1318621 [7] NCCL INFO Connected all rings
+csci-cscidl01:1316102:1318619 [5] NCCL INFO Connected all rings
+csci-cscidl01:1316101:1318618 [4] NCCL INFO Connected all rings
+csci-cscidl01:1316104:1318621 [7] NCCL INFO Channel 00 : 7[7] -> 6[6] via SHM/direct/direct
+csci-cscidl01:1316104:1318621 [7] NCCL INFO Channel 01 : 7[7] -> 6[6] via SHM/direct/direct
+csci-cscidl01:1316100:1318616 [3] NCCL INFO Connected all rings
+csci-cscidl01:1316098:1318617 [1] NCCL INFO Connected all rings
+csci-cscidl01:1316099:1318620 [2] NCCL INFO Connected all rings
+csci-cscidl01:1316097:1318615 [0] NCCL INFO Connected all rings
+csci-cscidl01:1316102:1318619 [5] NCCL INFO Channel 00 : 5[5] -> 4[4] via SHM/direct/direct
+csci-cscidl01:1316102:1318619 [5] NCCL INFO Channel 01 : 5[5] -> 4[4] via SHM/direct/direct
+csci-cscidl01:1316101:1318618 [4] NCCL INFO Channel 00 : 4[4] -> 3[3] via SHM/direct/direct
+csci-cscidl01:1316101:1318618 [4] NCCL INFO Channel 01 : 4[4] -> 3[3] via SHM/direct/direct
+csci-cscidl01:1316103:1318622 [6] NCCL INFO Channel 00 : 6[6] -> 5[5] via SHM/direct/direct
+csci-cscidl01:1316103:1318622 [6] NCCL INFO Channel 01 : 6[6] -> 5[5] via SHM/direct/direct
+csci-cscidl01:1316100:1318616 [3] NCCL INFO Channel 00 : 3[3] -> 2[2] via SHM/direct/direct
+csci-cscidl01:1316099:1318620 [2] NCCL INFO Channel 00 : 2[2] -> 1[1] via SHM/direct/direct
+csci-cscidl01:1316100:1318616 [3] NCCL INFO Channel 01 : 3[3] -> 2[2] via SHM/direct/direct
+csci-cscidl01:1316098:1318617 [1] NCCL INFO Channel 00 : 1[1] -> 0[0] via SHM/direct/direct
+csci-cscidl01:1316099:1318620 [2] NCCL INFO Channel 01 : 2[2] -> 1[1] via SHM/direct/direct
+csci-cscidl01:1316098:1318617 [1] NCCL INFO Channel 01 : 1[1] -> 0[0] via SHM/direct/direct
+csci-cscidl01:1316104:1318621 [7] NCCL INFO Connected all trees
+csci-cscidl01:1316104:1318621 [7] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+csci-cscidl01:1316104:1318621 [7] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+csci-cscidl01:1316103:1318622 [6] NCCL INFO Connected all trees
+csci-cscidl01:1316103:1318622 [6] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+csci-cscidl01:1316103:1318622 [6] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+csci-cscidl01:1316102:1318619 [5] NCCL INFO Connected all trees
+csci-cscidl01:1316101:1318618 [4] NCCL INFO Connected all trees
+csci-cscidl01:1316102:1318619 [5] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+csci-cscidl01:1316102:1318619 [5] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+csci-cscidl01:1316101:1318618 [4] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+csci-cscidl01:1316101:1318618 [4] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+csci-cscidl01:1316100:1318616 [3] NCCL INFO Connected all trees
+csci-cscidl01:1316100:1318616 [3] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+csci-cscidl01:1316097:1318615 [0] NCCL INFO Connected all trees
+csci-cscidl01:1316100:1318616 [3] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+csci-cscidl01:1316099:1318620 [2] NCCL INFO Connected all trees
+csci-cscidl01:1316099:1318620 [2] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+csci-cscidl01:1316098:1318617 [1] NCCL INFO Connected all trees
+csci-cscidl01:1316099:1318620 [2] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+csci-cscidl01:1316098:1318617 [1] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+csci-cscidl01:1316098:1318617 [1] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+csci-cscidl01:1316097:1318615 [0] NCCL INFO threadThresholds 8/8/64 | 64/8/64 | 512 | 512
+csci-cscidl01:1316097:1318615 [0] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+csci-cscidl01:1316097:1318615 [0] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+csci-cscidl01:1316102:1318619 [5] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+csci-cscidl01:1316098:1318617 [1] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+csci-cscidl01:1316104:1318621 [7] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+csci-cscidl01:1316103:1318622 [6] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+csci-cscidl01:1316101:1318618 [4] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+csci-cscidl01:1316097:1318615 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+csci-cscidl01:1316099:1318620 [2] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+csci-cscidl01:1316102:1318619 [5] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+csci-cscidl01:1316098:1318617 [1] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+csci-cscidl01:1316104:1318621 [7] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+csci-cscidl01:1316103:1318622 [6] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+csci-cscidl01:1316101:1318618 [4] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+csci-cscidl01:1316097:1318615 [0] NCCL INFO ncclCommInitRank comm 0x1cd5e160 rank 0 nranks 8 cudaDev 0 nvmlDev 0 busId 1b000 commId 0xd8d845c18c41bfdb - Init COMPLETE
+csci-cscidl01:1316099:1318620 [2] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+csci-cscidl01:1316102:1318619 [5] NCCL INFO ncclCommInitRank comm 0x4d076370 rank 5 nranks 8 cudaDev 5 nvmlDev 5 busId 3f000 commId 0xd8d845c18c41bfdb - Init COMPLETE
+csci-cscidl01:1316098:1318617 [1] NCCL INFO ncclCommInitRank comm 0x16fd3010 rank 1 nranks 8 cudaDev 1 nvmlDev 1 busId 1c000 commId 0xd8d845c18c41bfdb - Init COMPLETE
+csci-cscidl01:1316104:1318621 [7] NCCL INFO ncclCommInitRank comm 0x3b0f6b10 rank 7 nranks 8 cudaDev 7 nvmlDev 7 busId 41000 commId 0xd8d845c18c41bfdb - Init COMPLETE
+csci-cscidl01:1316103:1318622 [6] NCCL INFO ncclCommInitRank comm 0x2a8e0b40 rank 6 nranks 8 cudaDev 6 nvmlDev 6 busId 40000 commId 0xd8d845c18c41bfdb - Init COMPLETE
+csci-cscidl01:1316101:1318618 [4] NCCL INFO ncclCommInitRank comm 0x3afc56b0 rank 4 nranks 8 cudaDev 4 nvmlDev 4 busId 3d000 commId 0xd8d845c18c41bfdb - Init COMPLETE
+csci-cscidl01:1316099:1318620 [2] NCCL INFO ncclCommInitRank comm 0x4a516d10 rank 2 nranks 8 cudaDev 2 nvmlDev 2 busId 1d000 commId 0xd8d845c18c41bfdb - Init COMPLETE
+csci-cscidl01:1316100:1318616 [3] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+csci-cscidl01:1316100:1318616 [3] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+csci-cscidl01:1316100:1318616 [3] NCCL INFO ncclCommInitRank comm 0x421d7a70 rank 3 nranks 8 cudaDev 3 nvmlDev 3 busId 1e000 commId 0xd8d845c18c41bfdb - Init COMPLETE
+/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/huggingface_hub/file_download.py:1150: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/huggingface_hub/file_download.py:1150: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/huggingface_hub/file_download.py:1150: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/huggingface_hub/file_download.py:1150: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/huggingface_hub/file_download.py:1150: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/huggingface_hub/file_download.py:1150: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/huggingface_hub/file_download.py:1150: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/huggingface_hub/file_download.py:1150: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+You are using a model of type phi to instantiate a model of type llava_phi. This is not supported for all configurations of models and can yield errors.
+You are using a model of type phi to instantiate a model of type llava_phi. This is not supported for all configurations of models and can yield errors.
+You are using a model of type phi to instantiate a model of type llava_phi. This is not supported for all configurations of models and can yield errors.
+You are using a model of type phi to instantiate a model of type llava_phi. This is not supported for all configurations of models and can yield errors.
+You are using a model of type phi to instantiate a model of type llava_phi. This is not supported for all configurations of models and can yield errors.
+You are using a model of type phi to instantiate a model of type llava_phi. This is not supported for all configurations of models and can yield errors.
+You are using a model of type phi to instantiate a model of type llava_phi. This is not supported for all configurations of models and can yield errors.
+You are using a model of type phi to instantiate a model of type llava_phi. This is not supported for all configurations of models and can yield errors.
+[2026-01-27 18:27:47,398] [INFO] [launch.py:335:sigkill_handler] Killing subprocess 1316097
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/train/train_mem.py", line 13, in <module>
+[rank4]:     train()
+[rank4]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/train/train.py", line 1304, in train
+[rank4]:     model = LlavaPhiForCausalLM.from_pretrained(
+[rank4]:   File "/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3596, in from_pretrained
+[rank4]:     model = cls(config, *model_args, **model_kwargs)
+[rank4]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/llava_phi.py", line 47, in __init__
+[rank4]:     self.model = LlavaPhiModel(config)
+[rank4]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/llava_phi.py", line 39, in __init__
+[rank4]:     super(LlavaPhiModel, self).__init__(config)
+[rank4]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/llava_arch.py", line 32, in __init__
+[rank4]:     super(LlavaMetaModel, self).__init__(config)
+[rank4]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 824, in __init__
+[rank4]:     [PhiDecoderLayer(config, layer_idx) for layer_idx in range(config.num_hidden_layers)]
+[rank4]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 824, in <listcomp>
+[rank4]:     [PhiDecoderLayer(config, layer_idx) for layer_idx in range(config.num_hidden_layers)]
+[rank4]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 632, in __init__
+[rank4]:     self.self_attn = PHI_ATTENTION_CLASSES[config._attn_implementation](config, layer_idx=layer_idx)
+[rank4]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 276, in __init__
+[rank4]:     self._init_rope()
+[rank4]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 280, in _init_rope
+[rank4]:     self.rotary_emb = PhiRotaryEmbedding(
+[rank4]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 93, in __init__
+[rank4]:     self._set_cos_sin_cache(
+[rank4]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 105, in _set_cos_sin_cache
+[rank4]:     self.register_buffer("sin_cached", emb.sin().to(dtype), persistent=False)
+[rank4]: KeyboardInterrupt
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/train/train_mem.py", line 13, in <module>
+[rank5]:     train()
+[rank5]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/train/train.py", line 1304, in train
+[rank5]:     model = LlavaPhiForCausalLM.from_pretrained(
+[rank5]:   File "/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3596, in from_pretrained
+[rank5]:     model = cls(config, *model_args, **model_kwargs)
+[rank5]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/llava_phi.py", line 47, in __init__
+[rank5]:     self.model = LlavaPhiModel(config)
+[rank5]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/llava_phi.py", line 39, in __init__
+[rank5]:     super(LlavaPhiModel, self).__init__(config)
+[rank5]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/llava_arch.py", line 32, in __init__
+[rank5]:     super(LlavaMetaModel, self).__init__(config)
+[rank5]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 824, in __init__
+[rank5]:     [PhiDecoderLayer(config, layer_idx) for layer_idx in range(config.num_hidden_layers)]
+[rank5]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 824, in <listcomp>
+[rank5]:     [PhiDecoderLayer(config, layer_idx) for layer_idx in range(config.num_hidden_layers)]
+[rank5]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 632, in __init__
+[rank5]:     self.self_attn = PHI_ATTENTION_CLASSES[config._attn_implementation](config, layer_idx=layer_idx)
+[rank5]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 276, in __init__
+[rank5]:     self._init_rope()
+[rank5]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 280, in _init_rope
+[rank5]:     self.rotary_emb = PhiRotaryEmbedding(
+[rank5]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 93, in __init__
+[rank5]:     self._set_cos_sin_cache(
+[rank5]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 104, in _set_cos_sin_cache
+[rank5]:     self.register_buffer("cos_cached", emb.cos().to(dtype), persistent=False)
+[rank5]: KeyboardInterrupt
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/train/train_mem.py", line 13, in <module>
+[rank0]:     train()
+[rank0]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/train/train.py", line 1304, in train
+[rank0]:     model = LlavaPhiForCausalLM.from_pretrained(
+[rank0]:   File "/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3596, in from_pretrained
+[rank0]:     model = cls(config, *model_args, **model_kwargs)
+[rank0]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/llava_phi.py", line 47, in __init__
+[rank0]:     self.model = LlavaPhiModel(config)
+[rank0]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/llava_phi.py", line 39, in __init__
+[rank0]:     super(LlavaPhiModel, self).__init__(config)
+[rank0]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/llava_arch.py", line 32, in __init__
+[rank0]:     super(LlavaMetaModel, self).__init__(config)
+[rank0]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 824, in __init__
+[rank0]:     [PhiDecoderLayer(config, layer_idx) for layer_idx in range(config.num_hidden_layers)]
+[rank0]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 824, in <listcomp>
+[rank0]:     [PhiDecoderLayer(config, layer_idx) for layer_idx in range(config.num_hidden_layers)]
+[rank0]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 632, in __init__
+[rank0]:     self.self_attn = PHI_ATTENTION_CLASSES[config._attn_implementation](config, layer_idx=layer_idx)
+[rank0]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 276, in __init__
+[rank0]:     self._init_rope()
+[rank0]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 280, in _init_rope
+[rank0]:     self.rotary_emb = PhiRotaryEmbedding(
+[rank0]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 93, in __init__
+[rank0]:     self._set_cos_sin_cache(
+[rank0]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 105, in _set_cos_sin_cache
+[rank0]:     self.register_buffer("sin_cached", emb.sin().to(dtype), persistent=False)
+[rank0]: KeyboardInterrupt
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/train/train_mem.py", line 13, in <module>
+[rank7]:     train()
+[rank7]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/train/train.py", line 1304, in train
+[rank7]:     model = LlavaPhiForCausalLM.from_pretrained(
+[rank7]:   File "/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3596, in from_pretrained
+[rank7]:     model = cls(config, *model_args, **model_kwargs)
+[rank7]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/llava_phi.py", line 47, in __init__
+[rank7]:     self.model = LlavaPhiModel(config)
+[rank7]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/llava_phi.py", line 39, in __init__
+[rank7]:     super(LlavaPhiModel, self).__init__(config)
+[rank7]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/llava_arch.py", line 32, in __init__
+[rank7]:     super(LlavaMetaModel, self).__init__(config)
+[rank7]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 824, in __init__
+[rank7]:     [PhiDecoderLayer(config, layer_idx) for layer_idx in range(config.num_hidden_layers)]
+[rank7]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 824, in <listcomp>
+[rank7]:     [PhiDecoderLayer(config, layer_idx) for layer_idx in range(config.num_hidden_layers)]
+[rank7]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 632, in __init__
+[rank7]:     self.self_attn = PHI_ATTENTION_CLASSES[config._attn_implementation](config, layer_idx=layer_idx)
+[rank7]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 276, in __init__
+[rank7]:     self._init_rope()
+[rank7]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 280, in _init_rope
+[rank7]:     self.rotary_emb = PhiRotaryEmbedding(
+[rank7]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 93, in __init__
+[rank7]:     self._set_cos_sin_cache(
+[rank7]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 105, in _set_cos_sin_cache
+[rank7]:     self.register_buffer("sin_cached", emb.sin().to(dtype), persistent=False)
+[rank7]: KeyboardInterrupt
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/train/train_mem.py", line 13, in <module>
+[rank3]:     train()
+[rank3]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/train/train.py", line 1304, in train
+[rank3]:     model = LlavaPhiForCausalLM.from_pretrained(
+[rank3]:   File "/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3596, in from_pretrained
+[rank3]:     model = cls(config, *model_args, **model_kwargs)
+[rank3]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/llava_phi.py", line 47, in __init__
+[rank3]:     self.model = LlavaPhiModel(config)
+[rank3]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/llava_phi.py", line 39, in __init__
+[rank3]:     super(LlavaPhiModel, self).__init__(config)
+[rank3]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/llava_arch.py", line 32, in __init__
+[rank3]:     super(LlavaMetaModel, self).__init__(config)
+[rank3]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 824, in __init__
+[rank3]:     [PhiDecoderLayer(config, layer_idx) for layer_idx in range(config.num_hidden_layers)]
+[rank3]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 824, in <listcomp>
+[rank3]:     [PhiDecoderLayer(config, layer_idx) for layer_idx in range(config.num_hidden_layers)]
+[rank3]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 632, in __init__
+[rank3]:     self.self_attn = PHI_ATTENTION_CLASSES[config._attn_implementation](config, layer_idx=layer_idx)
+[rank3]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 276, in __init__
+[rank3]:     self._init_rope()
+[rank3]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 280, in _init_rope
+[rank3]:     self.rotary_emb = PhiRotaryEmbedding(
+[rank3]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 93, in __init__
+[rank3]:     self._set_cos_sin_cache(
+[rank3]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 105, in _set_cos_sin_cache
+[rank3]:     self.register_buffer("sin_cached", emb.sin().to(dtype), persistent=False)
+[rank3]: KeyboardInterrupt
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/train/train_mem.py", line 13, in <module>
+[rank2]:     train()
+[rank2]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/train/train.py", line 1304, in train
+[rank2]:     model = LlavaPhiForCausalLM.from_pretrained(
+[rank2]:   File "/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3596, in from_pretrained
+[rank2]:     model = cls(config, *model_args, **model_kwargs)
+[rank2]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/llava_phi.py", line 47, in __init__
+[rank2]:     self.model = LlavaPhiModel(config)
+[rank2]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/llava_phi.py", line 39, in __init__
+[rank2]:     super(LlavaPhiModel, self).__init__(config)
+[rank2]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/llava_arch.py", line 32, in __init__
+[rank2]:     super(LlavaMetaModel, self).__init__(config)
+[rank2]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 824, in __init__
+[rank2]:     [PhiDecoderLayer(config, layer_idx) for layer_idx in range(config.num_hidden_layers)]
+[rank2]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 824, in <listcomp>
+[rank2]:     [PhiDecoderLayer(config, layer_idx) for layer_idx in range(config.num_hidden_layers)]
+[rank2]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 632, in __init__
+[rank2]:     self.self_attn = PHI_ATTENTION_CLASSES[config._attn_implementation](config, layer_idx=layer_idx)
+[rank2]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 264, in __init__
+[rank2]:     self.v_proj = nn.Linear(self.hidden_size, self.num_key_value_heads * self.head_dim, bias=True)
+[rank2]:   File "/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 102, in __init__
+[rank2]:     super().__init__()
+[rank2]:   File "/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/torch/nn/modules/module.py", line 502, in __init__
+[rank2]:     super().__setattr__("_state_dict_pre_hooks", OrderedDict())
+[rank2]: KeyboardInterrupt
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/train/train_mem.py", line 13, in <module>
+[rank6]:     train()
+[rank6]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/train/train.py", line 1304, in train
+[rank6]:     model = LlavaPhiForCausalLM.from_pretrained(
+[rank6]:   File "/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3596, in from_pretrained
+[rank6]:     model = cls(config, *model_args, **model_kwargs)
+[rank6]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/llava_phi.py", line 47, in __init__
+[rank6]:     self.model = LlavaPhiModel(config)
+[rank6]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/llava_phi.py", line 39, in __init__
+[rank6]:     super(LlavaPhiModel, self).__init__(config)
+[rank6]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/llava_arch.py", line 32, in __init__
+[rank6]:     super(LlavaMetaModel, self).__init__(config)
+[rank6]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 824, in __init__
+[rank6]:     [PhiDecoderLayer(config, layer_idx) for layer_idx in range(config.num_hidden_layers)]
+[rank6]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 824, in <listcomp>
+[rank6]:     [PhiDecoderLayer(config, layer_idx) for layer_idx in range(config.num_hidden_layers)]
+[rank6]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 632, in __init__
+[rank6]:     self.self_attn = PHI_ATTENTION_CLASSES[config._attn_implementation](config, layer_idx=layer_idx)
+[rank6]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 276, in __init__
+[rank6]:     self._init_rope()
+[rank6]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 280, in _init_rope
+[rank6]:     self.rotary_emb = PhiRotaryEmbedding(
+[rank6]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 93, in __init__
+[rank6]:     self._set_cos_sin_cache(
+[rank6]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 105, in _set_cos_sin_cache
+[rank6]:     self.register_buffer("sin_cached", emb.sin().to(dtype), persistent=False)
+[rank6]: KeyboardInterrupt
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/train/train_mem.py", line 13, in <module>
+[rank1]:     train()
+[rank1]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/train/train.py", line 1304, in train
+[rank1]:     model = LlavaPhiForCausalLM.from_pretrained(
+[rank1]:   File "/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3596, in from_pretrained
+[rank1]:     model = cls(config, *model_args, **model_kwargs)
+[rank1]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/llava_phi.py", line 47, in __init__
+[rank1]:     self.model = LlavaPhiModel(config)
+[rank1]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/llava_phi.py", line 39, in __init__
+[rank1]:     super(LlavaPhiModel, self).__init__(config)
+[rank1]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/llava_arch.py", line 32, in __init__
+[rank1]:     super(LlavaMetaModel, self).__init__(config)
+[rank1]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 824, in __init__
+[rank1]:     [PhiDecoderLayer(config, layer_idx) for layer_idx in range(config.num_hidden_layers)]
+[rank1]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 824, in <listcomp>
+[rank1]:     [PhiDecoderLayer(config, layer_idx) for layer_idx in range(config.num_hidden_layers)]
+[rank1]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 632, in __init__
+[rank1]:     self.self_attn = PHI_ATTENTION_CLASSES[config._attn_implementation](config, layer_idx=layer_idx)
+[rank1]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 276, in __init__
+[rank1]:     self._init_rope()
+[rank1]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 280, in _init_rope
+[rank1]:     self.rotary_emb = PhiRotaryEmbedding(
+[rank1]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 93, in __init__
+[rank1]:     self._set_cos_sin_cache(
+[rank1]:   File "/home/myid/mj71006/projects/Bio-Med-Agent/MoE-LLaVA/moellava/model/language_model/phi/modeling_phi.py", line 105, in _set_cos_sin_cache
+[rank1]:     self.register_buffer("sin_cached", emb.sin().to(dtype), persistent=False)
+[rank1]: KeyboardInterrupt
+[rank2]:[W127 18:27:47.357106087 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[rank7]:[W127 18:27:47.384371498 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[rank4]:[W127 18:27:47.384369520 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[rank3]:[W127 18:27:47.384416350 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[rank1]:[W127 18:27:47.384421815 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[rank6]:[W127 18:27:47.384479531 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[rank2]:[W127 18:27:47.393379181 TCPStore.cpp:125] [c10d] recvValue failed on SocketImpl(fd=90, addr=[localhost]:58342, remote=[localhost]:29500): stoi
+[rank2]:[W127 18:27:47.393753563 ProcessGroupNCCL.cpp:1662] [PG ID 0 PG GUID 0(default_pg) Rank 2] Failed to check the "should dump" flag on TCPStore, (maybe TCPStore server has shut down too early), with error: stoi
+Traceback (most recent call last):
+  File "/home/myid/mj71006/anaconda3/envs/moellava/bin/deepspeed", line 6, in <module>
+    main()
+  File "/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/deepspeed/launcher/runner.py", line 646, in main
+    result.wait()
+  File "/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/subprocess.py", line 1209, in wait
+    return self._wait(timeout=timeout)
+  File "/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/subprocess.py", line 1959, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/subprocess.py", line 1917, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
+[rank7]:[W127 18:27:47.423479476 TCPStore.cpp:125] [c10d] recvValue failed on SocketImpl(fd=94, addr=[localhost]:45722, remote=[localhost]:29500): stoi
+[rank7]:[W127 18:27:47.423978623 ProcessGroupNCCL.cpp:1662] [PG ID 0 PG GUID 0(default_pg) Rank 7] Failed to check the "should dump" flag on TCPStore, (maybe TCPStore server has shut down too early), with error: stoi
+[rank4]:[W127 18:27:47.433114795 TCPStore.cpp:125] [c10d] recvValue failed on SocketImpl(fd=90, addr=[localhost]:58296, remote=[localhost]:29500): stoi
+[rank4]:[W127 18:27:47.433650782 ProcessGroupNCCL.cpp:1662] [PG ID 0 PG GUID 0(default_pg) Rank 4] Failed to check the "should dump" flag on TCPStore, (maybe TCPStore server has shut down too early), with error: stoi
+[rank1]:[W127 18:27:47.434842522 TCPStore.cpp:125] [c10d] recvValue failed on SocketImpl(fd=90, addr=[localhost]:58306, remote=[localhost]:29500): stoi
+[rank1]:[W127 18:27:47.435259321 ProcessGroupNCCL.cpp:1662] [PG ID 0 PG GUID 0(default_pg) Rank 1] Failed to check the "should dump" flag on TCPStore, (maybe TCPStore server has shut down too early), with error: stoi
+[rank6]:[W127 18:27:47.436599660 TCPStore.cpp:125] [c10d] recvValue failed on SocketImpl(fd=90, addr=[localhost]:58318, remote=[localhost]:29500): stoi
+[rank6]:[W127 18:27:47.437049815 ProcessGroupNCCL.cpp:1662] [PG ID 0 PG GUID 0(default_pg) Rank 6] Failed to check the "should dump" flag on TCPStore, (maybe TCPStore server has shut down too early), with error: stoi
+[rank3]:[W127 18:27:47.444750843 TCPStore.cpp:125] [c10d] recvValue failed on SocketImpl(fd=90, addr=[localhost]:58284, remote=[localhost]:29500): stoi
+[rank3]:[W127 18:27:47.445296470 ProcessGroupNCCL.cpp:1662] [PG ID 0 PG GUID 0(default_pg) Rank 3] Failed to check the "should dump" flag on TCPStore, (maybe TCPStore server has shut down too early), with error: stoi
+[2026-01-27 18:27:47,735] [INFO] [launch.py:335:sigkill_handler] Killing subprocess 1316098
+[2026-01-27 18:27:47,942] [INFO] [launch.py:335:sigkill_handler] Killing subprocess 1316099
+[rank5]:[W127 18:27:48.810399402 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[rank5]:[W127 18:27:48.844946818 TCPStore.cpp:125] [c10d] recvValue failed on SocketImpl(fd=90, addr=[localhost]:58334, remote=[localhost]:29500): stoi
+[rank5]:[W127 18:27:48.845380608 ProcessGroupNCCL.cpp:1662] [PG ID 0 PG GUID 0(default_pg) Rank 5] Failed to check the "should dump" flag on TCPStore, (maybe TCPStore server has shut down too early), with error: stoi
+[2026-01-27 18:27:48,184] [INFO] [launch.py:335:sigkill_handler] Killing subprocess 1316100
+[2026-01-27 18:27:48,452] [INFO] [launch.py:335:sigkill_handler] Killing subprocess 1316101
+[2026-01-27 18:27:48,686] [INFO] [launch.py:335:sigkill_handler] Killing subprocess 1316102
+[rank7]:[W127 18:27:48.424141738 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[rank7]:[W127 18:27:48.424272639 TCPStore.cpp:106] [c10d] sendBytes failed on SocketImpl(fd=94, addr=[localhost]:45722, remote=[localhost]:29500): stoi
+[rank7]:[W127 18:27:48.424623607 ProcessGroupNCCL.cpp:1662] [PG ID 0 PG GUID 0(default_pg) Rank 7] Failed to check the "should dump" flag on TCPStore, (maybe TCPStore server has shut down too early), with error: stoi
+[rank6]:[W127 18:27:48.437262675 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[rank6]:[W127 18:27:48.437538564 TCPStore.cpp:106] [c10d] sendBytes failed on SocketImpl(fd=90, addr=[localhost]:58318, remote=[localhost]:29500): stoi
+[rank6]:[W127 18:27:48.437887802 ProcessGroupNCCL.cpp:1662] [PG ID 0 PG GUID 0(default_pg) Rank 6] Failed to check the "should dump" flag on TCPStore, (maybe TCPStore server has shut down too early), with error: stoi
+[2026-01-27 18:27:48,928] [INFO] [launch.py:335:sigkill_handler] Killing subprocess 1316103
+[2026-01-27 18:27:49,129] [INFO] [launch.py:335:sigkill_handler] Killing subprocess 1316104
+[2026-01-27 18:27:49,395] [INFO] [launch.py:344:sigkill_handler] Main process received SIGINT, exiting

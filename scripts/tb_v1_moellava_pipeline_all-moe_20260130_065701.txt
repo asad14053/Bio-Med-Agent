@@ -1,0 +1,2510 @@
+Log file: /home/myid/mj71006/projects/Bio-Med-Agent/scripts/tb_v1_moellava_pipeline_all-moe_20260130_065701.txt
+Repo root: /home/myid/mj71006/projects/Bio-Med-Agent
+Host: csci-cscidl01
+GPU visibility: 0
+
+
++ bash -lc CUDA_VISIBLE_DEVICES=0 python -m pipelines.eval_runner \
+    --ablate \
+    --items data/preprocess/tb_v1/v1/preprocess_manifest_evaluate.jsonl \
+    --mem_root data/memory_db/base/tb_v1/v1/first-writeback \
+    --out_json output/eval_tb_v1_phi2_4e.ablate_all-m-after-first-writeback.json \
+    --model_path checkpoints/MoE-LLaVA-Phi2-finetune-MoE \
+    --conv_mode phi \
+    --max_new_tokens 128 \
+    --temperature 0.2
+--------------------------------------------------------------------------------
+[W130 06:57:03.713949549 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:17.591338188 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:17.592741643 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:17.593539531 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:17.594252691 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:18.998463190 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:18.999423890 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:18.999880370 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:18.000319830 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:18.000710515 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:18.001060641 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:18.001314848 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:18.001581068 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:18.001840529 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:18.002104891 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:18.002359602 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:19.635244121 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:19.672141679 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:19.672885063 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:19.673262344 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:19.673541713 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:19.673792984 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:19.674039816 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:19.674284301 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:19.674527641 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:19.674770965 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:19.675014104 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:19.675256716 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:19.675497430 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:19.675736595 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:19.676163995 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:19.676499676 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 06:57:20.747360058 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[dist] use_dist=False world_size=1
+[rank0] local_rank=0 cuda=0
+[rank0] running eval_runner from: /home/myid/mj71006/projects/Bio-Med-Agent/pipelines/eval_runner.py
+/home/myid/mj71006/projects/Bio-Med-Agent/ImageBind/imagebind/data.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/huggingface_hub/file_download.py:1150: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:07,  2.61s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:05<00:05,  2.60s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.58s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:09<00:00,  2.09s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:09<00:00,  2.27s/it]
+csci-cscidl01:1567654:1567654 [0] NCCL INFO Bootstrap : Using eno1:172.22.162.40<0>
+csci-cscidl01:1567654:1567654 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+csci-cscidl01:1567654:1567654 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+csci-cscidl01:1567654:1567654 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+csci-cscidl01:1567654:1567654 [0] NCCL INFO cudaDriverVersion 13000
+NCCL version 2.21.5+cuda11.0
+csci-cscidl01:1567654:1567654 [0] NCCL INFO Comm config Blocking set to 1
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Failed to open libibverbs.so[.1]
+csci-cscidl01:1567654:1568107 [0] NCCL INFO NET/Socket : Using [0]eno1:172.22.162.40<0>
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Using non-device net plugin version 0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Using network Socket
+csci-cscidl01:1567654:1568107 [0] NCCL INFO ncclCommInitRank comm 0x417883d0 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId 1b000 commId 0x23e2577bc4c4c30f - Init START
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Setting affinity for GPU 0 to ffff,0000ffff
+csci-cscidl01:1567654:1568107 [0] NCCL INFO comm 0x417883d0 rank 0 nRanks 1 nNodes 1 localRanks 1 localRank 0 MNNVL 0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 00/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 01/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 02/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 03/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 04/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 05/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 06/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 07/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 08/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 09/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 10/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 11/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 12/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 13/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 14/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 15/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 16/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 17/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 18/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 19/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 20/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 21/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 22/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 23/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 24/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 25/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 26/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 27/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 28/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 29/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 30/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Channel 31/32 :    0
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Trees [0] -1/-1/-1->0->-1 [1] -1/-1/-1->0->-1 [2] -1/-1/-1->0->-1 [3] -1/-1/-1->0->-1 [4] -1/-1/-1->0->-1 [5] -1/-1/-1->0->-1 [6] -1/-1/-1->0->-1 [7] -1/-1/-1->0->-1 [8] -1/-1/-1->0->-1 [9] -1/-1/-1->0->-1 [10] -1/-1/-1->0->-1 [11] -1/-1/-1->0->-1 [12] -1/-1/-1->0->-1 [13] -1/-1/-1->0->-1 [14] -1/-1/-1->0->-1 [15] -1/-1/-1->0->-1 [16] -1/-1/-1->0->-1 [17] -1/-1/-1->0->-1 [18] -1/-1/-1->0->-1 [19] -1/-1/-1->0->-1 [20] -1/-1/-1->0->-1 [21] -1/-1/-1->0->-1 [22] -1/-1/-1->0->-1 [23] -1/-1/-1->0->-1 [24] -1/-1/-1->0->-1 [25] -1/-1/-1->0->-1 [26] -1/-1/-1->0->-1 [27] -1/-1/-1->0->-1 [28] -1/-1/-1->0->-1 [29] -1/-1/-1->0->-1 [30] -1/-1/-1->0->-1 [31] -1/-1/-1->0->-1
+csci-cscidl01:1567654:1568107 [0] NCCL INFO P2P Chunksize set to 131072
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Connected all rings
+csci-cscidl01:1567654:1568107 [0] NCCL INFO Connected all trees
+csci-cscidl01:1567654:1568107 [0] NCCL INFO 32 coll channels, 32 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+csci-cscidl01:1567654:1568107 [0] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+csci-cscidl01:156[none] [progress] 50/5000 done
+[none] [progress] 100/5000 done
+[none] [progress] 150/5000 done
+[none] [progress] 200/5000 done
+[none] [progress] 250/5000 done
+[none] [progress] 300/5000 done
+[none] [progress] 350/5000 done
+[none] [progress] 400/5000 done
+[none] [progress] 450/5000 done
+[none] [progress] 500/5000 done
+[none] [progress] 550/5000 done
+[none] [progress] 600/5000 done
+[none] [progress] 650/5000 done
+[none] [progress] 700/5000 done
+[none] [progress] 750/5000 done
+[none] [progress] 800/5000 done
+[none] [progress] 850/5000 done
+[none] [progress] 900/5000 done
+[none] [progress] 950/5000 done
+[none] [progress] 1000/5000 done
+[none] [progress] 1050/5000 done
+[none] [progress] 1100/5000 done
+[none] [progress] 1150/5000 done
+[none] [progress] 1200/5000 done
+[none] [progress] 1250/5000 done
+[none] [progress] 1300/5000 done
+[none] [progress] 1350/5000 done
+[none] [progress] 1400/5000 done
+[none] [progress] 1450/5000 done
+[none] [progress] 1500/5000 done
+[none] [progress] 1550/5000 done
+[none] [progress] 1600/5000 done
+[none] [progress] 1650/5000 done
+[none] [progress] 1700/5000 done
+[none] [progress] 1750/5000 done
+[none] [progress] 1800/5000 done
+[none] [progress] 1850/5000 done
+[none] [progress] 1900/5000 done
+[none] [progress] 1950/5000 done
+[none] [progress] 2000/5000 done
+[none] [progress] 2050/5000 done
+[none] [progress] 2100/5000 done
+[none] [progress] 2150/5000 done
+[none] [progress] 2200/5000 done
+[none] [progress] 2250/5000 done
+[none] [progress] 2300/5000 done
+[none] [progress] 2350/5000 done
+[none] [progress] 2400/5000 done
+[none] [progress] 2450/5000 done
+[none] [progress] 2500/5000 done
+[none] [progress] 2550/5000 done
+[none] [progress] 2600/5000 done
+[none] [progress] 2650/5000 done
+[none] [progress] 2700/5000 done
+[none] [progress] 2750/5000 done
+[none] [progress] 2800/5000 done
+[none] [progress] 2850/5000 done
+[none] [progress] 2900/5000 done
+[none] [progress] 2950/5000 done
+[none] [progress] 3000/5000 done
+[none] [progress] 3050/5000 done
+[none] [progress] 3100/5000 done
+[none] [progress] 3150/5000 done
+[none] [progress] 3200/5000 done
+[none] [progress] 3250/5000 done
+[none] [progress] 3300/5000 done
+[none] [progress] 3350/5000 done
+[none] [progress] 3400/5000 done
+[none] [progress] 3450/5000 done
+[none] [progress] 3500/5000 done
+[none] [progress] 3550/5000 done
+[none] [progress] 3600/5000 done
+[none] [progress] 3650/5000 done
+[none] [progress] 3700/5000 done
+[none] [progress] 3750/5000 done
+[none] [progress] 3800/5000 done
+[none] [progress] 3850/5000 done
+[none] [progress] 3900/5000 done
+[none] [progress] 3950/5000 done
+[none] [progress] 4000/5000 done
+[none] [progress] 4050/5000 done
+[none] [progress] 4100/5000 done
+[none] [progress] 4150/5000 done
+[none] [progress] 4200/5000 done
+[none] [progress] 4250/5000 done
+[none] [progress] 4300/5000 done
+[none] [progress] 4350/5000 done
+[none] [progress] 4400/5000 done
+[none] [progress] 4450/5000 done
+[none] [progress] 4500/5000 done
+[none] [progress] 4550/5000 done
+[none] [progress] 4600/5000 done
+[none] [progress] 4650/5000 done
+[none] [progress] 4700/5000 done
+[none] [progress] 4750/5000 done
+[none] [progress] 4800/5000 done
+[none] [progress] 4850/5000 done
+[none] [progress] 4900/5000 done
+[none] [progress] 4950/5000 done
+[none] [progress] 5000/5000 done
+
+✅ [rank0] completed mode=none summary={'mode': 'none', 'ablation': {'use_sem': False, 'use_epi': False, 'use_vis': False}, 'count_ok': 5000, 'count_total': 5000, 'em_full_avg': 0.0492, 'f1_full_avg': 0.12246496035213415, 'em_impression_avg': 0.1914, 'f1_impression_avg': 0.1914, 'em_findings_avg': 0.0492, 'f1_findings_avg': 0.06619818914910144, 'writeback_total': 0}
+[sem_only] [progress] 50/5000 done
+[sem_only] [progress] 100/5000 done
+[sem_only] [progress] 150/5000 done
+[sem_only] [progress] 200/5000 done
+[sem_only] [progress] 250/5000 done
+[sem_only] [progress] 300/5000 done
+[sem_only] [progress] 350/5000 done
+[sem_only] [progress] 400/5000 done
+[sem_only] [progress] 450/5000 done
+[sem_only] [progress] 500/5000 done
+[sem_only] [progress] 550/5000 done
+[sem_only] [progress] 600/5000 done
+[sem_only] [progress] 650/5000 done
+[sem_only] [progress] 700/5000 done
+[sem_only] [progress] 750/5000 done
+[sem_only] [progress] 800/5000 done
+[sem_only] [progress] 850/5000 done
+[sem_only] [progress] 900/5000 done
+[sem_only] [progress] 950/5000 done
+[sem_only] [progress] 1000/5000 done
+[sem_only] [progress] 1050/5000 done
+[sem_only] [progress] 1100/5000 done
+[sem_only] [progress] 1150/5000 done
+[sem_only] [progress] 1200/5000 done
+[sem_only] [progress] 1250/5000 done
+[sem_only] [progress] 1300/5000 done
+[sem_only] [progress] 1350/5000 done
+[sem_only] [progress] 1400/5000 done
+[sem_only] [progress] 1450/5000 done
+[sem_only] [progress] 1500/5000 done
+[sem_only] [progress] 1550/5000 done
+[sem_only] [progress] 1600/5000 done
+[sem_only] [progress] 1650/5000 done
+[sem_only] [progress] 1700/5000 done
+[sem_only] [progress] 1750/5000 done
+[sem_only] [progress] 1800/5000 done
+[sem_only] [progress] 1850/5000 done
+[sem_only] [progress] 1900/5000 done
+[sem_only] [progress] 1950/5000 done
+[sem_only] [progress] 2000/5000 done
+[sem_only] [progress] 2050/5000 done
+[sem_only] [progress] 2100/5000 done
+[sem_only] [progress] 2150/5000 done
+[sem_only] [progress] 2200/5000 done
+[sem_only] [progress] 2250/5000 done
+[sem_only] [progress] 2300/5000 done
+[sem_only] [progress] 2350/5000 done
+[sem_only] [progress] 2400/5000 done
+[sem_only] [progress] 2450/5000 done
+[sem_only] [progress] 2500/5000 done
+[sem_only] [progress] 2550/5000 done
+[sem_only] [progress] 2600/5000 done
+[sem_only] [progress] 2650/5000 done
+[sem_only] [progress] 2700/5000 done
+[sem_only] [progress] 2750/5000 done
+[sem_only] [progress] 2800/5000 done
+[sem_only] [progress] 2850/5000 done
+[sem_only] [progress] 2900/5000 done
+[sem_only] [progress] 2950/5000 done
+[sem_only] [progress] 3000/5000 done
+[sem_only] [progress] 3050/5000 done
+[sem_only] [progress] 3100/5000 done
+[sem_only] [progress] 3150/5000 done
+[sem_only] [progress] 3200/5000 done
+[sem_only] [progress] 3250/5000 done
+[sem_only] [progress] 3300/5000 done
+[sem_only] [progress] 3350/5000 done
+[sem_only] [progress] 3400/5000 done
+[sem_only] [progress] 3450/5000 done
+[sem_only] [progress] 3500/5000 done
+[sem_only] [progress] 3550/5000 done
+[sem_only] [progress] 3600/5000 done
+[sem_only] [progress] 3650/5000 done
+[sem_only] [progress] 3700/5000 done
+[sem_only] [progress] 3750/5000 done
+[sem_only] [progress] 3800/5000 done
+[sem_only] [progress] 3850/5000 done
+[sem_only] [progress] 3900/5000 done
+[sem_only] [progress] 3950/5000 done
+[sem_only] [progress] 4000/5000 done
+[sem_only] [progress] 4050/5000 done
+[sem_only] [progress] 4100/5000 done
+[sem_only] [progress] 4150/5000 done
+[sem_only] [progress] 4200/5000 done
+[sem_only] [progress] 4250/5000 done
+[sem_only] [progress] 4300/5000 done
+[sem_only] [progress] 4350/5000 done
+[sem_only] [progress] 4400/5000 done
+[sem_only] [progress] 4450/5000 done
+[sem_only] [progress] 4500/5000 done
+[sem_only] [progress] 4550/5000 done
+[sem_only] [progress] 4600/5000 done
+[sem_only] [progress] 4650/5000 done
+[sem_only] [progress] 4700/5000 done
+[sem_only] [progress] 4750/5000 done
+[sem_only] [progress] 4800/5000 done
+[sem_only] [progress] 4850/5000 done
+[sem_only] [progress] 4900/5000 done
+[sem_only] [progress] 4950/5000 done
+[sem_only] [progress] 5000/5000 done
+
+✅ [rank0] completed mode=sem_only summary={'mode': 'sem_only', 'ablation': {'use_sem': True, 'use_epi': False, 'use_vis': False}, 'count_ok': 5000, 'count_total': 5000, 'em_full_avg': 0.0492, 'f1_full_avg': 0.12246496035213415, 'em_impression_avg': 0.1914, 'f1_impression_avg': 0.1914, 'em_findings_avg': 0.0492, 'f1_findings_avg': 0.06619818914910144, 'writeback_total': 0}
+[epi_only] [progress] 50/5000 done
+[epi_only] [progress] 100/5000 done
+[epi_only] [progress] 150/5000 done
+[epi_only] [progress] 200/5000 done
+[epi_only] [progress] 250/5000 done
+[epi_only] [progress] 300/5000 done
+[epi_only] [progress] 350/5000 done
+[epi_only] [progress] 400/5000 done
+[epi_only] [progress] 450/5000 done
+[epi_only] [progress] 500/5000 done
+[epi_only] [progress] 550/5000 done
+[epi_only] [progress] 600/5000 done
+[epi_only] [progress] 650/5000 done
+[epi_only] [progress] 700/5000 done
+[epi_only] [progress] 750/5000 done
+[epi_only] [progress] 800/5000 done
+[epi_only] [progress] 850/5000 done
+[epi_only] [progress] 900/5000 done
+[epi_only] [progress] 950/5000 done
+[epi_only] [progress] 1000/5000 done
+[epi_only] [progress] 1050/5000 done
+[epi_only] [progress] 1100/5000 done
+[epi_only] [progress] 1150/5000 done
+[epi_only] [progress] 1200/5000 done
+[epi_only] [progress] 1250/5000 done
+[epi_only] [progress] 1300/5000 done
+[epi_only] [progress] 1350/5000 done
+[epi_only] [progress] 1400/5000 done
+[epi_only] [progress] 1450/5000 done
+[epi_only] [progress] 1500/5000 done
+[epi_only] [progress] 1550/5000 done
+[epi_only] [progress] 1600/5000 done
+[epi_only] [progress] 1650/5000 done
+[epi_only] [progress] 1700/5000 done
+[epi_only] [progress] 1750/5000 done
+[epi_only] [progress] 1800/5000 done
+[epi_only] [progress] 1850/5000 done
+[epi_only] [progress] 1900/5000 done
+[epi_only] [progress] 1950/5000 done
+[epi_only] [progress] 2000/5000 done
+[epi_only] [progress] 2050/5000 done
+[epi_only] [progress] 2100/5000 done
+[epi_only] [progress] 2150/5000 done
+[epi_only] [progress] 2200/5000 done
+[epi_only] [progress] 2250/5000 done
+[epi_only] [progress] 2300/5000 done
+[epi_only] [progress] 2350/5000 done
+[epi_only] [progress] 2400/5000 done
+[epi_only] [progress] 2450/5000 done
+[epi_only] [progress] 2500/5000 done
+[epi_only] [progress] 2550/5000 done
+[epi_only] [progress] 2600/5000 done
+[epi_only] [progress] 2650/5000 done
+[epi_only] [progress] 2700/5000 done
+[epi_only] [progress] 2750/5000 done
+[epi_only] [progress] 2800/5000 done
+[epi_only] [progress] 2850/5000 done
+[epi_only] [progress] 2900/5000 done
+[epi_only] [progress] 2950/5000 done
+[epi_only] [progress] 3000/5000 done
+[epi_only] [progress] 3050/5000 done
+[epi_only] [progress] 3100/5000 done
+[epi_only] [progress] 3150/5000 done
+[epi_only] [progress] 3200/5000 done
+[epi_only] [progress] 3250/5000 done
+[epi_only] [progress] 3300/5000 done
+[epi_only] [progress] 3350/5000 done
+[epi_only] [progress] 3400/5000 done
+[epi_only] [progress] 3450/5000 done
+[epi_only] [progress] 3500/5000 done
+[epi_only] [progress] 3550/5000 done
+[epi_only] [progress] 3600/5000 done
+[epi_only] [progress] 3650/5000 done
+[epi_only] [progress] 3700/5000 done
+[epi_only] [progress] 3750/5000 done
+[epi_only] [progress] 3800/5000 done
+[epi_only] [progress] 3850/5000 done
+[epi_only] [progress] 3900/5000 done
+[epi_only] [progress] 3950/5000 done
+[epi_only] [progress] 4000/5000 done
+[epi_only] [progress] 4050/5000 done
+[epi_only] [progress] 4100/5000 done
+[epi_only] [progress] 4150/5000 done
+[epi_only] [progress] 4200/5000 done
+[epi_only] [progress] 4250/5000 done
+[epi_only] [progress] 4300/5000 done
+[epi_only] [progress] 4350/5000 done
+[epi_only] [progress] 4400/5000 done
+[epi_only] [progress] 4450/5000 done
+[epi_only] [progress] 4500/5000 done
+[epi_only] [progress] 4550/5000 done
+[epi_only] [progress] 4600/5000 done
+[epi_only] [progress] 4650/5000 done
+[epi_only] [progress] 4700/5000 done
+[epi_only] [progress] 4750/5000 done
+[epi_only] [progress] 4800/5000 done
+[epi_only] [progress] 4850/5000 done
+[epi_only] [progress] 4900/5000 done
+[epi_only] [progress] 4950/5000 done
+[epi_only] [progress] 5000/5000 done
+
+✅ [rank0] completed mode=epi_only summary={'mode': 'epi_only', 'ablation': {'use_sem': False, 'use_epi': True, 'use_vis': False}, 'count_ok': 5000, 'count_total': 5000, 'em_full_avg': 0.0492, 'f1_full_avg': 0.12293401211593032, 'em_impression_avg': 0.1914, 'f1_impression_avg': 0.19161666666666669, 'em_findings_avg': 0.0492, 'f1_findings_avg': 0.06680765629270688, 'writeback_total': 0}
+[vis_only] [progress] 50/5000 done
+[vis_only] [progress] 100/5000 done
+[vis_only] [progress] 150/5000 done
+[vis_only] [progress] 200/5000 done
+[vis_only] [progress] 250/5000 done
+[vis_only] [progress] 300/5000 done
+[vis_only] [progress] 350/5000 done
+[vis_only] [progress] 400/5000 done
+[vis_only] [progress] 450/5000 done
+[vis_only] [progress] 500/5000 done
+[vis_only] [progress] 550/5000 done
+[vis_only] [progress] 600/5000 done
+[vis_only] [progress] 650/5000 done
+[vis_only] [progress] 700/5000 done
+[vis_only] [progress] 750/5000 done
+[vis_only] [progress] 800/5000 done
+[vis_only] [progress] 850/5000 done
+[vis_only] [progress] 900/5000 done
+[vis_only] [progress] 950/5000 done
+[vis_only] [progress] 1000/5000 done
+[vis_only] [progress] 1050/5000 done
+[vis_only] [progress] 1100/5000 done
+[vis_only] [progress] 1150/5000 done
+[vis_only] [progress] 1200/5000 done
+[vis_only] [progress] 1250/5000 done
+[vis_only] [progress] 1300/5000 done
+[vis_only] [progress] 1350/5000 done
+[vis_only] [progress] 1400/5000 done
+[vis_only] [progress] 1450/5000 done
+[vis_only] [progress] 1500/5000 done
+[vis_only] [progress] 1550/5000 done
+[vis_only] [progress] 1600/5000 done
+[vis_only] [progress] 1650/5000 done
+[vis_only] [progress] 1700/5000 done
+[vis_only] [progress] 1750/5000 done
+[vis_only] [progress] 1800/5000 done
+[vis_only] [progress] 1850/5000 done
+[vis_only] [progress] 1900/5000 done
+[vis_only] [progress] 1950/5000 done
+[vis_only] [progress] 2000/5000 done
+[vis_only] [progress] 2050/5000 done
+[vis_only] [progress] 2100/5000 done
+[vis_only] [progress] 2150/5000 done
+[vis_only] [progress] 2200/5000 done
+[vis_only] [progress] 2250/5000 done
+[vis_only] [progress] 2300/5000 done
+[vis_only] [progress] 2350/5000 done
+[vis_only] [progress] 2400/5000 done
+[vis_only] [progress] 2450/5000 done
+[vis_only] [progress] 2500/5000 done
+[vis_only] [progress] 2550/5000 done
+[vis_only] [progress] 2600/5000 done
+[vis_only] [progress] 2650/5000 done
+[vis_only] [progress] 2700/5000 done
+[vis_only] [progress] 2750/5000 done
+[vis_only] [progress] 2800/5000 done
+[vis_only] [progress] 2850/5000 done
+[vis_only] [progress] 2900/5000 done
+[vis_only] [progress] 2950/5000 done
+[vis_only] [progress] 3000/5000 done
+[vis_only] [progress] 3050/5000 done
+[vis_only] [progress] 3100/5000 done
+[vis_only] [progress] 3150/5000 done
+[vis_only] [progress] 3200/5000 done
+[vis_only] [progress] 3250/5000 done
+[vis_only] [progress] 3300/5000 done
+[vis_only] [progress] 3350/5000 done
+[vis_only] [progress] 3400/5000 done
+[vis_only] [progress] 3450/5000 done
+[vis_only] [progress] 3500/5000 done
+[vis_only] [progress] 3550/5000 done
+[vis_only] [progress] 3600/5000 done
+[vis_only] [progress] 3650/5000 done
+[vis_only] [progress] 3700/5000 done
+[vis_only] [progress] 3750/5000 done
+[vis_only] [progress] 3800/5000 done
+[vis_only] [progress] 3850/5000 done
+[vis_only] [progress] 3900/5000 done
+[vis_only] [progress] 3950/5000 done
+[vis_only] [progress] 4000/5000 done
+[vis_only] [progress] 4050/5000 done
+[vis_only] [progress] 4100/5000 done
+[vis_only] [progress] 4150/5000 done
+[vis_only] [progress] 4200/5000 done
+[vis_only] [progress] 4250/5000 done
+[vis_only] [progress] 4300/5000 done
+[vis_only] [progress] 4350/5000 done
+[vis_only] [progress] 4400/5000 done
+[vis_only] [progress] 4450/5000 done
+[vis_only] [progress] 4500/5000 done
+[vis_only] [progress] 4550/5000 done
+[vis_only] [progress] 4600/5000 done
+[vis_only] [progress] 4650/5000 done
+[vis_only] [progress] 4700/5000 done
+[vis_only] [progress] 4750/5000 done
+[vis_only] [progress] 4800/5000 done
+[vis_only] [progress] 4850/5000 done
+[vis_only] [progress] 4900/5000 done
+[vis_only] [progress] 4950/5000 done
+[vis_only] [progress] 5000/5000 done
+
+✅ [rank0] completed mode=vis_only summary={'mode': 'vis_only', 'ablation': {'use_sem': False, 'use_epi': False, 'use_vis': True}, 'count_ok': 5000, 'count_total': 5000, 'em_full_avg': 0.0492, 'f1_full_avg': 0.12246496035213415, 'em_impression_avg': 0.1914, 'f1_impression_avg': 0.1914, 'em_findings_avg': 0.0492, 'f1_findings_avg': 0.06619818914910144, 'writeback_total': 0}
+[sem_epi] [progress] 50/5000 done
+[sem_epi] [progress] 100/5000 done
+[sem_epi] [progress] 150/5000 done
+[sem_epi] [progress] 200/5000 done
+[sem_epi] [progress] 250/5000 done
+[sem_epi] [progress] 300/5000 done
+[sem_epi] [progress] 350/5000 done
+[sem_epi] [progress] 400/5000 done
+[sem_epi] [progress] 450/5000 done
+[sem_epi] [progress] 500/5000 done
+[sem_epi] [progress] 550/5000 done
+[sem_epi] [progress] 600/5000 done
+[sem_epi] [progress] 650/5000 done
+[sem_epi] [progress] 700/5000 done
+[sem_epi] [progress] 750/5000 done
+[sem_epi] [progress] 800/5000 done
+[sem_epi] [progress] 850/5000 done
+[sem_epi] [progress] 900/5000 done
+[sem_epi] [progress] 950/5000 done
+[sem_epi] [progress] 1000/5000 done
+[sem_epi] [progress] 1050/5000 done
+[sem_epi] [progress] 1100/5000 done
+[sem_epi] [progress] 1150/5000 done
+[sem_epi] [progress] 1200/5000 done
+[sem_epi] [progress] 1250/5000 done
+[sem_epi] [progress] 1300/5000 done
+[sem_epi] [progress] 1350/5000 done
+[sem_epi] [progress] 1400/5000 done
+[sem_epi] [progress] 1450/5000 done
+[sem_epi] [progress] 1500/5000 done
+[sem_epi] [progress] 1550/5000 done
+[sem_epi] [progress] 1600/5000 done
+[sem_epi] [progress] 1650/5000 done
+[sem_epi] [progress] 1700/5000 done
+[sem_epi] [progress] 1750/5000 done
+[sem_epi] [progress] 1800/5000 done
+[sem_epi] [progress] 1850/5000 done
+[sem_epi] [progress] 1900/5000 done
+[sem_epi] [progress] 1950/5000 done
+[sem_epi] [progress] 2000/5000 done
+[sem_epi] [progress] 2050/5000 done
+[sem_epi] [progress] 2100/5000 done
+[sem_epi] [progress] 2150/5000 done
+[sem_epi] [progress] 2200/5000 done
+[sem_epi] [progress] 2250/5000 done
+[sem_epi] [progress] 2300/5000 done
+[sem_epi] [progress] 2350/5000 done
+[sem_epi] [progress] 2400/5000 done
+[sem_epi] [progress] 2450/5000 done
+[sem_epi] [progress] 2500/5000 done
+[sem_epi] [progress] 2550/5000 done
+[sem_epi] [progress] 2600/5000 done
+[sem_epi] [progress] 2650/5000 done
+[sem_epi] [progress] 2700/5000 done
+[sem_epi] [progress] 2750/5000 done
+[sem_epi] [progress] 2800/5000 done
+[sem_epi] [progress] 2850/5000 done
+[sem_epi] [progress] 2900/5000 done
+[sem_epi] [progress] 2950/5000 done
+[sem_epi] [progress] 3000/5000 done
+[sem_epi] [progress] 3050/5000 done
+[sem_epi] [progress] 3100/5000 done
+[sem_epi] [progress] 3150/5000 done
+[sem_epi] [progress] 3200/5000 done
+[sem_epi] [progress] 3250/5000 done
+[sem_epi] [progress] 3300/5000 done
+[sem_epi] [progress] 3350/5000 done
+[sem_epi] [progress] 3400/5000 done
+[sem_epi] [progress] 3450/5000 done
+[sem_epi] [progress] 3500/5000 done
+[sem_epi] [progress] 3550/5000 done
+[sem_epi] [progress] 3600/5000 done
+[sem_epi] [progress] 3650/5000 done
+[sem_epi] [progress] 3700/5000 done
+[sem_epi] [progress] 3750/5000 done
+[sem_epi] [progress] 3800/5000 done
+[sem_epi] [progress] 3850/5000 done
+[sem_epi] [progress] 3900/5000 done
+[sem_epi] [progress] 3950/5000 done
+[sem_epi] [progress] 4000/5000 done
+[sem_epi] [progress] 4050/5000 done
+[sem_epi] [progress] 4100/5000 done
+[sem_epi] [progress] 4150/5000 done
+[sem_epi] [progress] 4200/5000 done
+[sem_epi] [progress] 4250/5000 done
+[sem_epi] [progress] 4300/5000 done
+[sem_epi] [progress] 4350/5000 done
+[sem_epi] [progress] 4400/5000 done
+[sem_epi] [progress] 4450/5000 done
+[sem_epi] [progress] 4500/5000 done
+[sem_epi] [progress] 4550/5000 done
+[sem_epi] [progress] 4600/5000 done
+[sem_epi] [progress] 4650/5000 done
+[sem_epi] [progress] 4700/5000 done
+[sem_epi] [progress] 4750/5000 done
+[sem_epi] [progress] 4800/5000 done
+[sem_epi] [progress] 4850/5000 done
+[sem_epi] [progress] 4900/5000 done
+[sem_epi] [progress] 4950/5000 done
+[sem_epi] [progress] 5000/5000 done
+
+✅ [rank0] completed mode=sem_epi summary={'mode': 'sem_epi', 'ablation': {'use_sem': True, 'use_epi': True, 'use_vis': False}, 'count_ok': 5000, 'count_total': 5000, 'em_full_avg': 0.0492, 'f1_full_avg': 0.12259329000097992, 'em_impression_avg': 0.1914, 'f1_impression_avg': 0.1914, 'em_findings_avg': 0.0492, 'f1_findings_avg': 0.06640061657753056, 'writeback_total': 0}
+[sem_vis] [progress] 50/5000 done
+[sem_vis] [progress] 100/5000 done
+[sem_vis] [progress] 150/5000 done
+[sem_vis] [progress] 200/5000 done
+[sem_vis] [progress] 250/5000 done
+[sem_vis] [progress] 300/5000 done
+[sem_vis] [progress] 350/5000 done
+[sem_vis] [progress] 400/5000 done
+[sem_vis] [progress] 450/5000 done
+[sem_vis] [progress] 500/5000 done
+[sem_vis] [progress] 550/5000 done
+[sem_vis] [progress] 600/5000 done
+[sem_vis] [progress] 650/5000 done
+[sem_vis] [progress] 700/5000 done
+[sem_vis] [progress] 750/5000 done
+[sem_vis] [progress] 800/5000 done
+[sem_vis] [progress] 850/5000 done
+[sem_vis] [progress] 900/5000 done
+[sem_vis] [progress] 950/5000 done
+[sem_vis] [progress] 1000/5000 done
+[sem_vis] [progress] 1050/5000 done
+[sem_vis] [progress] 1100/5000 done
+[sem_vis] [progress] 1150/5000 done
+[sem_vis] [progress] 1200/5000 done
+[sem_vis] [progress] 1250/5000 done
+[sem_vis] [progress] 1300/5000 done
+[sem_vis] [progress] 1350/5000 done
+[sem_vis] [progress] 1400/5000 done
+[sem_vis] [progress] 1450/5000 done
+[sem_vis] [progress] 1500/5000 done
+[sem_vis] [progress] 1550/5000 done
+[sem_vis] [progress] 1600/5000 done
+[sem_vis] [progress] 1650/5000 done
+[sem_vis] [progress] 1700/5000 done
+[sem_vis] [progress] 1750/5000 done
+[sem_vis] [progress] 1800/5000 done
+[sem_vis] [progress] 1850/5000 done
+[sem_vis] [progress] 1900/5000 done
+[sem_vis] [progress] 1950/5000 done
+[sem_vis] [progress] 2000/5000 done
+[sem_vis] [progress] 2050/5000 done
+[sem_vis] [progress] 2100/5000 done
+[sem_vis] [progress] 2150/5000 done
+[sem_vis] [progress] 2200/5000 done
+[sem_vis] [progress] 2250/5000 done
+[sem_vis] [progress] 2300/5000 done
+[sem_vis] [progress] 2350/5000 done
+[sem_vis] [progress] 2400/5000 done
+[sem_vis] [progress] 2450/5000 done
+[sem_vis] [progress] 2500/5000 done
+[sem_vis] [progress] 2550/5000 done
+[sem_vis] [progress] 2600/5000 done
+[sem_vis] [progress] 2650/5000 done
+[sem_vis] [progress] 2700/5000 done
+[sem_vis] [progress] 2750/5000 done
+[sem_vis] [progress] 2800/5000 done
+[sem_vis] [progress] 2850/5000 done
+[sem_vis] [progress] 2900/5000 done
+[sem_vis] [progress] 2950/5000 done
+[sem_vis] [progress] 3000/5000 done
+[sem_vis] [progress] 3050/5000 done
+[sem_vis] [progress] 3100/5000 done
+[sem_vis] [progress] 3150/5000 done
+[sem_vis] [progress] 3200/5000 done
+[sem_vis] [progress] 3250/5000 done
+[sem_vis] [progress] 3300/5000 done
+[sem_vis] [progress] 3350/5000 done
+[sem_vis] [progress] 3400/5000 done
+[sem_vis] [progress] 3450/5000 done
+[sem_vis] [progress] 3500/5000 done
+[sem_vis] [progress] 3550/5000 done
+[sem_vis] [progress] 3600/5000 done
+[sem_vis] [progress] 3650/5000 done
+[sem_vis] [progress] 3700/5000 done
+[sem_vis] [progress] 3750/5000 done
+[sem_vis] [progress] 3800/5000 done
+[sem_vis] [progress] 3850/5000 done
+[sem_vis] [progress] 3900/5000 done
+[sem_vis] [progress] 3950/5000 done
+[sem_vis] [progress] 4000/5000 done
+[sem_vis] [progress] 4050/5000 done
+[sem_vis] [progress] 4100/5000 done
+[sem_vis] [progress] 4150/5000 done
+[sem_vis] [progress] 4200/5000 done
+[sem_vis] [progress] 4250/5000 done
+[sem_vis] [progress] 4300/5000 done
+[sem_vis] [progress] 4350/5000 done
+[sem_vis] [progress] 4400/5000 done
+[sem_vis] [progress] 4450/5000 done
+[sem_vis] [progress] 4500/5000 done
+[sem_vis] [progress] 4550/5000 done
+[sem_vis] [progress] 4600/5000 done
+[sem_vis] [progress] 4650/5000 done
+[sem_vis] [progress] 4700/5000 done
+[sem_vis] [progress] 4750/5000 done
+[sem_vis] [progress] 4800/5000 done
+[sem_vis] [progress] 4850/5000 done
+[sem_vis] [progress] 4900/5000 done
+[sem_vis] [progress] 4950/5000 done
+[sem_vis] [progress] 5000/5000 done
+
+✅ [rank0] completed mode=sem_vis summary={'mode': 'sem_vis', 'ablation': {'use_sem': True, 'use_epi': False, 'use_vis': True}, 'count_ok': 5000, 'count_total': 5000, 'em_full_avg': 0.0492, 'f1_full_avg': 0.12246496035213415, 'em_impression_avg': 0.1914, 'f1_impression_avg': 0.1914, 'em_findings_avg': 0.0492, 'f1_findings_avg': 0.06619818914910144, 'writeback_total': 0}
+[epi_vis] [progress] 50/5000 done
+[epi_vis] [progress] 100/5000 done
+[epi_vis] [progress] 150/5000 done
+[epi_vis] [progress] 200/5000 done
+[epi_vis] [progress] 250/5000 done
+[epi_vis] [progress] 300/5000 done
+[epi_vis] [progress] 350/5000 done
+[epi_vis] [progress] 400/5000 done
+[epi_vis] [progress] 450/5000 done
+[epi_vis] [progress] 500/5000 done
+[epi_vis] [progress] 550/5000 done
+[epi_vis] [progress] 600/5000 done
+[epi_vis] [progress] 650/5000 done
+[epi_vis] [progress] 700/5000 done
+[epi_vis] [progress] 750/5000 done
+[epi_vis] [progress] 800/5000 done
+[epi_vis] [progress] 850/5000 done
+[epi_vis] [progress] 900/5000 done
+[epi_vis] [progress] 950/5000 done
+[epi_vis] [progress] 1000/5000 done
+[epi_vis] [progress] 1050/5000 done
+[epi_vis] [progress] 1100/5000 done
+[epi_vis] [progress] 1150/5000 done
+[epi_vis] [progress] 1200/5000 done
+[epi_vis] [progress] 1250/5000 done
+[epi_vis] [progress] 1300/5000 done
+[epi_vis] [progress] 1350/5000 done
+[epi_vis] [progress] 1400/5000 done
+[epi_vis] [progress] 1450/5000 done
+[epi_vis] [progress] 1500/5000 done
+[epi_vis] [progress] 1550/5000 done
+[epi_vis] [progress] 1600/5000 done
+[epi_vis] [progress] 1650/5000 done
+[epi_vis] [progress] 1700/5000 done
+[epi_vis] [progress] 1750/5000 done
+[epi_vis] [progress] 1800/5000 done
+[epi_vis] [progress] 1850/5000 done
+[epi_vis] [progress] 1900/5000 done
+[epi_vis] [progress] 1950/5000 done
+[epi_vis] [progress] 2000/5000 done
+[epi_vis] [progress] 2050/5000 done
+[epi_vis] [progress] 2100/5000 done
+[epi_vis] [progress] 2150/5000 done
+[epi_vis] [progress] 2200/5000 done
+[epi_vis] [progress] 2250/5000 done
+[epi_vis] [progress] 2300/5000 done
+[epi_vis] [progress] 2350/5000 done
+[epi_vis] [progress] 2400/5000 done
+[epi_vis] [progress] 2450/5000 done
+[epi_vis] [progress] 2500/5000 done
+[epi_vis] [progress] 2550/5000 done
+[epi_vis] [progress] 2600/5000 done
+[epi_vis] [progress] 2650/5000 done
+[epi_vis] [progress] 2700/5000 done
+[epi_vis] [progress] 2750/5000 done
+[epi_vis] [progress] 2800/5000 done
+[epi_vis] [progress] 2850/5000 done
+[epi_vis] [progress] 2900/5000 done
+[epi_vis] [progress] 2950/5000 done
+[epi_vis] [progress] 3000/5000 done
+[epi_vis] [progress] 3050/5000 done
+[epi_vis] [progress] 3100/5000 done
+[epi_vis] [progress] 3150/5000 done
+[epi_vis] [progress] 3200/5000 done
+[epi_vis] [progress] 3250/5000 done
+[epi_vis] [progress] 3300/5000 done
+[epi_vis] [progress] 3350/5000 done
+[epi_vis] [progress] 3400/5000 done
+[epi_vis] [progress] 3450/5000 done
+[epi_vis] [progress] 3500/5000 done
+[epi_vis] [progress] 3550/5000 done
+[epi_vis] [progress] 3600/5000 done
+[epi_vis] [progress] 3650/5000 done
+[epi_vis] [progress] 3700/5000 done
+[epi_vis] [progress] 3750/5000 done
+[epi_vis] [progress] 3800/5000 done
+[epi_vis] [progress] 3850/5000 done
+[epi_vis] [progress] 3900/5000 done
+[epi_vis] [progress] 3950/5000 done
+[epi_vis] [progress] 4000/5000 done
+[epi_vis] [progress] 4050/5000 done
+[epi_vis] [progress] 4100/5000 done
+[epi_vis] [progress] 4150/5000 done
+[epi_vis] [progress] 4200/5000 done
+[epi_vis] [progress] 4250/5000 done
+[epi_vis] [progress] 4300/5000 done
+[epi_vis] [progress] 4350/5000 done
+[epi_vis] [progress] 4400/5000 done
+[epi_vis] [progress] 4450/5000 done
+[epi_vis] [progress] 4500/5000 done
+[epi_vis] [progress] 4550/5000 done
+[epi_vis] [progress] 4600/5000 done
+[epi_vis] [progress] 4650/5000 done
+[epi_vis] [progress] 4700/5000 done
+[epi_vis] [progress] 4750/5000 done
+[epi_vis] [progress] 4800/5000 done
+[epi_vis] [progress] 4850/5000 done
+[epi_vis] [progress] 4900/5000 done
+[epi_vis] [progress] 4950/5000 done
+[epi_vis] [progress] 5000/5000 done
+
+✅ [rank0] completed mode=epi_vis summary={'mode': 'epi_vis', 'ablation': {'use_sem': False, 'use_epi': True, 'use_vis': True}, 'count_ok': 5000, 'count_total': 5000, 'em_full_avg': 0.0492, 'f1_full_avg': 0.12250399771418706, 'em_impression_avg': 0.1914, 'f1_impression_avg': 0.1914, 'em_findings_avg': 0.0492, 'f1_findings_avg': 0.06625418914910146, 'writeback_total': 0}
+[all] [progress] 50/5000 done
+[all] [progress] 100/5000 done
+[all] [progress] 150/5000 done
+[all] [progress] 200/5000 done
+[all] [progress] 250/5000 done
+[all] [progress] 300/5000 done
+[all] [progress] 350/5000 done
+[all] [progress] 400/5000 done
+[all] [progress] 450/5000 done
+[all] [progress] 500/5000 done
+[all] [progress] 550/5000 done
+[all] [progress] 600/5000 done
+[all] [progress] 650/5000 done
+[all] [progress] 700/5000 done
+[all] [progress] 750/5000 done
+[all] [progress] 800/5000 done
+[all] [progress] 850/5000 done
+[all] [progress] 900/5000 done
+[all] [progress] 950/5000 done
+[all] [progress] 1000/5000 done
+[all] [progress] 1050/5000 done
+[all] [progress] 1100/5000 done
+[all] [progress] 1150/5000 done
+[all] [progress] 1200/5000 done
+[all] [progress] 1250/5000 done
+[all] [progress] 1300/5000 done
+[all] [progress] 1350/5000 done
+[all] [progress] 1400/5000 done
+[all] [progress] 1450/5000 done
+[all] [progress] 1500/5000 done
+[all] [progress] 1550/5000 done
+[all] [progress] 1600/5000 done
+[all] [progress] 1650/5000 done
+[all] [progress] 1700/5000 done
+[all] [progress] 1750/5000 done
+[all] [progress] 1800/5000 done
+[all] [progress] 1850/5000 done
+[all] [progress] 1900/5000 done
+[all] [progress] 1950/5000 done
+[all] [progress] 2000/5000 done
+[all] [progress] 2050/5000 done
+[all] [progress] 2100/5000 done
+[all] [progress] 2150/5000 done
+[all] [progress] 2200/5000 done
+[all] [progress] 2250/5000 done
+[all] [progress] 2300/5000 done
+[all] [progress] 2350/5000 done
+[all] [progress] 2400/5000 done
+[all] [progress] 2450/5000 done
+[all] [progress] 2500/5000 done
+[all] [progress] 2550/5000 done
+[all] [progress] 2600/5000 done
+[all] [progress] 2650/5000 done
+[all] [progress] 2700/5000 done
+[all] [progress] 2750/5000 done
+[all] [progress] 2800/5000 done
+[all] [progress] 2850/5000 done
+[all] [progress] 2900/5000 done
+[all] [progress] 2950/5000 done
+[all] [progress] 3000/5000 done
+[all] [progress] 3050/5000 done
+[all] [progress] 3100/5000 done
+[all] [progress] 3150/5000 done
+[all] [progress] 3200/5000 done
+[all] [progress] 3250/5000 done
+[all] [progress] 3300/5000 done
+[all] [progress] 3350/5000 done
+[all] [progress] 3400/5000 done
+[all] [progress] 3450/5000 done
+[all] [progress] 3500/5000 done
+[all] [progress] 3550/5000 done
+[all] [progress] 3600/5000 done
+[all] [progress] 3650/5000 done
+[all] [progress] 3700/5000 done
+[all] [progress] 3750/5000 done
+[all] [progress] 3800/5000 done
+[all] [progress] 3850/5000 done
+[all] [progress] 3900/5000 done
+[all] [progress] 3950/5000 done
+[all] [progress] 4000/5000 done
+[all] [progress] 4050/5000 done
+[all] [progress] 4100/5000 done
+[all] [progress] 4150/5000 done
+[all] [progress] 4200/5000 done
+[all] [progress] 4250/5000 done
+[all] [progress] 4300/5000 done
+[all] [progress] 4350/5000 done
+[all] [progress] 4400/5000 done
+[all] [progress] 4450/5000 done
+[all] [progress] 4500/5000 done
+[all] [progress] 4550/5000 done
+[all] [progress] 4600/5000 done
+[all] [progress] 4650/5000 done
+[all] [progress] 4700/5000 done
+[all] [progress] 4750/5000 done
+[all] [progress] 4800/5000 done
+[all] [progress] 4850/5000 done
+[all] [progress] 4900/5000 done
+[all] [progress] 4950/5000 done
+[all] [progress] 5000/5000 done
+
+✅ [rank0] completed mode=all summary={'mode': 'all', 'ablation': {'use_sem': True, 'use_epi': True, 'use_vis': True}, 'count_ok': 5000, 'count_total': 5000, 'em_full_avg': 0.0492, 'f1_full_avg': 0.12246496035213415, 'em_impression_avg': 0.1914, 'f1_impression_avg': 0.1914, 'em_findings_avg': 0.0492, 'f1_findings_avg': 0.06619818914910144, 'writeback_total': 0}
+
+✅ [rank0] eval done (ablations)
+ - out: output/eval_tb_v1_phi2_4e.ablate_all-m-after-first-writeback.json
+7654:1568107 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+csci-cscidl01:1567654:1568107 [0] NCCL INFO ncclCommInitRank comm 0x417883d0 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId 1b000 commId 0x23e2577bc4c4c30f - Init COMPLETE
+csci-cscidl01:1567654:1567654 [0] NCCL INFO comm 0x417883d0 rank 0 nranks 1 cudaDev 0 busId 1b000 - Destroy COMPLETE
+--------------------------------------------------------------------------------
+✅ Completed: bash -lc CUDA_VISIBLE_DEVICES=0 python -m pipelines.eval_runner \
+    --ablate \
+    --items data/preprocess/tb_v1/v1/preprocess_manifest_evaluate.jsonl \
+    --mem_root data/memory_db/base/tb_v1/v1/first-writeback \
+    --out_json output/eval_tb_v1_phi2_4e.ablate_all-m-after-first-writeback.json \
+    --model_path checkpoints/MoE-LLaVA-Phi2-finetune-MoE \
+    --conv_mode phi \
+    --max_new_tokens 128 \
+    --temperature 0.2
+
++ bash -lc CUDA_VISIBLE_DEVICES=0 python -m pipelines.eval_runner \
+    --items data/preprocess/tb_v1/v1/preprocess_manifest_writeback2.jsonl \
+    --mem_root data/memory_db/base/tb_v1/v1/second-writeback \
+    --out_json output/eval_tb_v1_phi2_4e.during-second-writeback.json \
+    --model_path checkpoints/MoE-LLaVA-Phi2-finetune-MoE \
+    --conv_mode phi \
+    --max_new_tokens 128 \
+    --writeback \
+    --writeback_k_epi 0 \
+    --writeback_k_vis 0 \
+    --writeback_novelty_thr 0.65 \
+    --writeback_min_impression_chars 30 \
+    --writeback_change_keywords "new,increased,decreased,worsened,improved,interval,progression,resolved,stable" \
+    --writeback_finding_keywords "effusion,pneumothorax,consolidation,cavitary,nodule,mass,atelectasis,edema,tb,tuberculosis,miliary"
+--------------------------------------------------------------------------------
+[W130 21:30:34.268903886 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:49.761157075 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:49.762713392 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:49.763664572 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:49.764552945 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:49.164421684 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:49.165354348 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:49.165793646 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:49.166187715 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:49.166563139 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:49.166942629 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:49.167307905 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:49.167681370 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:49.168068057 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:49.168457126 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:49.168832360 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:51.872748484 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:51.906418246 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:51.907017106 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:51.907295235 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:51.907536180 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:51.907765851 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:51.907996987 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:51.908267788 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:51.908506237 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:51.908743929 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:51.908981787 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:51.909231206 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:51.909459815 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:51.909685716 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:51.910053041 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:51.910306869 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 21:30:51.975138366 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[dist] use_dist=False world_size=1
+[rank0] local_rank=0 cuda=0
+[rank0] running eval_runner from: /home/myid/mj71006/projects/Bio-Med-Agent/pipelines/eval_runner.py
+/home/myid/mj71006/projects/Bio-Med-Agent/ImageBind/imagebind/data.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/huggingface_hub/file_download.py:1150: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:07,  2.46s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:04<00:04,  2.39s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.38s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  1.97s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  2.13s/it]
+csci-cscidl01:1592750:1592750 [0] NCCL INFO Bootstrap : Using eno1:172.22.162.40<0>
+csci-cscidl01:1592750:1592750 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+csci-cscidl01:1592750:1592750 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+csci-cscidl01:1592750:1592750 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+csci-cscidl01:1592750:1592750 [0] NCCL INFO cudaDriverVersion 13000
+NCCL version 2.21.5+cuda11.0
+csci-cscidl01:1592750:1592750 [0] NCCL INFO Comm config Blocking set to 1
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Failed to open libibverbs.so[.1]
+csci-cscidl01:1592750:1593051 [0] NCCL INFO NET/Socket : Using [0]eno1:172.22.162.40<0>
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Using non-device net plugin version 0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Using network Socket
+csci-cscidl01:1592750:1593051 [0] NCCL INFO ncclCommInitRank comm 0x53700b10 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId 1b000 commId 0x9ec9feb77a6cd171 - Init START
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Setting affinity for GPU 0 to ffff,0000ffff
+csci-cscidl01:1592750:1593051 [0] NCCL INFO comm 0x53700b10 rank 0 nRanks 1 nNodes 1 localRanks 1 localRank 0 MNNVL 0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 00/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 01/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 02/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 03/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 04/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 05/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 06/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 07/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 08/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 09/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 10/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 11/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 12/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 13/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 14/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 15/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 16/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 17/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 18/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 19/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 20/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 21/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 22/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 23/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 24/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 25/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 26/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 27/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 28/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 29/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 30/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Channel 31/32 :    0
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Trees [0] -1/-1/-1->0->-1 [1] -1/-1/-1->0->-1 [2] -1/-1/-1->0->-1 [3] -1/-1/-1->0->-1 [4] -1/-1/-1->0->-1 [5] -1/-1/-1->0->-1 [6] -1/-1/-1->0->-1 [7] -1/-1/-1->0->-1 [8] -1/-1/-1->0->-1 [9] -1/-1/-1->0->-1 [10] -1/-1/-1->0->-1 [11] -1/-1/-1->0->-1 [12] -1/-1/-1->0->-1 [13] -1/-1/-1->0->-1 [14] -1/-1/-1->0->-1 [15] -1/-1/-1->0->-1 [16] -1/-1/-1->0->-1 [17] -1/-1/-1->0->-1 [18] -1/-1/-1->0->-1 [19] -1/-1/-1->0->-1 [20] -1/-1/-1->0->-1 [21] -1/-1/-1->0->-1 [22] -1/-1/-1->0->-1 [23] -1/-1/-1->0->-1 [24] -1/-1/-1->0->-1 [25] -1/-1/-1->0->-1 [26] -1/-1/-1->0->-1 [27] -1/-1/-1->0->-1 [28] -1/-1/-1->0->-1 [29] -1/-1/-1->0->-1 [30] -1/-1/-1->0->-1 [31] -1/-1/-1->0->-1
+csci-cscidl01:1592750:1593051 [0] NCCL INFO P2P Chunksize set to 131072
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Connected all rings
+csci-cscidl01:1592750:1593051 [0] NCCL INFO Connected all trees
+csci-cscidl01:1592750:1593051 [0] NCCL INFO 32 coll channels, 32 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+csci-cscidl01:1592750:1593051 [0] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+csci-cscidl01:159[both] [progress] 50/3000 done
+[both] [progress] 100/3000 done
+[both] [progress] 150/3000 done
+[both] [progress] 200/3000 done
+[both] [progress] 250/3000 done
+[both] [progress] 300/3000 done
+[both] [progress] 350/3000 done
+[both] [progress] 400/3000 done
+[both] [progress] 450/3000 done
+[both] [progress] 500/3000 done
+[both] [progress] 550/3000 done
+[both] [progress] 600/3000 done
+[both] [progress] 650/3000 done
+[both] [progress] 700/3000 done
+[both] [progress] 750/3000 done
+[both] [progress] 800/3000 done
+[both] [progress] 850/3000 done
+[both] [progress] 900/3000 done
+[both] [progress] 950/3000 done
+[both] [progress] 1000/3000 done
+[both] [progress] 1050/3000 done
+[both] [progress] 1100/3000 done
+[both] [progress] 1150/3000 done
+[both] [progress] 1200/3000 done
+[both] [progress] 1250/3000 done
+[both] [progress] 1300/3000 done
+[both] [progress] 1350/3000 done
+[both] [progress] 1400/3000 done
+[both] [progress] 1450/3000 done
+[both] [progress] 1500/3000 done
+[both] [progress] 1550/3000 done
+[both] [progress] 1600/3000 done
+[both] [progress] 1650/3000 done
+[both] [progress] 1700/3000 done
+[both] [progress] 1750/3000 done
+[both] [progress] 1800/3000 done
+[both] [progress] 1850/3000 done
+[both] [progress] 1900/3000 done
+[both] [progress] 1950/3000 done
+[both] [progress] 2000/3000 done
+[both] [progress] 2050/3000 done
+[both] [progress] 2100/3000 done
+[both] [progress] 2150/3000 done
+[both] [progress] 2200/3000 done
+[both] [progress] 2250/3000 done
+[both] [progress] 2300/3000 done
+[both] [progress] 2350/3000 done
+[both] [progress] 2400/3000 done
+[both] [progress] 2450/3000 done
+[both] [progress] 2500/3000 done
+[both] [progress] 2550/3000 done
+[both] [progress] 2600/3000 done
+[both] [progress] 2650/3000 done
+[both] [progress] 2700/3000 done
+[both] [progress] 2750/3000 done
+[both] [progress] 2800/3000 done
+[both] [progress] 2850/3000 done
+[both] [progress] 2900/3000 done
+[both] [progress] 2950/3000 done
+[both] [progress] 3000/3000 done
+
+✅ [rank0] eval done (single mode=both)
+ - out: output/eval_tb_v1_phi2_4e.during-second-writeback.json
+ - summary: {'mode': 'both', 'ablation': {'use_sem': True, 'use_epi': True, 'use_vis': True}, 'count_ok': 3000, 'count_total': 3000, 'em_full_avg': 0.04466666666666667, 'f1_full_avg': 0.12411528895960308, 'em_impression_avg': 0.17666666666666667, 'f1_impression_avg': 0.17666666666666667, 'em_findings_avg': 0.04466666666666667, 'f1_findings_avg': 0.06186150769068731, 'writeback_total': 0}
+2750:1593051 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+csci-cscidl01:1592750:1593051 [0] NCCL INFO ncclCommInitRank comm 0x53700b10 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId 1b000 commId 0x9ec9feb77a6cd171 - Init COMPLETE
+csci-cscidl01:1592750:1592750 [0] NCCL INFO comm 0x53700b10 rank 0 nranks 1 cudaDev 0 busId 1b000 - Destroy COMPLETE
+--------------------------------------------------------------------------------
+✅ Completed: bash -lc CUDA_VISIBLE_DEVICES=0 python -m pipelines.eval_runner \
+    --items data/preprocess/tb_v1/v1/preprocess_manifest_writeback2.jsonl \
+    --mem_root data/memory_db/base/tb_v1/v1/second-writeback \
+    --out_json output/eval_tb_v1_phi2_4e.during-second-writeback.json \
+    --model_path checkpoints/MoE-LLaVA-Phi2-finetune-MoE \
+    --conv_mode phi \
+    --max_new_tokens 128 \
+    --writeback \
+    --writeback_k_epi 0 \
+    --writeback_k_vis 0 \
+    --writeback_novelty_thr 0.65 \
+    --writeback_min_impression_chars 30 \
+    --writeback_change_keywords "new,increased,decreased,worsened,improved,interval,progression,resolved,stable" \
+    --writeback_finding_keywords "effusion,pneumothorax,consolidation,cavitary,nodule,mass,atelectasis,edema,tb,tuberculosis,miliary"
+
++ mkdir -p data/memory_db/base/tb_v1/v1/third-writeback
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+✅ Completed: mkdir -p data/memory_db/base/tb_v1/v1/third-writeback
+
++ cp -a data/memory_db/base/tb_v1/v1/second-writeback/. data/memory_db/base/tb_v1/v1/third-writeback/
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+✅ Completed: cp -a data/memory_db/base/tb_v1/v1/second-writeback/. data/memory_db/base/tb_v1/v1/third-writeback/
+
++ bash -lc CUDA_VISIBLE_DEVICES=0 python -m pipelines.eval_runner \
+    --ablate \
+    --items data/preprocess/tb_v1/v1/preprocess_manifest_evaluate.jsonl \
+    --mem_root data/memory_db/base/tb_v1/v1/second-writeback \
+    --out_json output/eval_tb_v1_phi2_4e.ablate_all-m-after-second-writeback.json \
+    --model_path checkpoints/MoE-LLaVA-Phi2-finetune-MoE \
+    --conv_mode phi \
+    --max_new_tokens 128 \
+    --temperature 0.2
+--------------------------------------------------------------------------------
+[W130 22:37:50.661675461 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:05.828292146 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:05.829553879 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:05.830313265 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:05.830996131 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:05.223630488 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:05.224569938 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:05.225024414 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:05.225428915 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:05.225817445 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:05.226206037 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:05.226586173 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:05.226962868 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:05.227335787 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:05.227713078 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:05.228144123 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:07.991489686 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:07.024835127 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:07.025466952 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:07.025758410 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:07.026016663 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:07.026263999 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:07.026505841 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:07.026747149 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:07.026984278 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:07.027223598 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:07.027461818 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:07.027705310 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:07.027948774 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:07.028196168 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:07.028578809 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:07.028841852 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W130 22:38:07.097671067 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[dist] use_dist=False world_size=1
+[rank0] local_rank=0 cuda=0
+[rank0] running eval_runner from: /home/myid/mj71006/projects/Bio-Med-Agent/pipelines/eval_runner.py
+/home/myid/mj71006/projects/Bio-Med-Agent/ImageBind/imagebind/data.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/huggingface_hub/file_download.py:1150: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:07,  2.50s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:04<00:04,  2.48s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.48s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  2.04s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:08<00:00,  2.21s/it]
+csci-cscidl01:1593400:1593400 [0] NCCL INFO Bootstrap : Using eno1:172.22.162.40<0>
+csci-cscidl01:1593400:1593400 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+csci-cscidl01:1593400:1593400 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+csci-cscidl01:1593400:1593400 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+csci-cscidl01:1593400:1593400 [0] NCCL INFO cudaDriverVersion 13000
+NCCL version 2.21.5+cuda11.0
+csci-cscidl01:1593400:1593400 [0] NCCL INFO Comm config Blocking set to 1
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Failed to open libibverbs.so[.1]
+csci-cscidl01:1593400:1593698 [0] NCCL INFO NET/Socket : Using [0]eno1:172.22.162.40<0>
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Using non-device net plugin version 0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Using network Socket
+csci-cscidl01:1593400:1593698 [0] NCCL INFO ncclCommInitRank comm 0x35a7e8b0 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId 1b000 commId 0x5e76e3e5d763d193 - Init START
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Setting affinity for GPU 0 to ffff,0000ffff
+csci-cscidl01:1593400:1593698 [0] NCCL INFO comm 0x35a7e8b0 rank 0 nRanks 1 nNodes 1 localRanks 1 localRank 0 MNNVL 0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 00/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 01/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 02/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 03/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 04/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 05/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 06/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 07/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 08/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 09/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 10/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 11/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 12/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 13/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 14/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 15/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 16/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 17/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 18/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 19/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 20/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 21/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 22/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 23/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 24/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 25/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 26/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 27/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 28/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 29/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 30/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Channel 31/32 :    0
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Trees [0] -1/-1/-1->0->-1 [1] -1/-1/-1->0->-1 [2] -1/-1/-1->0->-1 [3] -1/-1/-1->0->-1 [4] -1/-1/-1->0->-1 [5] -1/-1/-1->0->-1 [6] -1/-1/-1->0->-1 [7] -1/-1/-1->0->-1 [8] -1/-1/-1->0->-1 [9] -1/-1/-1->0->-1 [10] -1/-1/-1->0->-1 [11] -1/-1/-1->0->-1 [12] -1/-1/-1->0->-1 [13] -1/-1/-1->0->-1 [14] -1/-1/-1->0->-1 [15] -1/-1/-1->0->-1 [16] -1/-1/-1->0->-1 [17] -1/-1/-1->0->-1 [18] -1/-1/-1->0->-1 [19] -1/-1/-1->0->-1 [20] -1/-1/-1->0->-1 [21] -1/-1/-1->0->-1 [22] -1/-1/-1->0->-1 [23] -1/-1/-1->0->-1 [24] -1/-1/-1->0->-1 [25] -1/-1/-1->0->-1 [26] -1/-1/-1->0->-1 [27] -1/-1/-1->0->-1 [28] -1/-1/-1->0->-1 [29] -1/-1/-1->0->-1 [30] -1/-1/-1->0->-1 [31] -1/-1/-1->0->-1
+csci-cscidl01:1593400:1593698 [0] NCCL INFO P2P Chunksize set to 131072
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Connected all rings
+csci-cscidl01:1593400:1593698 [0] NCCL INFO Connected all trees
+csci-cscidl01:1593400:1593698 [0] NCCL INFO 32 coll channels, 32 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+csci-cscidl01:1593400:1593698 [0] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+csci-cscidl01:159[none] [progress] 50/5000 done
+[none] [progress] 100/5000 done
+[none] [progress] 150/5000 done
+[none] [progress] 200/5000 done
+[none] [progress] 250/5000 done
+[none] [progress] 300/5000 done
+[none] [progress] 350/5000 done
+[none] [progress] 400/5000 done
+[none] [progress] 450/5000 done
+[none] [progress] 500/5000 done
+[none] [progress] 550/5000 done
+[none] [progress] 600/5000 done
+[none] [progress] 650/5000 done
+[none] [progress] 700/5000 done
+[none] [progress] 750/5000 done
+[none] [progress] 800/5000 done
+[none] [progress] 850/5000 done
+[none] [progress] 900/5000 done
+[none] [progress] 950/5000 done
+[none] [progress] 1000/5000 done
+[none] [progress] 1050/5000 done
+[none] [progress] 1100/5000 done
+[none] [progress] 1150/5000 done
+[none] [progress] 1200/5000 done
+[none] [progress] 1250/5000 done
+[none] [progress] 1300/5000 done
+[none] [progress] 1350/5000 done
+[none] [progress] 1400/5000 done
+[none] [progress] 1450/5000 done
+[none] [progress] 1500/5000 done
+[none] [progress] 1550/5000 done
+[none] [progress] 1600/5000 done
+[none] [progress] 1650/5000 done
+[none] [progress] 1700/5000 done
+[none] [progress] 1750/5000 done
+[none] [progress] 1800/5000 done
+[none] [progress] 1850/5000 done
+[none] [progress] 1900/5000 done
+[none] [progress] 1950/5000 done
+[none] [progress] 2000/5000 done
+[none] [progress] 2050/5000 done
+[none] [progress] 2100/5000 done
+[none] [progress] 2150/5000 done
+[none] [progress] 2200/5000 done
+[none] [progress] 2250/5000 done
+[none] [progress] 2300/5000 done
+[none] [progress] 2350/5000 done
+[none] [progress] 2400/5000 done
+[none] [progress] 2450/5000 done
+[none] [progress] 2500/5000 done
+[none] [progress] 2550/5000 done
+[none] [progress] 2600/5000 done
+[none] [progress] 2650/5000 done
+[none] [progress] 2700/5000 done
+[none] [progress] 2750/5000 done
+[none] [progress] 2800/5000 done
+[none] [progress] 2850/5000 done
+[none] [progress] 2900/5000 done
+[none] [progress] 2950/5000 done
+[none] [progress] 3000/5000 done
+[none] [progress] 3050/5000 done
+[none] [progress] 3100/5000 done
+[none] [progress] 3150/5000 done
+[none] [progress] 3200/5000 done
+[none] [progress] 3250/5000 done
+[none] [progress] 3300/5000 done
+[none] [progress] 3350/5000 done
+[none] [progress] 3400/5000 done
+[none] [progress] 3450/5000 done
+[none] [progress] 3500/5000 done
+[none] [progress] 3550/5000 done
+[none] [progress] 3600/5000 done
+[none] [progress] 3650/5000 done
+[none] [progress] 3700/5000 done
+[none] [progress] 3750/5000 done
+[none] [progress] 3800/5000 done
+[none] [progress] 3850/5000 done
+[none] [progress] 3900/5000 done
+[none] [progress] 3950/5000 done
+[none] [progress] 4000/5000 done
+[none] [progress] 4050/5000 done
+[none] [progress] 4100/5000 done
+[none] [progress] 4150/5000 done
+[none] [progress] 4200/5000 done
+[none] [progress] 4250/5000 done
+[none] [progress] 4300/5000 done
+[none] [progress] 4350/5000 done
+[none] [progress] 4400/5000 done
+[none] [progress] 4450/5000 done
+[none] [progress] 4500/5000 done
+[none] [progress] 4550/5000 done
+[none] [progress] 4600/5000 done
+[none] [progress] 4650/5000 done
+[none] [progress] 4700/5000 done
+[none] [progress] 4750/5000 done
+[none] [progress] 4800/5000 done
+[none] [progress] 4850/5000 done
+[none] [progress] 4900/5000 done
+[none] [progress] 4950/5000 done
+[none] [progress] 5000/5000 done
+
+✅ [rank0] completed mode=none summary={'mode': 'none', 'ablation': {'use_sem': False, 'use_epi': False, 'use_vis': False}, 'count_ok': 5000, 'count_total': 5000, 'em_full_avg': 0.0492, 'f1_full_avg': 0.12246496035213415, 'em_impression_avg': 0.1914, 'f1_impression_avg': 0.1914, 'em_findings_avg': 0.0492, 'f1_findings_avg': 0.06619818914910144, 'writeback_total': 0}
+[sem_only] [progress] 50/5000 done
+[sem_only] [progress] 100/5000 done
+[sem_only] [progress] 150/5000 done
+[sem_only] [progress] 200/5000 done
+[sem_only] [progress] 250/5000 done
+[sem_only] [progress] 300/5000 done
+[sem_only] [progress] 350/5000 done
+[sem_only] [progress] 400/5000 done
+[sem_only] [progress] 450/5000 done
+[sem_only] [progress] 500/5000 done
+[sem_only] [progress] 550/5000 done
+[sem_only] [progress] 600/5000 done
+[sem_only] [progress] 650/5000 done
+[sem_only] [progress] 700/5000 done
+[sem_only] [progress] 750/5000 done
+[sem_only] [progress] 800/5000 done
+[sem_only] [progress] 850/5000 done
+[sem_only] [progress] 900/5000 done
+[sem_only] [progress] 950/5000 done
+[sem_only] [progress] 1000/5000 done
+[sem_only] [progress] 1050/5000 done
+[sem_only] [progress] 1100/5000 done
+[sem_only] [progress] 1150/5000 done
+[sem_only] [progress] 1200/5000 done
+[sem_only] [progress] 1250/5000 done
+[sem_only] [progress] 1300/5000 done
+[sem_only] [progress] 1350/5000 done
+[sem_only] [progress] 1400/5000 done
+[sem_only] [progress] 1450/5000 done
+[sem_only] [progress] 1500/5000 done
+[sem_only] [progress] 1550/5000 done
+[sem_only] [progress] 1600/5000 done
+[sem_only] [progress] 1650/5000 done
+[sem_only] [progress] 1700/5000 done
+[sem_only] [progress] 1750/5000 done
+[sem_only] [progress] 1800/5000 done
+[sem_only] [progress] 1850/5000 done
+[sem_only] [progress] 1900/5000 done
+[sem_only] [progress] 1950/5000 done
+[sem_only] [progress] 2000/5000 done
+[sem_only] [progress] 2050/5000 done
+[sem_only] [progress] 2100/5000 done
+[sem_only] [progress] 2150/5000 done
+[sem_only] [progress] 2200/5000 done
+[sem_only] [progress] 2250/5000 done
+[sem_only] [progress] 2300/5000 done
+[sem_only] [progress] 2350/5000 done
+[sem_only] [progress] 2400/5000 done
+[sem_only] [progress] 2450/5000 done
+[sem_only] [progress] 2500/5000 done
+[sem_only] [progress] 2550/5000 done
+[sem_only] [progress] 2600/5000 done
+[sem_only] [progress] 2650/5000 done
+[sem_only] [progress] 2700/5000 done
+[sem_only] [progress] 2750/5000 done
+[sem_only] [progress] 2800/5000 done
+[sem_only] [progress] 2850/5000 done
+[sem_only] [progress] 2900/5000 done
+[sem_only] [progress] 2950/5000 done
+[sem_only] [progress] 3000/5000 done
+[sem_only] [progress] 3050/5000 done
+[sem_only] [progress] 3100/5000 done
+[sem_only] [progress] 3150/5000 done
+[sem_only] [progress] 3200/5000 done
+[sem_only] [progress] 3250/5000 done
+[sem_only] [progress] 3300/5000 done
+[sem_only] [progress] 3350/5000 done
+[sem_only] [progress] 3400/5000 done
+[sem_only] [progress] 3450/5000 done
+[sem_only] [progress] 3500/5000 done
+[sem_only] [progress] 3550/5000 done
+[sem_only] [progress] 3600/5000 done
+[sem_only] [progress] 3650/5000 done
+[sem_only] [progress] 3700/5000 done
+[sem_only] [progress] 3750/5000 done
+[sem_only] [progress] 3800/5000 done
+[sem_only] [progress] 3850/5000 done
+[sem_only] [progress] 3900/5000 done
+[sem_only] [progress] 3950/5000 done
+[sem_only] [progress] 4000/5000 done
+[sem_only] [progress] 4050/5000 done
+[sem_only] [progress] 4100/5000 done
+[sem_only] [progress] 4150/5000 done
+[sem_only] [progress] 4200/5000 done
+[sem_only] [progress] 4250/5000 done
+[sem_only] [progress] 4300/5000 done
+[sem_only] [progress] 4350/5000 done
+[sem_only] [progress] 4400/5000 done
+[sem_only] [progress] 4450/5000 done
+[sem_only] [progress] 4500/5000 done
+[sem_only] [progress] 4550/5000 done
+[sem_only] [progress] 4600/5000 done
+[sem_only] [progress] 4650/5000 done
+[sem_only] [progress] 4700/5000 done
+[sem_only] [progress] 4750/5000 done
+[sem_only] [progress] 4800/5000 done
+[sem_only] [progress] 4850/5000 done
+[sem_only] [progress] 4900/5000 done
+[sem_only] [progress] 4950/5000 done
+[sem_only] [progress] 5000/5000 done
+
+✅ [rank0] completed mode=sem_only summary={'mode': 'sem_only', 'ablation': {'use_sem': True, 'use_epi': False, 'use_vis': False}, 'count_ok': 5000, 'count_total': 5000, 'em_full_avg': 0.0492, 'f1_full_avg': 0.12246496035213415, 'em_impression_avg': 0.1914, 'f1_impression_avg': 0.1914, 'em_findings_avg': 0.0492, 'f1_findings_avg': 0.06619818914910144, 'writeback_total': 0}
+[epi_only] [progress] 50/5000 done
+[epi_only] [progress] 100/5000 done
+[epi_only] [progress] 150/5000 done
+[epi_only] [progress] 200/5000 done
+[epi_only] [progress] 250/5000 done
+[epi_only] [progress] 300/5000 done
+[epi_only] [progress] 350/5000 done
+[epi_only] [progress] 400/5000 done
+[epi_only] [progress] 450/5000 done
+[epi_only] [progress] 500/5000 done
+[epi_only] [progress] 550/5000 done
+[epi_only] [progress] 600/5000 done
+[epi_only] [progress] 650/5000 done
+[epi_only] [progress] 700/5000 done
+[epi_only] [progress] 750/5000 done
+[epi_only] [progress] 800/5000 done
+[epi_only] [progress] 850/5000 done
+[epi_only] [progress] 900/5000 done
+[epi_only] [progress] 950/5000 done
+[epi_only] [progress] 1000/5000 done
+[epi_only] [progress] 1050/5000 done
+[epi_only] [progress] 1100/5000 done
+[epi_only] [progress] 1150/5000 done
+[epi_only] [progress] 1200/5000 done
+[epi_only] [progress] 1250/5000 done
+[epi_only] [progress] 1300/5000 done
+[epi_only] [progress] 1350/5000 done
+[epi_only] [progress] 1400/5000 done
+[epi_only] [progress] 1450/5000 done
+[epi_only] [progress] 1500/5000 done
+[epi_only] [progress] 1550/5000 done
+[epi_only] [progress] 1600/5000 done
+[epi_only] [progress] 1650/5000 done
+[epi_only] [progress] 1700/5000 done
+[epi_only] [progress] 1750/5000 done
+[epi_only] [progress] 1800/5000 done
+[epi_only] [progress] 1850/5000 done
+[epi_only] [progress] 1900/5000 done
+[epi_only] [progress] 1950/5000 done
+[epi_only] [progress] 2000/5000 done
+[epi_only] [progress] 2050/5000 done
+[epi_only] [progress] 2100/5000 done
+[epi_only] [progress] 2150/5000 done
+[epi_only] [progress] 2200/5000 done
+[epi_only] [progress] 2250/5000 done
+[epi_only] [progress] 2300/5000 done
+[epi_only] [progress] 2350/5000 done
+[epi_only] [progress] 2400/5000 done
+[epi_only] [progress] 2450/5000 done
+[epi_only] [progress] 2500/5000 done
+[epi_only] [progress] 2550/5000 done
+[epi_only] [progress] 2600/5000 done
+[epi_only] [progress] 2650/5000 done
+[epi_only] [progress] 2700/5000 done
+[epi_only] [progress] 2750/5000 done
+[epi_only] [progress] 2800/5000 done
+[epi_only] [progress] 2850/5000 done
+[epi_only] [progress] 2900/5000 done
+[epi_only] [progress] 2950/5000 done
+[epi_only] [progress] 3000/5000 done
+[epi_only] [progress] 3050/5000 done
+[epi_only] [progress] 3100/5000 done
+[epi_only] [progress] 3150/5000 done
+[epi_only] [progress] 3200/5000 done
+[epi_only] [progress] 3250/5000 done
+[epi_only] [progress] 3300/5000 done
+[epi_only] [progress] 3350/5000 done
+[epi_only] [progress] 3400/5000 done
+[epi_only] [progress] 3450/5000 done
+[epi_only] [progress] 3500/5000 done
+[epi_only] [progress] 3550/5000 done
+[epi_only] [progress] 3600/5000 done
+[epi_only] [progress] 3650/5000 done
+[epi_only] [progress] 3700/5000 done
+[epi_only] [progress] 3750/5000 done
+[epi_only] [progress] 3800/5000 done
+[epi_only] [progress] 3850/5000 done
+[epi_only] [progress] 3900/5000 done
+[epi_only] [progress] 3950/5000 done
+[epi_only] [progress] 4000/5000 done
+[epi_only] [progress] 4050/5000 done
+[epi_only] [progress] 4100/5000 done
+[epi_only] [progress] 4150/5000 done
+[epi_only] [progress] 4200/5000 done
+[epi_only] [progress] 4250/5000 done
+[epi_only] [progress] 4300/5000 done
+[epi_only] [progress] 4350/5000 done
+[epi_only] [progress] 4400/5000 done
+[epi_only] [progress] 4450/5000 done
+[epi_only] [progress] 4500/5000 done
+[epi_only] [progress] 4550/5000 done
+[epi_only] [progress] 4600/5000 done
+[epi_only] [progress] 4650/5000 done
+[epi_only] [progress] 4700/5000 done
+[epi_only] [progress] 4750/5000 done
+[epi_only] [progress] 4800/5000 done
+[epi_only] [progress] 4850/5000 done
+[epi_only] [progress] 4900/5000 done
+[epi_only] [progress] 4950/5000 done
+[epi_only] [progress] 5000/5000 done
+
+✅ [rank0] completed mode=epi_only summary={'mode': 'epi_only', 'ablation': {'use_sem': False, 'use_epi': True, 'use_vis': False}, 'count_ok': 5000, 'count_total': 5000, 'em_full_avg': 0.0492, 'f1_full_avg': 0.12293401211593032, 'em_impression_avg': 0.1914, 'f1_impression_avg': 0.19161666666666669, 'em_findings_avg': 0.0492, 'f1_findings_avg': 0.06680765629270688, 'writeback_total': 0}
+[vis_only] [progress] 50/5000 done
+[vis_only] [progress] 100/5000 done
+[vis_only] [progress] 150/5000 done
+[vis_only] [progress] 200/5000 done
+[vis_only] [progress] 250/5000 done
+[vis_only] [progress] 300/5000 done
+[vis_only] [progress] 350/5000 done
+[vis_only] [progress] 400/5000 done
+[vis_only] [progress] 450/5000 done
+[vis_only] [progress] 500/5000 done
+[vis_only] [progress] 550/5000 done
+[vis_only] [progress] 600/5000 done
+[vis_only] [progress] 650/5000 done
+[vis_only] [progress] 700/5000 done
+[vis_only] [progress] 750/5000 done
+[vis_only] [progress] 800/5000 done
+[vis_only] [progress] 850/5000 done
+[vis_only] [progress] 900/5000 done
+[vis_only] [progress] 950/5000 done
+[vis_only] [progress] 1000/5000 done
+[vis_only] [progress] 1050/5000 done
+[vis_only] [progress] 1100/5000 done
+[vis_only] [progress] 1150/5000 done
+[vis_only] [progress] 1200/5000 done
+[vis_only] [progress] 1250/5000 done
+[vis_only] [progress] 1300/5000 done
+[vis_only] [progress] 1350/5000 done
+[vis_only] [progress] 1400/5000 done
+[vis_only] [progress] 1450/5000 done
+[vis_only] [progress] 1500/5000 done
+[vis_only] [progress] 1550/5000 done
+[vis_only] [progress] 1600/5000 done
+[vis_only] [progress] 1650/5000 done
+[vis_only] [progress] 1700/5000 done
+[vis_only] [progress] 1750/5000 done
+[vis_only] [progress] 1800/5000 done
+[vis_only] [progress] 1850/5000 done
+[vis_only] [progress] 1900/5000 done
+[vis_only] [progress] 1950/5000 done
+[vis_only] [progress] 2000/5000 done
+[vis_only] [progress] 2050/5000 done
+[vis_only] [progress] 2100/5000 done
+[vis_only] [progress] 2150/5000 done
+[vis_only] [progress] 2200/5000 done
+[vis_only] [progress] 2250/5000 done
+[vis_only] [progress] 2300/5000 done
+[vis_only] [progress] 2350/5000 done
+[vis_only] [progress] 2400/5000 done
+[vis_only] [progress] 2450/5000 done
+[vis_only] [progress] 2500/5000 done
+[vis_only] [progress] 2550/5000 done
+[vis_only] [progress] 2600/5000 done
+[vis_only] [progress] 2650/5000 done
+[vis_only] [progress] 2700/5000 done
+[vis_only] [progress] 2750/5000 done
+[vis_only] [progress] 2800/5000 done
+[vis_only] [progress] 2850/5000 done
+[vis_only] [progress] 2900/5000 done
+[vis_only] [progress] 2950/5000 done
+[vis_only] [progress] 3000/5000 done
+[vis_only] [progress] 3050/5000 done
+[vis_only] [progress] 3100/5000 done
+[vis_only] [progress] 3150/5000 done
+[vis_only] [progress] 3200/5000 done
+[vis_only] [progress] 3250/5000 done
+[vis_only] [progress] 3300/5000 done
+[vis_only] [progress] 3350/5000 done
+[vis_only] [progress] 3400/5000 done
+[vis_only] [progress] 3450/5000 done
+[vis_only] [progress] 3500/5000 done
+[vis_only] [progress] 3550/5000 done
+[vis_only] [progress] 3600/5000 done
+[vis_only] [progress] 3650/5000 done
+[vis_only] [progress] 3700/5000 done
+[vis_only] [progress] 3750/5000 done
+[vis_only] [progress] 3800/5000 done
+[vis_only] [progress] 3850/5000 done
+[vis_only] [progress] 3900/5000 done
+[vis_only] [progress] 3950/5000 done
+[vis_only] [progress] 4000/5000 done
+[vis_only] [progress] 4050/5000 done
+[vis_only] [progress] 4100/5000 done
+[vis_only] [progress] 4150/5000 done
+[vis_only] [progress] 4200/5000 done
+[vis_only] [progress] 4250/5000 done
+[vis_only] [progress] 4300/5000 done
+[vis_only] [progress] 4350/5000 done
+[vis_only] [progress] 4400/5000 done
+[vis_only] [progress] 4450/5000 done
+[vis_only] [progress] 4500/5000 done
+[vis_only] [progress] 4550/5000 done
+[vis_only] [progress] 4600/5000 done
+[vis_only] [progress] 4650/5000 done
+[vis_only] [progress] 4700/5000 done
+[vis_only] [progress] 4750/5000 done
+[vis_only] [progress] 4800/5000 done
+[vis_only] [progress] 4850/5000 done
+[vis_only] [progress] 4900/5000 done
+[vis_only] [progress] 4950/5000 done
+[vis_only] [progress] 5000/5000 done
+
+✅ [rank0] completed mode=vis_only summary={'mode': 'vis_only', 'ablation': {'use_sem': False, 'use_epi': False, 'use_vis': True}, 'count_ok': 5000, 'count_total': 5000, 'em_full_avg': 0.0492, 'f1_full_avg': 0.12246496035213415, 'em_impression_avg': 0.1914, 'f1_impression_avg': 0.1914, 'em_findings_avg': 0.0492, 'f1_findings_avg': 0.06619818914910144, 'writeback_total': 0}
+[sem_epi] [progress] 50/5000 done
+[sem_epi] [progress] 100/5000 done
+[sem_epi] [progress] 150/5000 done
+[sem_epi] [progress] 200/5000 done
+[sem_epi] [progress] 250/5000 done
+[sem_epi] [progress] 300/5000 done
+[sem_epi] [progress] 350/5000 done
+[sem_epi] [progress] 400/5000 done
+[sem_epi] [progress] 450/5000 done
+[sem_epi] [progress] 500/5000 done
+[sem_epi] [progress] 550/5000 done
+[sem_epi] [progress] 600/5000 done
+[sem_epi] [progress] 650/5000 done
+[sem_epi] [progress] 700/5000 done
+[sem_epi] [progress] 750/5000 done
+[sem_epi] [progress] 800/5000 done
+[sem_epi] [progress] 850/5000 done
+[sem_epi] [progress] 900/5000 done
+[sem_epi] [progress] 950/5000 done
+[sem_epi] [progress] 1000/5000 done
+[sem_epi] [progress] 1050/5000 done
+[sem_epi] [progress] 1100/5000 done
+[sem_epi] [progress] 1150/5000 done
+[sem_epi] [progress] 1200/5000 done
+[sem_epi] [progress] 1250/5000 done
+[sem_epi] [progress] 1300/5000 done
+[sem_epi] [progress] 1350/5000 done
+[sem_epi] [progress] 1400/5000 done
+[sem_epi] [progress] 1450/5000 done
+[sem_epi] [progress] 1500/5000 done
+[sem_epi] [progress] 1550/5000 done
+[sem_epi] [progress] 1600/5000 done
+[sem_epi] [progress] 1650/5000 done
+[sem_epi] [progress] 1700/5000 done
+[sem_epi] [progress] 1750/5000 done
+[sem_epi] [progress] 1800/5000 done
+[sem_epi] [progress] 1850/5000 done
+[sem_epi] [progress] 1900/5000 done
+[sem_epi] [progress] 1950/5000 done
+[sem_epi] [progress] 2000/5000 done
+[sem_epi] [progress] 2050/5000 done
+[sem_epi] [progress] 2100/5000 done
+[sem_epi] [progress] 2150/5000 done
+[sem_epi] [progress] 2200/5000 done
+[sem_epi] [progress] 2250/5000 done
+[sem_epi] [progress] 2300/5000 done
+[sem_epi] [progress] 2350/5000 done
+[sem_epi] [progress] 2400/5000 done
+[sem_epi] [progress] 2450/5000 done
+[sem_epi] [progress] 2500/5000 done
+[sem_epi] [progress] 2550/5000 done
+[sem_epi] [progress] 2600/5000 done
+[sem_epi] [progress] 2650/5000 done
+[sem_epi] [progress] 2700/5000 done
+[sem_epi] [progress] 2750/5000 done
+[sem_epi] [progress] 2800/5000 done
+[sem_epi] [progress] 2850/5000 done
+[sem_epi] [progress] 2900/5000 done
+[sem_epi] [progress] 2950/5000 done
+[sem_epi] [progress] 3000/5000 done
+[sem_epi] [progress] 3050/5000 done
+[sem_epi] [progress] 3100/5000 done
+[sem_epi] [progress] 3150/5000 done
+[sem_epi] [progress] 3200/5000 done
+[sem_epi] [progress] 3250/5000 done
+[sem_epi] [progress] 3300/5000 done
+[sem_epi] [progress] 3350/5000 done
+[sem_epi] [progress] 3400/5000 done
+[sem_epi] [progress] 3450/5000 done
+[sem_epi] [progress] 3500/5000 done
+[sem_epi] [progress] 3550/5000 done
+[sem_epi] [progress] 3600/5000 done
+[sem_epi] [progress] 3650/5000 done
+[sem_epi] [progress] 3700/5000 done
+[sem_epi] [progress] 3750/5000 done
+[sem_epi] [progress] 3800/5000 done
+[sem_epi] [progress] 3850/5000 done
+[sem_epi] [progress] 3900/5000 done
+[sem_epi] [progress] 3950/5000 done
+[sem_epi] [progress] 4000/5000 done
+[sem_epi] [progress] 4050/5000 done
+[sem_epi] [progress] 4100/5000 done
+[sem_epi] [progress] 4150/5000 done
+[sem_epi] [progress] 4200/5000 done
+[sem_epi] [progress] 4250/5000 done
+[sem_epi] [progress] 4300/5000 done
+[sem_epi] [progress] 4350/5000 done
+[sem_epi] [progress] 4400/5000 done
+[sem_epi] [progress] 4450/5000 done
+[sem_epi] [progress] 4500/5000 done
+[sem_epi] [progress] 4550/5000 done
+[sem_epi] [progress] 4600/5000 done
+[sem_epi] [progress] 4650/5000 done
+[sem_epi] [progress] 4700/5000 done
+[sem_epi] [progress] 4750/5000 done
+[sem_epi] [progress] 4800/5000 done
+[sem_epi] [progress] 4850/5000 done
+[sem_epi] [progress] 4900/5000 done
+[sem_epi] [progress] 4950/5000 done
+[sem_epi] [progress] 5000/5000 done
+
+✅ [rank0] completed mode=sem_epi summary={'mode': 'sem_epi', 'ablation': {'use_sem': True, 'use_epi': True, 'use_vis': False}, 'count_ok': 5000, 'count_total': 5000, 'em_full_avg': 0.0492, 'f1_full_avg': 0.12259329000097992, 'em_impression_avg': 0.1914, 'f1_impression_avg': 0.1914, 'em_findings_avg': 0.0492, 'f1_findings_avg': 0.06640061657753056, 'writeback_total': 0}
+[sem_vis] [progress] 50/5000 done
+[sem_vis] [progress] 100/5000 done
+[sem_vis] [progress] 150/5000 done
+[sem_vis] [progress] 200/5000 done
+[sem_vis] [progress] 250/5000 done
+[sem_vis] [progress] 300/5000 done
+[sem_vis] [progress] 350/5000 done
+[sem_vis] [progress] 400/5000 done
+[sem_vis] [progress] 450/5000 done
+[sem_vis] [progress] 500/5000 done
+[sem_vis] [progress] 550/5000 done
+[sem_vis] [progress] 600/5000 done
+[sem_vis] [progress] 650/5000 done
+[sem_vis] [progress] 700/5000 done
+[sem_vis] [progress] 750/5000 done
+[sem_vis] [progress] 800/5000 done
+[sem_vis] [progress] 850/5000 done
+[sem_vis] [progress] 900/5000 done
+[sem_vis] [progress] 950/5000 done
+[sem_vis] [progress] 1000/5000 done
+[sem_vis] [progress] 1050/5000 done
+[sem_vis] [progress] 1100/5000 done
+[sem_vis] [progress] 1150/5000 done
+[sem_vis] [progress] 1200/5000 done
+[sem_vis] [progress] 1250/5000 done
+[sem_vis] [progress] 1300/5000 done
+[sem_vis] [progress] 1350/5000 done
+[sem_vis] [progress] 1400/5000 done
+[sem_vis] [progress] 1450/5000 done
+[sem_vis] [progress] 1500/5000 done
+[sem_vis] [progress] 1550/5000 done
+[sem_vis] [progress] 1600/5000 done
+[sem_vis] [progress] 1650/5000 done
+[sem_vis] [progress] 1700/5000 done
+[sem_vis] [progress] 1750/5000 done
+[sem_vis] [progress] 1800/5000 done
+[sem_vis] [progress] 1850/5000 done
+[sem_vis] [progress] 1900/5000 done
+[sem_vis] [progress] 1950/5000 done
+[sem_vis] [progress] 2000/5000 done
+[sem_vis] [progress] 2050/5000 done
+[sem_vis] [progress] 2100/5000 done
+[sem_vis] [progress] 2150/5000 done
+[sem_vis] [progress] 2200/5000 done
+[sem_vis] [progress] 2250/5000 done
+[sem_vis] [progress] 2300/5000 done
+[sem_vis] [progress] 2350/5000 done
+[sem_vis] [progress] 2400/5000 done
+[sem_vis] [progress] 2450/5000 done
+[sem_vis] [progress] 2500/5000 done
+[sem_vis] [progress] 2550/5000 done
+[sem_vis] [progress] 2600/5000 done
+[sem_vis] [progress] 2650/5000 done
+[sem_vis] [progress] 2700/5000 done
+[sem_vis] [progress] 2750/5000 done
+[sem_vis] [progress] 2800/5000 done
+[sem_vis] [progress] 2850/5000 done
+[sem_vis] [progress] 2900/5000 done
+[sem_vis] [progress] 2950/5000 done
+[sem_vis] [progress] 3000/5000 done
+[sem_vis] [progress] 3050/5000 done
+[sem_vis] [progress] 3100/5000 done
+[sem_vis] [progress] 3150/5000 done
+[sem_vis] [progress] 3200/5000 done
+[sem_vis] [progress] 3250/5000 done
+[sem_vis] [progress] 3300/5000 done
+[sem_vis] [progress] 3350/5000 done
+[sem_vis] [progress] 3400/5000 done
+[sem_vis] [progress] 3450/5000 done
+[sem_vis] [progress] 3500/5000 done
+[sem_vis] [progress] 3550/5000 done
+[sem_vis] [progress] 3600/5000 done
+[sem_vis] [progress] 3650/5000 done
+[sem_vis] [progress] 3700/5000 done
+[sem_vis] [progress] 3750/5000 done
+[sem_vis] [progress] 3800/5000 done
+[sem_vis] [progress] 3850/5000 done
+[sem_vis] [progress] 3900/5000 done
+[sem_vis] [progress] 3950/5000 done
+[sem_vis] [progress] 4000/5000 done
+[sem_vis] [progress] 4050/5000 done
+[sem_vis] [progress] 4100/5000 done
+[sem_vis] [progress] 4150/5000 done
+[sem_vis] [progress] 4200/5000 done
+[sem_vis] [progress] 4250/5000 done
+[sem_vis] [progress] 4300/5000 done
+[sem_vis] [progress] 4350/5000 done
+[sem_vis] [progress] 4400/5000 done
+[sem_vis] [progress] 4450/5000 done
+[sem_vis] [progress] 4500/5000 done
+[sem_vis] [progress] 4550/5000 done
+[sem_vis] [progress] 4600/5000 done
+[sem_vis] [progress] 4650/5000 done
+[sem_vis] [progress] 4700/5000 done
+[sem_vis] [progress] 4750/5000 done
+[sem_vis] [progress] 4800/5000 done
+[sem_vis] [progress] 4850/5000 done
+[sem_vis] [progress] 4900/5000 done
+[sem_vis] [progress] 4950/5000 done
+[sem_vis] [progress] 5000/5000 done
+
+✅ [rank0] completed mode=sem_vis summary={'mode': 'sem_vis', 'ablation': {'use_sem': True, 'use_epi': False, 'use_vis': True}, 'count_ok': 5000, 'count_total': 5000, 'em_full_avg': 0.0492, 'f1_full_avg': 0.12246496035213415, 'em_impression_avg': 0.1914, 'f1_impression_avg': 0.1914, 'em_findings_avg': 0.0492, 'f1_findings_avg': 0.06619818914910144, 'writeback_total': 0}
+[epi_vis] [progress] 50/5000 done
+[epi_vis] [progress] 100/5000 done
+[epi_vis] [progress] 150/5000 done
+[epi_vis] [progress] 200/5000 done
+[epi_vis] [progress] 250/5000 done
+[epi_vis] [progress] 300/5000 done
+[epi_vis] [progress] 350/5000 done
+[epi_vis] [progress] 400/5000 done
+[epi_vis] [progress] 450/5000 done
+[epi_vis] [progress] 500/5000 done
+[epi_vis] [progress] 550/5000 done
+[epi_vis] [progress] 600/5000 done
+[epi_vis] [progress] 650/5000 done
+[epi_vis] [progress] 700/5000 done
+[epi_vis] [progress] 750/5000 done
+[epi_vis] [progress] 800/5000 done
+[epi_vis] [progress] 850/5000 done
+[epi_vis] [progress] 900/5000 done
+[epi_vis] [progress] 950/5000 done
+[epi_vis] [progress] 1000/5000 done
+[epi_vis] [progress] 1050/5000 done
+[epi_vis] [progress] 1100/5000 done
+[epi_vis] [progress] 1150/5000 done
+[epi_vis] [progress] 1200/5000 done
+[epi_vis] [progress] 1250/5000 done
+[epi_vis] [progress] 1300/5000 done
+[epi_vis] [progress] 1350/5000 done
+[epi_vis] [progress] 1400/5000 done
+[epi_vis] [progress] 1450/5000 done
+[epi_vis] [progress] 1500/5000 done
+[epi_vis] [progress] 1550/5000 done
+[epi_vis] [progress] 1600/5000 done
+[epi_vis] [progress] 1650/5000 done
+[epi_vis] [progress] 1700/5000 done
+[epi_vis] [progress] 1750/5000 done
+[epi_vis] [progress] 1800/5000 done
+[epi_vis] [progress] 1850/5000 done
+[epi_vis] [progress] 1900/5000 done
+[epi_vis] [progress] 1950/5000 done
+[epi_vis] [progress] 2000/5000 done
+[epi_vis] [progress] 2050/5000 done
+[epi_vis] [progress] 2100/5000 done
+[epi_vis] [progress] 2150/5000 done
+[epi_vis] [progress] 2200/5000 done
+[epi_vis] [progress] 2250/5000 done
+[epi_vis] [progress] 2300/5000 done
+[epi_vis] [progress] 2350/5000 done
+[epi_vis] [progress] 2400/5000 done
+[epi_vis] [progress] 2450/5000 done
+[epi_vis] [progress] 2500/5000 done
+[epi_vis] [progress] 2550/5000 done
+[epi_vis] [progress] 2600/5000 done
+[epi_vis] [progress] 2650/5000 done
+[epi_vis] [progress] 2700/5000 done
+[epi_vis] [progress] 2750/5000 done
+[epi_vis] [progress] 2800/5000 done
+[epi_vis] [progress] 2850/5000 done
+[epi_vis] [progress] 2900/5000 done
+[epi_vis] [progress] 2950/5000 done
+[epi_vis] [progress] 3000/5000 done
+[epi_vis] [progress] 3050/5000 done
+[epi_vis] [progress] 3100/5000 done
+[epi_vis] [progress] 3150/5000 done
+[epi_vis] [progress] 3200/5000 done
+[epi_vis] [progress] 3250/5000 done
+[epi_vis] [progress] 3300/5000 done
+[epi_vis] [progress] 3350/5000 done
+[epi_vis] [progress] 3400/5000 done
+[epi_vis] [progress] 3450/5000 done
+[epi_vis] [progress] 3500/5000 done
+[epi_vis] [progress] 3550/5000 done
+[epi_vis] [progress] 3600/5000 done
+[epi_vis] [progress] 3650/5000 done
+[epi_vis] [progress] 3700/5000 done
+[epi_vis] [progress] 3750/5000 done
+[epi_vis] [progress] 3800/5000 done
+[epi_vis] [progress] 3850/5000 done
+[epi_vis] [progress] 3900/5000 done
+[epi_vis] [progress] 3950/5000 done
+[epi_vis] [progress] 4000/5000 done
+[epi_vis] [progress] 4050/5000 done
+[epi_vis] [progress] 4100/5000 done
+[epi_vis] [progress] 4150/5000 done
+[epi_vis] [progress] 4200/5000 done
+[epi_vis] [progress] 4250/5000 done
+[epi_vis] [progress] 4300/5000 done
+[epi_vis] [progress] 4350/5000 done
+[epi_vis] [progress] 4400/5000 done
+[epi_vis] [progress] 4450/5000 done
+[epi_vis] [progress] 4500/5000 done
+[epi_vis] [progress] 4550/5000 done
+[epi_vis] [progress] 4600/5000 done
+[epi_vis] [progress] 4650/5000 done
+[epi_vis] [progress] 4700/5000 done
+[epi_vis] [progress] 4750/5000 done
+[epi_vis] [progress] 4800/5000 done
+[epi_vis] [progress] 4850/5000 done
+[epi_vis] [progress] 4900/5000 done
+[epi_vis] [progress] 4950/5000 done
+[epi_vis] [progress] 5000/5000 done
+
+✅ [rank0] completed mode=epi_vis summary={'mode': 'epi_vis', 'ablation': {'use_sem': False, 'use_epi': True, 'use_vis': True}, 'count_ok': 5000, 'count_total': 5000, 'em_full_avg': 0.0492, 'f1_full_avg': 0.12250399771418706, 'em_impression_avg': 0.1914, 'f1_impression_avg': 0.1914, 'em_findings_avg': 0.0492, 'f1_findings_avg': 0.06625418914910146, 'writeback_total': 0}
+[all] [progress] 50/5000 done
+[all] [progress] 100/5000 done
+[all] [progress] 150/5000 done
+[all] [progress] 200/5000 done
+[all] [progress] 250/5000 done
+[all] [progress] 300/5000 done
+[all] [progress] 350/5000 done
+[all] [progress] 400/5000 done
+[all] [progress] 450/5000 done
+[all] [progress] 500/5000 done
+[all] [progress] 550/5000 done
+[all] [progress] 600/5000 done
+[all] [progress] 650/5000 done
+[all] [progress] 700/5000 done
+[all] [progress] 750/5000 done
+[all] [progress] 800/5000 done
+[all] [progress] 850/5000 done
+[all] [progress] 900/5000 done
+[all] [progress] 950/5000 done
+[all] [progress] 1000/5000 done
+[all] [progress] 1050/5000 done
+[all] [progress] 1100/5000 done
+[all] [progress] 1150/5000 done
+[all] [progress] 1200/5000 done
+[all] [progress] 1250/5000 done
+[all] [progress] 1300/5000 done
+[all] [progress] 1350/5000 done
+[all] [progress] 1400/5000 done
+[all] [progress] 1450/5000 done
+[all] [progress] 1500/5000 done
+[all] [progress] 1550/5000 done
+[all] [progress] 1600/5000 done
+[all] [progress] 1650/5000 done
+[all] [progress] 1700/5000 done
+[all] [progress] 1750/5000 done
+[all] [progress] 1800/5000 done
+[all] [progress] 1850/5000 done
+[all] [progress] 1900/5000 done
+[all] [progress] 1950/5000 done
+[all] [progress] 2000/5000 done
+[all] [progress] 2050/5000 done
+[all] [progress] 2100/5000 done
+[all] [progress] 2150/5000 done
+[all] [progress] 2200/5000 done
+[all] [progress] 2250/5000 done
+[all] [progress] 2300/5000 done
+[all] [progress] 2350/5000 done
+[all] [progress] 2400/5000 done
+[all] [progress] 2450/5000 done
+[all] [progress] 2500/5000 done
+[all] [progress] 2550/5000 done
+[all] [progress] 2600/5000 done
+[all] [progress] 2650/5000 done
+[all] [progress] 2700/5000 done
+[all] [progress] 2750/5000 done
+[all] [progress] 2800/5000 done
+[all] [progress] 2850/5000 done
+[all] [progress] 2900/5000 done
+[all] [progress] 2950/5000 done
+[all] [progress] 3000/5000 done
+[all] [progress] 3050/5000 done
+[all] [progress] 3100/5000 done
+[all] [progress] 3150/5000 done
+[all] [progress] 3200/5000 done
+[all] [progress] 3250/5000 done
+[all] [progress] 3300/5000 done
+[all] [progress] 3350/5000 done
+[all] [progress] 3400/5000 done
+[all] [progress] 3450/5000 done
+[all] [progress] 3500/5000 done
+[all] [progress] 3550/5000 done
+[all] [progress] 3600/5000 done
+[all] [progress] 3650/5000 done
+[all] [progress] 3700/5000 done
+[all] [progress] 3750/5000 done
+[all] [progress] 3800/5000 done
+[all] [progress] 3850/5000 done
+[all] [progress] 3900/5000 done
+[all] [progress] 3950/5000 done
+[all] [progress] 4000/5000 done
+[all] [progress] 4050/5000 done
+[all] [progress] 4100/5000 done
+[all] [progress] 4150/5000 done
+[all] [progress] 4200/5000 done
+[all] [progress] 4250/5000 done
+[all] [progress] 4300/5000 done
+[all] [progress] 4350/5000 done
+[all] [progress] 4400/5000 done
+[all] [progress] 4450/5000 done
+[all] [progress] 4500/5000 done
+[all] [progress] 4550/5000 done
+[all] [progress] 4600/5000 done
+[all] [progress] 4650/5000 done
+[all] [progress] 4700/5000 done
+[all] [progress] 4750/5000 done
+[all] [progress] 4800/5000 done
+[all] [progress] 4850/5000 done
+[all] [progress] 4900/5000 done
+[all] [progress] 4950/5000 done
+[all] [progress] 5000/5000 done
+
+✅ [rank0] completed mode=all summary={'mode': 'all', 'ablation': {'use_sem': True, 'use_epi': True, 'use_vis': True}, 'count_ok': 5000, 'count_total': 5000, 'em_full_avg': 0.0492, 'f1_full_avg': 0.12246496035213415, 'em_impression_avg': 0.1914, 'f1_impression_avg': 0.1914, 'em_findings_avg': 0.0492, 'f1_findings_avg': 0.06619818914910144, 'writeback_total': 0}
+
+✅ [rank0] eval done (ablations)
+ - out: output/eval_tb_v1_phi2_4e.ablate_all-m-after-second-writeback.json
+3400:1593698 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+csci-cscidl01:1593400:1593698 [0] NCCL INFO ncclCommInitRank comm 0x35a7e8b0 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId 1b000 commId 0x5e76e3e5d763d193 - Init COMPLETE
+csci-cscidl01:1593400:1593400 [0] NCCL INFO comm 0x35a7e8b0 rank 0 nranks 1 cudaDev 0 busId 1b000 - Destroy COMPLETE
+--------------------------------------------------------------------------------
+✅ Completed: bash -lc CUDA_VISIBLE_DEVICES=0 python -m pipelines.eval_runner \
+    --ablate \
+    --items data/preprocess/tb_v1/v1/preprocess_manifest_evaluate.jsonl \
+    --mem_root data/memory_db/base/tb_v1/v1/second-writeback \
+    --out_json output/eval_tb_v1_phi2_4e.ablate_all-m-after-second-writeback.json \
+    --model_path checkpoints/MoE-LLaVA-Phi2-finetune-MoE \
+    --conv_mode phi \
+    --max_new_tokens 128 \
+    --temperature 0.2
+
++ bash -lc CUDA_VISIBLE_DEVICES=0 python -m pipelines.eval_runner \
+    --items data/preprocess/tb_v1/v1/preprocess_manifest_writeback3.jsonl \
+    --mem_root data/memory_db/base/tb_v1/v1/third-writeback \
+    --out_json output/eval_tb_v1_phi2_4e.during-third-writeback.json \
+    --model_path checkpoints/MoE-LLaVA-Phi2-finetune-MoE \
+    --conv_mode phi \
+    --max_new_tokens 128 \
+    --writeback \
+    --writeback_k_epi 0 \
+    --writeback_k_vis 0 \
+    --writeback_novelty_thr 0.65 \
+    --writeback_min_impression_chars 30 \
+    --writeback_change_keywords "new,increased,decreased,worsened,improved,interval,progression,resolved,stable" \
+    --writeback_finding_keywords "effusion,pneumothorax,consolidation,cavitary,nodule,mass,atelectasis,edema,tb,tuberculosis,miliary"
+--------------------------------------------------------------------------------
+[W131 13:17:04.978178974 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:17.580094270 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:17.581698245 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:17.582647138 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:17.583513621 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:18.995586018 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:18.996554033 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:18.997017659 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:18.997413592 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:18.997795623 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:18.998181561 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:18.998557716 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:18.998957463 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:18.999358279 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:18.999758485 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:18.000161508 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:20.816391208 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:20.849335998 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:20.849989409 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:20.850275421 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:20.850522677 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:20.850760516 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:20.850994800 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:20.851229048 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:20.851457968 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:20.851692201 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:20.851923761 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:20.852188719 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:20.852427718 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:20.852665504 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:20.853047112 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:20.853312367 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 13:17:20.920071730 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[dist] use_dist=False world_size=1
+[rank0] local_rank=0 cuda=0
+[rank0] running eval_runner from: /home/myid/mj71006/projects/Bio-Med-Agent/pipelines/eval_runner.py
+/home/myid/mj71006/projects/Bio-Med-Agent/ImageBind/imagebind/data.py:10: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/site-packages/huggingface_hub/file_download.py:1150: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:07,  2.62s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:04<00:04,  2.46s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:07<00:02,  2.34s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:09<00:00,  2.17s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:09<00:00,  2.27s/it]
+csci-cscidl01:1600710:1600710 [0] NCCL INFO Bootstrap : Using eno1:172.22.162.40<0>
+csci-cscidl01:1600710:1600710 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+csci-cscidl01:1600710:1600710 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+csci-cscidl01:1600710:1600710 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+csci-cscidl01:1600710:1600710 [0] NCCL INFO cudaDriverVersion 13000
+NCCL version 2.21.5+cuda11.0
+csci-cscidl01:1600710:1600710 [0] NCCL INFO Comm config Blocking set to 1
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Failed to open libibverbs.so[.1]
+csci-cscidl01:1600710:1601006 [0] NCCL INFO NET/Socket : Using [0]eno1:172.22.162.40<0>
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Using non-device net plugin version 0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Using network Socket
+csci-cscidl01:1600710:1601006 [0] NCCL INFO ncclCommInitRank comm 0x4135bee0 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId 1b000 commId 0xfb142e3f657d7dc1 - Init START
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Setting affinity for GPU 0 to ffff,0000ffff
+csci-cscidl01:1600710:1601006 [0] NCCL INFO comm 0x4135bee0 rank 0 nRanks 1 nNodes 1 localRanks 1 localRank 0 MNNVL 0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 00/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 01/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 02/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 03/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 04/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 05/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 06/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 07/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 08/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 09/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 10/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 11/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 12/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 13/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 14/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 15/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 16/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 17/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 18/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 19/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 20/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 21/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 22/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 23/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 24/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 25/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 26/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 27/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 28/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 29/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 30/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Channel 31/32 :    0
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Trees [0] -1/-1/-1->0->-1 [1] -1/-1/-1->0->-1 [2] -1/-1/-1->0->-1 [3] -1/-1/-1->0->-1 [4] -1/-1/-1->0->-1 [5] -1/-1/-1->0->-1 [6] -1/-1/-1->0->-1 [7] -1/-1/-1->0->-1 [8] -1/-1/-1->0->-1 [9] -1/-1/-1->0->-1 [10] -1/-1/-1->0->-1 [11] -1/-1/-1->0->-1 [12] -1/-1/-1->0->-1 [13] -1/-1/-1->0->-1 [14] -1/-1/-1->0->-1 [15] -1/-1/-1->0->-1 [16] -1/-1/-1->0->-1 [17] -1/-1/-1->0->-1 [18] -1/-1/-1->0->-1 [19] -1/-1/-1->0->-1 [20] -1/-1/-1->0->-1 [21] -1/-1/-1->0->-1 [22] -1/-1/-1->0->-1 [23] -1/-1/-1->0->-1 [24] -1/-1/-1->0->-1 [25] -1/-1/-1->0->-1 [26] -1/-1/-1->0->-1 [27] -1/-1/-1->0->-1 [28] -1/-1/-1->0->-1 [29] -1/-1/-1->0->-1 [30] -1/-1/-1->0->-1 [31] -1/-1/-1->0->-1
+csci-cscidl01:1600710:1601006 [0] NCCL INFO P2P Chunksize set to 131072
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Connected all rings
+csci-cscidl01:1600710:1601006 [0] NCCL INFO Connected all trees
+csci-cscidl01:1600710:1601006 [0] NCCL INFO 32 coll channels, 32 collnet channels, 0 nvls channels, 32 p2p channels, 32 p2p channels per peer
+csci-cscidl01:1600710:1601006 [0] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+csci-cscidl01:160[both] [progress] 50/3000 done
+[both] [progress] 100/3000 done
+[both] [progress] 150/3000 done
+[both] [progress] 200/3000 done
+[both] [progress] 250/3000 done
+[both] [progress] 300/3000 done
+[both] [progress] 350/3000 done
+[both] [progress] 400/3000 done
+[both] [progress] 450/3000 done
+[both] [progress] 500/3000 done
+[writeback] ok qa_id=p11581298_s59000057_img0_q0 patient=11581298 episode_id=af87addc-9d5e-4df6-a12d-fb3c2ca6588c top1_sim=0.0000 impr_chars=34 change=False finding=True
+[both] [progress] 550/3000 done
+[both] [progress] 600/3000 done
+[both] [progress] 650/3000 done
+[both] [progress] 700/3000 done
+[both] [progress] 750/3000 done
+[both] [progress] 800/3000 done
+[both] [progress] 850/3000 done
+[both] [progress] 900/3000 done
+[both] [progress] 950/3000 done
+[both] [progress] 1000/3000 done
+[both] [progress] 1050/3000 done
+[both] [progress] 1100/3000 done
+[both] [progress] 1150/3000 done
+[both] [progress] 1200/3000 done
+[both] [progress] 1250/3000 done
+[both] [progress] 1300/3000 done
+[both] [progress] 1350/3000 done
+[both] [progress] 1400/3000 done
+[both] [progress] 1450/3000 done
+[both] [progress] 1500/3000 done
+[both] [progress] 1550/3000 done
+[both] [progress] 1600/3000 done
+[both] [progress] 1650/3000 done
+[both] [progress] 1700/3000 done
+[both] [progress] 1750/3000 done
+[both] [progress] 1800/3000 done
+[both] [progress] 1850/3000 done
+[both] [progress] 1900/3000 done
+[both] [progress] 1950/3000 done
+[both] [progress] 2000/3000 done
+[both] [progress] 2050/3000 done
+[both] [progress] 2100/3000 done
+[both] [progress] 2150/3000 done
+[both] [progress] 2200/3000 done
+[both] [progress] 2250/3000 done
+[both] [progress] 2300/3000 done
+[both] [progress] 2350/3000 done
+[both] [progress] 2400/3000 done
+[both] [progress] 2450/3000 done
+[both] [progress] 2500/3000 done
+[both] [progress] 2550/3000 done
+[both] [progress] 2600/3000 done
+[both] [progress] 2650/3000 done
+[both] [progress] 2700/3000 done
+[both] [progress] 2750/3000 done
+[both] [progress] 2800/3000 done
+[both] [progress] 2850/3000 done
+[both] [progress] 2900/3000 done
+[both] [progress] 2950/3000 done
+[both] [progress] 3000/3000 done
+
+✅ [rank0] eval done (single mode=both)
+ - out: output/eval_tb_v1_phi2_4e.during-third-writeback.json
+ - summary: {'mode': 'both', 'ablation': {'use_sem': True, 'use_epi': True, 'use_vis': True}, 'count_ok': 3000, 'count_total': 3000, 'em_full_avg': 0.04566666666666667, 'f1_full_avg': 0.12043150801367904, 'em_impression_avg': 0.18333333333333332, 'f1_impression_avg': 0.1835757575757576, 'em_findings_avg': 0.04566666666666667, 'f1_findings_avg': 0.06104359165135214, 'writeback_total': 1}
+0710:1601006 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+csci-cscidl01:1600710:1601006 [0] NCCL INFO ncclCommInitRank comm 0x4135bee0 rank 0 nranks 1 cudaDev 0 nvmlDev 0 busId 1b000 commId 0xfb142e3f657d7dc1 - Init COMPLETE
+csci-cscidl01:1600710:1600710 [0] NCCL INFO comm 0x4135bee0 rank 0 nranks 1 cudaDev 0 busId 1b000 - Destroy COMPLETE
+--------------------------------------------------------------------------------
+✅ Completed: bash -lc CUDA_VISIBLE_DEVICES=0 python -m pipelines.eval_runner \
+    --items data/preprocess/tb_v1/v1/preprocess_manifest_writeback3.jsonl \
+    --mem_root data/memory_db/base/tb_v1/v1/third-writeback \
+    --out_json output/eval_tb_v1_phi2_4e.during-third-writeback.json \
+    --model_path checkpoints/MoE-LLaVA-Phi2-finetune-MoE \
+    --conv_mode phi \
+    --max_new_tokens 128 \
+    --writeback \
+    --writeback_k_epi 0 \
+    --writeback_k_vis 0 \
+    --writeback_novelty_thr 0.65 \
+    --writeback_min_impression_chars 30 \
+    --writeback_change_keywords "new,increased,decreased,worsened,improved,interval,progression,resolved,stable" \
+    --writeback_finding_keywords "effusion,pneumothorax,consolidation,cavitary,nodule,mass,atelectasis,edema,tb,tuberculosis,miliary"
+
++ mkdir -p data/memory_db/base/tb_v1/v1/fourth-writeback
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+✅ Completed: mkdir -p data/memory_db/base/tb_v1/v1/fourth-writeback
+
++ cp -a data/memory_db/base/tb_v1/v1/third-writeback/. data/memory_db/base/tb_v1/v1/fourth-writeback/
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+✅ Completed: cp -a data/memory_db/base/tb_v1/v1/third-writeback/. data/memory_db/base/tb_v1/v1/fourth-writeback/
+
++ bash -lc CUDA_VISIBLE_DEVICES=0 python -m pipelines.eval_runner \
+    --ablate \
+    --items data/preprocess/tb_v1/v1/data/preprocess/tb_v1/v1/preprocess_manifest_evaluate.jsonl \
+    --mem_root data/memory_db/base/tb_v1/v1/third-writeback \
+    --out_json output/eval_tb_v1_phi2_4e.ablate_all-m-after-third-writeback.json \
+    --model_path checkpoints/MoE-LLaVA-Phi2-finetune-MoE \
+    --conv_mode phi \
+    --max_new_tokens 128 \
+    --temperature 0.2
+--------------------------------------------------------------------------------
+[W131 14:23:54.817355553 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:07.728714773 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:07.730281620 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:07.731212463 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:07.732115870 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:08.122511675 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:08.123469915 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:08.123927955 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:08.124339587 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:08.124734363 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:08.125130897 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:08.125509502 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:08.125887531 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:08.126273909 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:08.126659126 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:08.127042122 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:10.851031018 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:10.883730046 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:10.884358354 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:10.884642862 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:10.884895214 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:10.885140904 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:10.885403394 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:10.885641556 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:10.885874084 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:10.886112777 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:10.886348591 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:10.886590843 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:10.886828310 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:10.887061549 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:10.887441578 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:10.887701909 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[W131 14:24:10.952430194 Module.cpp:185] symbolizing C++ stack trace for exception; if this hangs, rerun with TORCH_DISABLE_ADDR2LINE=1...
+
+[dist] use_dist=False world_size=1
+[rank0] local_rank=0 cuda=0
+[rank0] running eval_runner from: /home/myid/mj71006/projects/Bio-Med-Agent/pipelines/eval_runner.py
+Traceback (most recent call last):
+  File "/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/myid/mj71006/projects/Bio-Med-Agent/pipelines/eval_runner.py", line 650, in <module>
+    main()
+  File "/home/myid/mj71006/projects/Bio-Med-Agent/pipelines/eval_runner.py", line 554, in main
+    items = read_jsonl(Path(args.items))
+  File "/home/myid/mj71006/projects/Bio-Med-Agent/pipelines/eval_runner.py", line 27, in read_jsonl
+    with p.open("r", encoding="utf-8") as f:
+  File "/home/myid/mj71006/anaconda3/envs/moellava/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: 'data/preprocess/tb_v1/v1/data/preprocess/tb_v1/v1/preprocess_manifest_evaluate.jsonl'
