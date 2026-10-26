@@ -381,7 +381,7 @@ All results come from a single chest-X-ray dataset. **This is a research prototy
 
 ## License and acknowledgements
 
-License: `<TODO: choose a license>`. Third-party components keep their own licenses:
+The MSM-Mem code in this repository is released under the [MIT License](LICENSE).
 
 | Component | License |
 |---|---|
