@@ -38,6 +38,11 @@ Medical agents built on multimodal LLMs are usually **stateless**: they do not k
 | **Visual (M_V)** | Image prototypes with a view tag | Comparing at the visual level |
 | **Semantic (M_S)** | A rolling per-patient summary of prior impressions | Longitudinal patient context |
 
+<p align="center">
+  <img src="assets/fig2_architecture.png" alt="MSM-Mem self-evolving architecture" width="95%">
+</p>
+<p align="center"><em><b>Figure 2.</b> MSM-Mem agent self-evolving architecture. (a) Offline loop: encoding, memory builder, building the base memory. (b) Online loop: run queries, retrieve from base and writeback memory, query the fine-tuned foundation model, adaptive routing.</em></p>
+
 For each case, the agent:
 
 1. Encodes the current image with **ImageBind**, producing a 1024-d, L2-normalized embedding.
@@ -274,8 +279,8 @@ bash scripts/moellava_memory_writeback_moe.sh       # MoE-FT (some steps are com
 
 | Paper result | What to read | Figure script |
 |---|---|---|
-| **Table 1**: memory ablation at WB4 | `f1/em_impression_avg` for all 8 modes after the 4th writeback | `scripts/plot/fig-2.py` (data: `figure2.csv`) |
-| **Figs. 3, 5, 6**: memory scaling WB0→WB4 | E, E+V and S+E+V after each phase | `scripts/plot/fig-1.py` (data: `E.csv`, `EV.csv`, `SEV.csv`) |
+| **Table 1** and **Fig. 5**: memory ablation at WB4 | `f1/em_impression_avg` for all 8 modes after the 4th writeback | `scripts/plot/fig-2.py` (data: `figure2.csv`) |
+| **Fig. 6**: memory scaling Base → WB4 | E, E+V and S+E+V after each phase | `scripts/plot/fig-1.py` (data: `E.csv`, `EV.csv`, `SEV.csv`) |
 | **Fig. 7**: MoE-FT vs. FT | MoE-FT − FT at WB4 | `scripts/plot/fig-3.py` (data: `figure2.csv`) |
 
 Regenerate all figures with:
@@ -339,6 +344,20 @@ The writeback rule is: **(impression length ≥ min) AND (top-1 same-patient epi
 - Episodic memory gives the largest gain of any single module.
 - The full S+E+V configuration is best for every backbone.
 - At WB4, MoE-FT beats regular FT by about 7–8 F1 points in every memory configuration.
+
+<p align="center">
+  <img src="assets/fig5_memory_combinations.png" alt="F1 and EM by memory combination" width="38%">
+  &nbsp;&nbsp;
+  <img src="assets/fig6_7_writeback_and_moe_gain.png" alt="Writeback phases and MoE-FT gain" width="58%">
+</p>
+<p align="center"><em><b>Left (Figure 5):</b> Impression-level F1 (a) and EM (b) for each memory combination on the Base, FT and MoE-FT backbones. <b>Right (Figures 6–7):</b> F1 across the writeback phases (Base → WB4) for E, E+V and E+V+S on the (a) Base, (b) FT and (c) MoE-FT backbones; and the gain of MoE-FT over regular FT at WB4, for F1 (a) and EM (b).</em></p>
+
+### Qualitative example
+
+<p align="center">
+  <img src="assets/fig3_case_study.png" alt="Clinical query case study" width="95%">
+</p>
+<p align="center"><em><b>Figure 3.</b> Effect of each memory modality on the MoE fine-tuned model. With episodic memory alone, or episodic + visual memory, the model detects progression but cannot ground its diagnosis. With the full S+E+V memory, it localizes the progression to the right lower lobe and identifies likely acute pneumonia.</em></p>
 
 ---
 
