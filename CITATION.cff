@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the MSM-Mem paper."
+title: "MSM-Mem: A Universal Medical Structured Multimodal Memory Framework for Medical AI Agents"
+type: software
+repository-code: "https://github.com/asad14053/Bio-Med-Agent"
+authors:
+  - family-names: Jabin
+    given-names: Md Asaduzzaman
+    affiliation: University of Georgia
+  - family-names: Le
+    given-names: Khoa
+  - family-names: Zhao
+    given-names: Lin
+  - family-names: Liu
+    given-names: Tianming
+    affiliation: University of Georgia
+preferred-citation:
+  type: article
+  title: "MSM-Mem: A Universal Medical Structured Multimodal Memory Framework for Medical AI Agents"
+  authors:
+    - family-names: Jabin
+      given-names: Md Asaduzzaman
+    - family-names: Le
+      given-names: Khoa
+    - family-names: Zhao
+      given-names: Lin
+    - family-names: Liu
+      given-names: Tianming
+  year: 2026
+  journal: "arXiv preprint"
+  identifiers:
+    - type: other
+      value: "arXiv:2608.21810"
+  url: "https://arxiv.org/abs/2608.21810"
