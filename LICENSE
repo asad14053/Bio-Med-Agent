@@ -1,0 +1,11 @@
+## License
+
+The MSM-Mem code in this repository is released under the [MIT License](LICENSE).
+
+Bundled and third-party components keep their own licenses:
+- `MoE-LLaVA/`: Apache-2.0
+- `ImageBind/` and its pretrained weights: CC-BY-NC-SA 4.0 (**non-commercial use only**)
+- Phi-2: MIT
+- MIMIC-CXR: PhysioNet Credentialed Health Data License. No data is distributed here.
+
+Because ImageBind is non-commercial, the full MSM-Mem pipeline can only be used for non-commercial research.
