@@ -25,3 +25,10 @@ wandb/
 checkpoints/
 cache_dir/
 *.whl
+
+# --- added by docs/paper-aligned-release (append-only) ---
+*.faiss
+*.egg-info/
+.ipynb_checkpoints/
+.checkpoints/
+.DS_Store
