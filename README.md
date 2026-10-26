@@ -328,19 +328,6 @@ The writeback rule is: **(impression length ≥ min) AND (top-1 same-patient epi
 
 ## Results
 
-**Table 1.** Impression-level token **F1 / EM (%)** at writeback phase WB4. S = semantic, E = episodic, V = visual.
-
-| S | E | V | Base | FT | MoE-FT |
-|:-:|:-:|:-:|---|---|---|
-| × | × | × | 11.50 / 9.91 | 15.36 / 13.46 | 18.43 / 16.37 |
-| ✓ | × | × | 13.33 / 11.29 | 18.70 / 16.68 | 25.69 / 23.77 |
-| × | ✓ | × | 14.73 / 12.89 | 20.51 / 18.78 | 28.53 / 26.38 |
-| × | × | ✓ | 14.16 / 12.24 | 19.59 / 17.85 | 27.25 / 25.44 |
-| ✓ | ✓ | × | 18.35 / 16.19 | 30.76 / 28.39 | 36.42 / 34.68 |
-| ✓ | × | ✓ | 18.41 / 16.21 | 29.69 / 27.53 | 36.59 / 34.71 |
-| × | ✓ | ✓ | 22.81 / 20.37 | 37.64 / 34.75 | 44.80 / 42.39 |
-| ✓ | ✓ | ✓ | **27.62 / 25.43** | **47.67 / 44.57** | **54.92 / 51.50** |
-
 - Episodic memory gives the largest gain of any single module.
 - The full S+E+V configuration is best for every backbone.
 - At WB4, MoE-FT beats regular FT by about 7–8 F1 points in every memory configuration.
@@ -348,6 +335,7 @@ The writeback rule is: **(impression length ≥ min) AND (top-1 same-patient epi
 <p align="center">
   <img src="assets/fig5_memory_combinations.png" alt="F1 and EM by memory combination" width="38%">
   &nbsp;&nbsp;
+  
   <img src="assets/fig6_7_writeback_and_moe_gain.png" alt="Writeback phases and MoE-FT gain" width="58%">
 </p>
 <p align="center"><em><b>Left (Figure 5):</b> Impression-level F1 (a) and EM (b) for each memory combination on the Base, FT and MoE-FT backbones. <b>Right (Figures 6–7):</b> F1 across the writeback phases (Base → WB4) for E, E+V and E+V+S on the (a) Base, (b) FT and (c) MoE-FT backbones; and the gain of MoE-FT over regular FT at WB4, for F1 (a) and EM (b).</em></p>
